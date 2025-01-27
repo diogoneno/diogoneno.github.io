@@ -23,15 +23,33 @@ tags: [module, security]
   <li>Produce and evaluate critically the resulting research proposal for the chosen topic.</li>
 </ul>
 
-### Group Assignment
 
-<p> Unit 6, <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/Development%20Team%20Project%20Group%20D.pdf" title="Risk Identification Report">Risk Identification Report</a></p>
+### Unit 5 
+<p>I learnt about the importance of security and risk standards in both industry and enterprise contexts. This included exploring industry-specific security standards and directives, understanding how these standards influence security and risk assessments, and reviewing several common standards used across industries. By the end of the unit, I was able to identify key security standards, select the most appropriate ones for specific scenarios, and incorporate them into threat models. This comprehensive learning experience provided me with a strong foundation to effectively apply security and risk standards in various risk management and planning processes.
+</p>
+
+<p> Link to Case Study 13 here <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/unit5GPDRcasestudy13.pdf" title="GDPR Case Studies">RGDPR Case Studies</a></p>
+
+
+### Group Assignment
 
 <p>I helped with the risk assessment for Pampered Pets' move to digital. I chose methods like the NIST Cybersecurity Framework and Failure Modes and Effects Analysis because they help us identify and prioritise risks easily.
 <br>
 I listed important digital projects, such as e-commerce platforms, ERP systems, and online marketing, to improve how we work. I used STRIDE to categorise risks into internal, external, or environmental and developed plans to manage them.
 <br>
 I also created charts to show the risks clearly. This made it easier for the team and stakeholders to understand the key information. My work ensured we tackled critical risks and supported the business needs, promoting teamwork and idea-sharing.</p>
+
+<p> Unit 6, Link to Group Assignment here <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/Development%20Team%20Project%20Group%20D.pdf" title="Risk Identification Report">Risk Identification Report</a></p>
+
+
+
+### Individual Project
+
+<p> Unit 11, Link to <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/executivesummarysecurityRisk.pdf" title="Executive Summary">Executive Summary</a></p>
+
+
+
+
 
 
 
