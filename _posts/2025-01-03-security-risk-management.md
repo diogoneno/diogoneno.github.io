@@ -7,7 +7,7 @@ tags: [module, security]
 ---
 
 ## Security and Risk Management Module
-
+![business](/assets/images/banners/scott-graham-5fNmWej4tAA-unsplash.jpg"business")
 
 ### Learning Outcomes
 
