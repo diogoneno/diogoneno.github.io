@@ -60,6 +60,24 @@ It also outlines robust plans to manage challenges, such as real-time monitoring
 <p> Unit 12 Reflective Piece  <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/ReflectiveReviewSecurityandRiskMan.pdf" title="Link here">Link here</a></p>
 
 
+### References
 
+Huda, M. (2024) ‘Trust as a key element for quality communication and information management: insights into developing safe cyber-organisational sustainability’, International Journal of Organisational Analysis.
+
+Prasun Singh, L.L.M. and Gautam, R. (2022) ‘Privacy and data protection in social media and liabilities of intermediaries’, About the conference. academia.edu. 
+
+Christopher, M. (2016) Logistics & Supply Chain Management. 5th edn. Harlow: Pearson.
+
+Deloitte (2020) The Future of Manufacturing: Insights on Automation and Quality Risk. Deloitte.
+
+ENISA (2023) ENISA Threat Landscape Report. ENISA.
+
+McKinsey & Company (2021) Industry 4.0 and the Future of Manufacturing.  McKinsey & Company.
+
+Rolfe, G., Freshwater, D. and Jasper, M. (2001) Critical reflection in nursing and the helping professions: a user’s guide. Basingstoke: Palgrave Macmillan.
+
+The University of Edinburgh (n.d.) Reflection Toolkit. 
+
+UoEO (n.d.) Short Guide to Reflective Writing. 
 
 
