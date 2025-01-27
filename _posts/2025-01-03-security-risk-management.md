@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Markdown Guide
-subtitle: Resources to work with Markdown
-categories: markdown
+title: Security and Risk Management 
+subtitle: October 2024
+categories: Module
 tags: [module, security]
 ---
 
@@ -29,4 +29,3 @@ tags: [module, security]
   <li>Evaluate critically existing literature, research design and methodology for the chosen topic, including data analysis processes.</li>
   <li>Produce and evaluate critically the resulting research proposal for the chosen topic.</li>
 </ul>
-
