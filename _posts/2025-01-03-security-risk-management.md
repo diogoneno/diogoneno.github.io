@@ -17,15 +17,12 @@ tags: [module, security]
   <li>Critically determine appropriate methodologies, tools and techniques to mitigate and/or solve security risks and their business impact.</li>
   <li>Articulate the legal, social, ethical, and professional issues faced by information security and risk professionals.
 </li>
-</ul>
-
-##### Research Methods and Professional Practice
-
-### Learning Outcomes
-
-<ul>
   <li>Appraise the professional, legal, social, cultural and ethical issues that affect computing professionals.</li>
   <li>Appraise the principles of academic investigation, applying them to a research topic in the applicable computing field.</li>
   <li>Evaluate critically existing literature, research design and methodology for the chosen topic, including data analysis processes.</li>
   <li>Produce and evaluate critically the resulting research proposal for the chosen topic.</li>
 </ul>
+
+### Group Assigment 
+
+<p> Unit 6, <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/Development%20Team%20Project%20Group%20D.pdf" title="Risk Identification Report">Risk Identification Report</a></p>
