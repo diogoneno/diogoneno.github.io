@@ -27,4 +27,11 @@ tags: [module, security]
 
 <p> Unit 6, <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/Development%20Team%20Project%20Group%20D.pdf" title="Risk Identification Report">Risk Identification Report</a></p>
 
+<p>I helped with the risk assessment for Pampered Pets' move to digital. I chose methods like the NIST Cybersecurity Framework and Failure Modes and Effects Analysis because they help us identify and prioritise risks easily.
+<br>
+I listed important digital projects, such as e-commerce platforms, ERP systems, and online marketing, to improve how we work. I used STRIDE to categorise risks into internal, external, or environmental and developed plans to manage them.
+<br>
+I also created charts to show the risks clearly. This made it easier for the team and stakeholders to understand the key information. My work ensured we tackled critical risks and supported the business needs, promoting teamwork and idea-sharing.</p>
+
+
 
