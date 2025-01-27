@@ -28,7 +28,7 @@ tags: [module, security]
 <p>I learnt about the importance of security and risk standards in both industry and enterprise contexts. This included exploring industry-specific security standards and directives, understanding how these standards influence security and risk assessments, and reviewing several common standards used across industries. By the end of the unit, I was able to identify key security standards, select the most appropriate ones for specific scenarios, and incorporate them into threat models. This comprehensive learning experience provided me with a strong foundation to effectively apply security and risk standards in various risk management and planning processes.
 </p>
 
-<p> Link to Case Study 13 here <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/unit5GPDRcasestudy13.pdf" title="GDPR Case Studies">RGDPR Case Studies</a></p>
+<p> Link to Case Study 13 here <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/unit5GPDRcasestudy13.pdf" title="GDPR Case Studies">GDPR Case Studies</a></p>
 
 
 ### Group Assignment
