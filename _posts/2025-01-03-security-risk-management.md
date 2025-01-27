@@ -54,5 +54,12 @@ In contrast, the final project incorporates advanced tools, including Monte Carl
 It also outlines robust plans to manage challenges, such as real-time monitoring and disaster recovery strategies. This reflects a shift from simply addressing immediate risks to focusing on creating a resilient and adaptable framework for digital transformation, ensuring long-term sustainability and success.</p>
 
 
+### Reflective Review
+
+
+<p> Unit 12 Reflective Piece here <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/ReflectiveReviewSecurityandRiskMan.pdf" title="Reflective Review">Reflective Review</a></p>
+
+
+
 
 
