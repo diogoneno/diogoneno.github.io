@@ -43,8 +43,15 @@ tags: [module, security]
 
 <p> Unit 11, Link to <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/executivesummarysecurityRisk.pdf" title="Executive Summary">Executive Summary</a></p>
 
+### Unit 6 vs Unit 11
 
+<p>The final project demonstrates significant growth since the previous report, delving deeper into risk management methods. The earlier report primarily addressed fundamental aspects, such as compliance, data protection, and ensuring operational continuity.
+<br>
 
+In contrast, the final project incorporates advanced tools, including Monte Carlo simulations, to assess risks in global supply chains, automation quality, and cybersecurity.
+<br>
+
+It also outlines robust plans to manage challenges, such as real-time monitoring and disaster recovery strategies. This reflects a shift from simply addressing immediate risks to focusing on creating a resilient and adaptable framework for digital transformation, ensuring long-term sustainability and success.</p>
 
 
 
