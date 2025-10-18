@@ -73,25 +73,55 @@ tags: [module, cybersecurity]
   <h3>Unit 12 — Secure Backup App</h3>
 
   <p>
-    Browse the submission files:
-    <ul>
-      <li><a href="{{ '/assets/unit12/secure_backup.py' | relative_url }}">secure_backup.py</a></li>
-      <li><a href="{{ '/assets/unit12/requirements.txt' | relative_url }}">requirements.txt</a></li>
-      <li><a href="{{ '/assets/unit12/TestData/requirements.png' | relative_url }}">requirements.png</a></li>
-      <li><a href="{{ '/assets/unit12/ResultsScreenshots.pdf' | relative_url }}">Results &amp; Screenshots (PDF)</a></li>
-    </ul>
+    This project implements a secure backup system in Python. It establishes a secure channel,
+    verifies user credentials, encrypts data, and checks integrity during backup.
   </p>
 
-  <!-- Inline screenshot preview -->
+  <p>Browse the submission files:</p>
+  <ul>
+    <li>
+      <a href="https://github.com/diogoneno/diogoneno.github.io/tree/main/assets/LauchingIntoCybersecurityApril2024/unit12"
+         target="_blank" rel="noopener">
+        Folder: assets/LauchingIntoCybersecurityApril2024/unit12
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/secure_backup.py"
+         target="_blank" rel="noopener">secure_backup.py</a>
+    </li>
+    <li>
+      <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/requirements.txt"
+         target="_blank" rel="noopener">requirements.txt</a>
+    </li>
+    <li>
+      <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/README.md"
+         target="_blank" rel="noopener">README.md</a>
+    </li>
+    <li>
+      <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/requirements.png"
+         target="_blank" rel="noopener">requirements.png</a>
+    </li>
+    <li>
+      <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/ResultsScreenshots.pdf"
+         target="_blank" rel="noopener">Results &amp; Screenshots (PDF)</a>
+    </li>
+  </ul>
+
+  <!-- Inline screenshot preview (use RAW for embedding) -->
   <figure style="margin:1rem 0;">
-    <img src="{{ '/assets/unit12/TestData/requirements.png' | relative_url }}"
-         alt="Requirements screenshot" style="max-width:100%;height:auto;">
+    <img
+      src="https://raw.githubusercontent.com/diogoneno/diogoneno.github.io/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/requirements.png"
+      alt="Requirements screenshot"
+      style="max-width:100%;height:auto;">
     <figcaption>Requirements screenshot</figcaption>
   </figure>
 
-  <!-- Inline PDF viewer (falls back to a link if not supported) -->
-  <object data="{{ '/assets/unit12/ResultsScreenshots.pdf' | relative_url }}"
-          type="application/pdf" width="100%" height="640">
-    <a href="{{ '/assets/unit12/ResultsScreenshots.pdf' | relative_url }}">Open the report (PDF)</a>
+  <!-- Inline PDF viewer (RAW so browsers can display it) -->
+  <object
+      data="https://raw.githubusercontent.com/diogoneno/diogoneno.github.io/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/ResultsScreenshots.pdf"
+      type="application/pdf" width="100%" height="640">
+    <a href="https://raw.githubusercontent.com/diogoneno/diogoneno.github.io/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/ResultsScreenshots.pdf">
+      Open the report (PDF)
+    </a>
   </object>
 </section>
