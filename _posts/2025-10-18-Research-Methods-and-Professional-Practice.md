@@ -98,8 +98,9 @@ tags: [module, cybersecurity]
          target="_blank" rel="noopener">README.md</a>
     </li>
     <li>
+      <!-- PNG link goes to GitHub "blob" page for preview (no download) -->
       <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/requirements.png"
-         target="_blank" rel="noopener">requirements.png</a>
+         target="_blank" rel="noopener">requirements.png (preview)</a>
     </li>
     <li>
       <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/ResultsScreenshots.pdf"
@@ -107,20 +108,24 @@ tags: [module, cybersecurity]
     </li>
   </ul>
 
-  <!-- Inline screenshot preview (use RAW for embedding) -->
+  <!-- Inline screenshot preview on the page.
+       Clicking the image itself opens the GitHub preview page (not a download). -->
   <figure style="margin:1rem 0;">
-    <img
-      src="https://raw.githubusercontent.com/diogoneno/diogoneno.github.io/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/requirements.png"
-      alt="Requirements screenshot"
-      style="max-width:100%;height:auto;">
+    <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/requirements.png"
+       target="_blank" rel="noopener">
+      <img
+        src="https://raw.githubusercontent.com/diogoneno/diogoneno.github.io/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/requirements.png"
+        alt="Requirements screenshot" style="max-width:100%;height:auto;" loading="lazy">
+    </a>
     <figcaption>Requirements screenshot</figcaption>
   </figure>
 
-  <!-- Inline PDF viewer (RAW so browsers can display it) -->
+  <!-- Inline PDF viewer; fallback link opens GitHub preview page (not a download). -->
   <object
       data="https://raw.githubusercontent.com/diogoneno/diogoneno.github.io/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/ResultsScreenshots.pdf"
       type="application/pdf" width="100%" height="640">
-    <a href="https://raw.githubusercontent.com/diogoneno/diogoneno.github.io/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/ResultsScreenshots.pdf">
+    <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/ResultsScreenshots.pdf"
+       target="_blank" rel="noopener">
       Open the report (PDF)
     </a>
   </object>
