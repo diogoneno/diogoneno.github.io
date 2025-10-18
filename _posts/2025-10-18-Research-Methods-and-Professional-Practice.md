@@ -64,18 +64,25 @@ tags: [module, cybersecurity]
 
 ### Unit 11
 
-### Unit 12
-
-<p> This project implements a secure backup operation system using Python. It focuses on establishing a secure communication channel, verifying user credentials, encrypting data, and ensuring data integrity during the backup process. This project implements a secure backup operation system using Python. It focuses on establishing a secure communication channel, verifying user credentials, encrypting data, and ensuring data integrity during the backup process. This project implements a secure backup operation system using Python. It focuses on establishing a secure communication channel, verifying user credentials, encrypting data, and ensuring data integrity during the backup process.</p>
-
-
 <section id="unit12" class="unit">
   <h3>Unit 12 — Secure Backup App</h3>
 
-  <p>
-    This project implements a secure backup system in Python. It establishes a secure channel,
-    verifies user credentials, encrypts data, and checks integrity during backup.
-  </p>
+  <header aria-labelledby="secure-backup-title">
+    <h4 id="secure-backup-title">Secure Backup Operation</h4>
+    <p class="lead">
+      This project implements a secure backup system in Python. It establishes a secure
+      communication channel, verifies user credentials, encrypts data, and ensures data
+      integrity during the backup process.
+    </p>
+  </header>
+
+  <h5>Features</h5>
+  <ul>
+    <li><strong>Secure Communication:</strong> Uses SSL/TLS for protected data transmission.</li>
+    <li><strong>Credential Verification:</strong> Validates user credentials before any backup starts.</li>
+    <li><strong>Data Encryption:</strong> Encrypts backup payloads to maintain confidentiality.</li>
+    <li><strong>Integrity Checks:</strong> Verifies data integrity during and after transfer.</li>
+  </ul>
 
   <p>Browse the submission files:</p>
   <ul>
@@ -106,19 +113,7 @@ tags: [module, cybersecurity]
          target="_blank" rel="noopener">Results &amp; Screenshots (PDF)</a>
     </li>
   </ul>
-  <figure style="margin:1rem 0;">
-    <img
-      src="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/requirements.png"
-      alt="Requirements screenshot"
-      style="max-width:100%;height:auto;">
-    <figcaption>Requirements screenshot</figcaption>
-  </figure>
-  <object
-      data="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/ResultsScreenshots.pdf"
-      type="application/pdf" width="100%" height="640">
-    <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/ResultsScreenshots.pdf">
-      Open the report (PDF)
-    </a>
-  </object>
 </section>
+
+
 
