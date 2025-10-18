@@ -7,7 +7,15 @@ tags: [module, cybersecurity]
 ---
 
 ## Launching into Cyber Security Module
-![business image](/assets/images/banners/scott-graham-5fNmWej4tAA-unsplash.jpg)
+
+<figure class="banner">
+  <img
+    src="{{ '/assets/images/banners/scott-graham-5fNmWej4tAA-unsplash.jpg' | relative_url }}"
+    alt="Close-up of a laptop on a desk with business documents, representing cybersecurity study"
+    loading="lazy"
+    decoding="async">
+  <figcaption>Photo: Scott Graham (Unsplash)</figcaption>
+</figure>
 
 ### Learning Outcomes
 
@@ -30,20 +38,46 @@ tags: [module, cybersecurity]
 </ul>
 
 ### Unit 1
+
 <p>I learned the bigger picture of Cyber Security—what it is, why it matters to organisations, and how professionals add value. This included exploring the core CIA principles (Confidentiality, Integrity and Availability), examining computing infrastructure (types of networks, software, databases, the Internet and the World Wide Web), and understanding how these components interact in information systems. I reviewed common attack types and vulnerabilities, mapped network configurations to appropriate security measures, and considered the skills and professional competencies required in the field. I also reflected on ethics and governance frameworks and how they shape responsible practice. By the end of the unit, I was able to explain the importance of cyber security, relate infrastructure components to risk, recognise prevalent threats and mitigations, and integrate ethical and governance considerations into basic threat thinking—providing a solid foundation for subsequent study and professional development.</p>
 
-<p> Unit 1, Link to Initial Post for Collaborative Learning Discussion 1 here <a href="https://github.com/diogoneno/diogoneno.github.io/blob/TutorResearch/assets/LauchingIntoCybersecurityApril2024/Initial%20Post.pdf" title="The Critical Importance of Cybersecurity: Lessons from the Log4j Vulnerability">The Critical Importance of Cybersecurity: Lessons from the Log4j Vulnerability</a></p>
-<p> <a href="https://github.com/diogoneno/diogoneno.github.io/blob/TutorResearch/assets/LauchingIntoCybersecurityApril2024/Initial%20Post%20-%20Peer%20Response.pdf" title="Peer Response">Peer Response</a></p>
+<p>
+  Initial Post for Collaborative Learning Discussion 1:
+  <a href="https://github.com/diogoneno/diogoneno.github.io/blob/TutorResearch/assets/LauchingIntoCybersecurityApril2024/Initial%20Post.pdf"
+     target="_blank" rel="noopener">
+    The Critical Importance of Cybersecurity: Lessons from the Log4j Vulnerability (PDF)
+  </a>
+</p>
+<p>
+  Peer Response:
+  <a href="https://github.com/diogoneno/diogoneno.github.io/blob/TutorResearch/assets/LauchingIntoCybersecurityApril2024/Initial%20Post%20-%20Peer%20Response.pdf"
+     target="_blank" rel="noopener">
+    Initial Post — Peer Response (PDF)
+  </a>
+</p>
 
 ### Unit 2
+
 <p>I learned how cyber security issues translate into legal, ethical, and governance obligations for global organisations. This included reviewing Data Protection legislation (e.g., GDPR and cross-border transfer rules), exploring regulatory and industry frameworks, and examining privacy risks with practical mitigation approaches such as privacy-by-design, data minimisation, DPIAs, lawful bases, consent management, and incident response. I applied Week 1 concepts to advise a hypothetical multinational—identifying likely ethical dilemmas and regulatory exposure across jurisdictions—and I helped turn high-level requirements into actionable guidance (records of processing, retention schedules, access controls, encryption, and vendor due diligence). By the end of the unit, I was able to recognise the key laws and frameworks, assess their implications for business operations, and produce concise, business-friendly advice that balances compliance, risk, and usability.</p>
 
-
 ### Unit 3
-<p>I learned how to design cyber security solutions from first principles—translating threat and vulnerability analysis into concrete architecture choices. This included revisiting network foundations (peer-to-peer vs client-server, LAN vs WAN, virtual/cloud overlays) and evaluating how topology, scalability and performance shape security posture. I identified common devices and protocols (switches/routers, VLANs, IP, HTTP/HTML, SMTP/POP/FTP) and mapped them to appropriate controls (segmentation, ACLs, firewalls/WAFs, IDS/IPS, VPNs). I applied design principles such as least privilege, defence-in-depth, secure-by-design and Zero Trust, and I used structured threat-modelling approaches (e.g., STRIDE/attack trees) to prioritise mitigations. I helped turn findings into practical patterns—DMZs, micro-segmentation, hardened baselines, and secure protocol choices (TLS, SFTP/FTPS)—and linked software risks to the SDLC via secure requirements and early vulnerability identification. By the end of the unit, I was able to justify topology and control selections, evaluate trade-offs, and produce design recommendations aligned to identified threats and business goals.</p> 
 
-<p> Unit 3, Link to Summary Post <a href="https://github.com/diogoneno/diogoneno.github.io/blob/TutorResearch/assets/LauchingIntoCybersecurityApril2024/Summary%20Post.pdf" title="here">here</a></p>
-<p> <a href="https://github.com/diogoneno/diogoneno.github.io/blob/TutorResearch/assets/LauchingIntoCybersecurityApril2024/Summary%20Post%20-%20Peer%20response.pdf" title="Peer Response">Peer Response</a></p>
+<p>I learned how to design cyber security solutions from first principles—translating threat and vulnerability analysis into concrete architecture choices. This included revisiting network foundations (peer-to-peer vs client-server, LAN vs WAN, virtual/cloud overlays) and evaluating how topology, scalability and performance shape security posture. I identified common devices and protocols (switches/routers, VLANs, IP, HTTP/HTML, SMTP/POP/FTP) and mapped them to appropriate controls (segmentation, ACLs, firewalls/WAFs, IDS/IPS, VPNs). I applied design principles such as least privilege, defence-in-depth, secure-by-design and Zero Trust, and I used structured threat-modelling approaches (e.g., STRIDE/attack trees) to prioritise mitigations. I helped turn findings into practical patterns—DMZs, micro-segmentation, hardened baselines, and secure protocol choices (TLS, SFTP/FTPS)—and linked software risks to the SDLC via secure requirements and early vulnerability identification. By the end of the unit, I was able to justify topology and control selections, evaluate trade-offs, and produce design recommendations aligned to identified threats and business goals.</p>
+
+<p>
+  Summary Post:
+  <a href="https://github.com/diogoneno/diogoneno.github.io/blob/TutorResearch/assets/LauchingIntoCybersecurityApril2024/Summary%20Post.pdf"
+     target="_blank" rel="noopener">
+    Unit 3 — Summary Post (PDF)
+  </a>
+</p>
+<p>
+  Peer Response:
+  <a href="https://github.com/diogoneno/diogoneno.github.io/blob/TutorResearch/assets/LauchingIntoCybersecurityApril2024/Summary%20Post%20-%20Peer%20response.pdf"
+     target="_blank" rel="noopener">
+    Unit 3 — Peer Response (PDF)
+  </a>
+</p>
 
 ### Unit 4
 
@@ -55,10 +89,15 @@ tags: [module, cybersecurity]
 
 ### Unit 8
 
-
 ### Unit 9
 
-<p>Individual Essay <a href="https://github.com/diogoneno/diogoneno.github.io/blob/TutorResearch/assets/LauchingIntoCybersecurityApril2024/Summary%20Post.pdf" title="(Report)">(Report)</a></p>
+<p>
+  Individual Essay:
+  <a href="https://github.com/diogoneno/diogoneno.github.io/blob/TutorResearch/assets/LauchingIntoCybersecurityApril2024/Summary%20Post.pdf"
+     target="_blank" rel="noopener">
+     Report (PDF)
+  </a>
+</p>
 
 ### Unit 10
 
@@ -114,6 +153,3 @@ tags: [module, cybersecurity]
     </li>
   </ul>
 </section>
-
-
-
