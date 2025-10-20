@@ -1,83 +1,110 @@
 ---
 layout: post
-title: Security and Risk Management 
+title: Security and Risk Management
 subtitle: October 2024
 categories: Module
-tags: [module, security]
+tags: [module, security, risk]
 ---
 
-## Security and Risk Management Module
-![business image](/assets/images/banners/scott-graham-5fNmWej4tAA-unsplash.jpg)
+<section id="introduction">
+  <h2>Security and Risk Management</h2>
+  <p>
+    This module introduced the fundamentals of information security and risk management, focusing on how organisations identify, analyse, and mitigate risks in response to evolving cyber threats. Analysing real-world case studies deepened my understanding of how legal, social, and ethical considerations shape professional practice and taught me to align security controls with organisational objectives (<em>Huda, 2024</em>). Collaborative and individual projects enhanced my skills in threat assessment, risk quantification, and effective communication with technical and non-technical audiences (<em>ENISA, 2023</em>).
+  </p>
+</section>
 
-### Learning Outcomes
+<hr>
 
-<ul>
-  <li>Identify and analyse critically security risks, threats and vulnerabilities in information systems, accounting for the current threat landscape.</li>
-  <li>Gather and synthesise information from multiple sources (including internet security alerts & warning sites) to aid in the systematic analysis of risks & security issues manage and audit risk & security issues.</li>
-  <li>Critically determine appropriate methodologies, tools and techniques to mitigate and/or solve security risks and their business impact.</li>
-  <li>Articulate the legal, social, ethical, and professional issues faced by information security and risk professionals.
-</li>
-  <li>Appraise the professional, legal, social, cultural and ethical issues that affect computing professionals.</li>
-  <li>Appraise the principles of academic investigation, applying them to a research topic in the applicable computing field.</li>
-  <li>Evaluate critically existing literature, research design and methodology for the chosen topic, including data analysis processes.</li>
-  <li>Produce and evaluate critically the resulting research proposal for the chosen topic.</li>
-</ul>
+<section id="learning-outcomes">
+  <h3>Learning Outcomes</h3>
+  <p>I will be able to:</p>
+  <ul>
+    <li>Identify and analyse critical security risks, threats, and vulnerabilities in information systems (<em>ENISA, 2023</em>).</li>
+    <li>Evaluate methodologies, tools, and frameworks (NIST, ISO 27001, STRIDE) for mitigating business risks (<em>Deloitte, 2020</em>).</li>
+    <li>Apply legal, ethical, and social principles to decision-making in information security (<em>Huda, 2024</em>).</li>
+    <li>Communicate and justify risk management strategies to diverse audiences.</li>
+    <li>Reflect on professional growth and continuous learning in cybersecurity (<em>Majola, 2025</em>).</li>
+  </ul>
+</section>
 
+<hr>
 
-### Unit 5 
-<p>I learned about the importance of security and risk standards in both industry and enterprise contexts. This included exploring industry-specific security standards and directives, understanding how these standards influence security and risk assessments, and reviewing several common standards used across industries. By the end of the unit, I was able to identify key security standards, select the most appropriate ones for specific scenarios, and incorporate them into threat models. This comprehensive learning experience provided me with a strong foundation to effectively apply security and risk standards in various risk management and planning processes.
-</p>
+<section id="artefacts-feedback">
+  <h3>Artefacts and Feedback</h3>
 
-<p> Link to Case Study 13 here <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/unit5GPDRcasestudy13.pdf" title="GDPR Case Studies">GDPR Case Studies</a></p>
+  <p><strong>Collaborative Discussion – Legal and Ethical Issues in Cybersecurity:</strong><br>
+  In this discussion, I examined the impact of data privacy laws such as GDPR and CCPA, emphasising ethical responsibilities beyond compliance (<em>Huda, 2024</em>). Peers recognised the strength of my legal analysis and suggested exploring cultural and social aspects further. Their feedback broadened my ethical perspective and deepened my understanding of how regulation shapes professional conduct.</p>
 
+  <p><strong>Team Project – Pampered Pets Risk Identification Report:</strong><br>
+  As a member of Group D, I contributed to a comprehensive risk assessment for a fictional company’s digital transformation, focusing on the NIST framework and STRIDE methodology (<em>Deloitte, 2020</em>). Our report was commended for its structure but needed more detailed control recommendations. This experience highlighted the need to connect each control to measurable business value and develop mitigation strategies tailored to specific risks (<em>Christopher, 2016</em>).</p>
 
-### Group Assignment
+  <p><strong>Individual Executive Summary – Security Risk Management:</strong><br>
+  This project marked a significant milestone as I integrated knowledge from previous units into a strategic report using Monte Carlo simulations for quantitative risk modelling (<em>ENISA, 2023</em>). Transitioning from qualitative to probabilistic analysis enhanced my ability to justify security investments with data-driven insights.</p>
 
-<p>I helped with the risk assessment for Pampered Pets' move to digital. I chose methods like the NIST Cybersecurity Framework and Failure Modes and Effects Analysis because they help us identify and prioritise risks easily. I listed important digital projects, such as e-commerce platforms, ERP systems, and online marketing, to improve how we work. I used STRIDE to categorise risks into internal, external, or environmental and developed plans to manage them. I also created charts to show the risks clearly. This made it easier for the team and stakeholders to understand the key information. My work ensured we tackled critical risks and supported the business needs, promoting teamwork and idea-sharing.</p>
+  <p><strong>Reflective Review – Professional Growth:</strong><br>
+  The reflective review allowed me to evaluate my development from a technically oriented practitioner to a strategic security professional. Tutor feedback recognised my progress in integrating ethics, analytics, and communication into a coherent professional narrative (<em>Majola, 2025</em>).</p>
+</section>
 
-<p> Unit 6, Link to Group Assignment here <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/Development%20Team%20Project%20Group%20D.pdf" title="Risk Identification Report">Risk Identification Report</a></p>
+<hr>
 
+<section id="reflections">
+  <h3>Reflections and Learning Highlights</h3>
 
+  <p>Examining privacy laws showed that security involves not only technical systems but also people, accountability, trust, and ethical responsibility beyond compliance (<em>Huda, 2024</em>).</p>
 
-### Individual Project
+  <p><strong>Team Project:</strong><br>
+  This project reinforced the value of teamwork and effective stakeholder communication. Handling disagreements required balancing perspectives and achieving evidence-based consensus (<em>Walland and Shaw, 2020</em>).</p>
 
-<p> Unit 11, Link to <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/executivesummarysecurityRisk.pdf" title="Executive Summary">Executive Summary</a></p>
+  <p><strong>Individual Executive Project:</strong><br>
+  Developing quantitative risk models expanded my technical skills, while explaining Monte Carlo simulations in business terms improved executive communication and increased confidence in data-driven decision-making (<em>ENISA, 2023</em>).</p>
 
-### Unit 6 vs Unit 11
+  <p><strong>Reflective Practice:</strong><br>
+  Continuous reflection using Gibbs’ and Rolfe’s models enabled me to identify areas for improvement, adapt my learning strategies, and apply theory to professional practice (<em>Rolfe, Freshwater and Jasper, 2001; The University of Edinburgh, 2024</em>).</p>
+</section>
 
-<p>The final project demonstrates significant growth since the previous report, delving deeper into risk management methods. The earlier report primarily addressed fundamental aspects, such as compliance, data protection, and ensuring operational continuity.
-<br>
+<hr>
 
-In contrast, the final project incorporates advanced tools, including Monte Carlo simulations, to assess risks in global supply chains, automation quality, and cybersecurity.
-<br>
+<section id="skills-matrix">
+  <h3>Professional Skills Matrix and Action Plan</h3>
 
-It also outlines robust plans to manage challenges, such as real-time monitoring and disaster recovery strategies. This reflects a shift from simply addressing immediate risks to focusing on creating a resilient and adaptable framework for digital transformation, ensuring long-term sustainability and success.</p>
+  <h4>Skills Gained or Enhanced</h4>
+  <ul>
+    <li>Strategic risk thinking and alignment with business goals (<em>Deloitte, 2020</em>)</li>
+    <li>Quantitative analysis using probabilistic methods (<em>ENISA, 2023</em>)</li>
+    <li>Threat modelling (STRIDE, attack trees) (<em>Christopher, 2016</em>)</li>
+    <li>Stakeholder communication and executive reporting (<em>Walland and Shaw, 2020</em>)</li>
+    <li>Ethical reasoning and legal compliance awareness (<em>Huda, 2024</em>)</li>
+    <li>Teamwork and collaborative decision-making (<em>Majola, 2025</em>)</li>
+    <li>Resilience planning and incident response design (<em>ENISA, 2023</em>)</li>
+    <li>Reflective practice and lifelong learning (<em>Rolfe, Freshwater and Jasper, 2001; The University of Edinburgh, 2024</em>)</li>
+  </ul>
 
+  <h4>Action Plan</h4>
+  <ul>
+    <li><strong>Short-Term:</strong> Each week, review the latest ENISA threat reports (<em>ENISA, 2023</em>). Summarise key findings and trends in a notebook to track emerging attack vectors and assess potential impact on ongoing projects.</li>
+    <li><strong>Medium-Term:</strong> Select two real business scenarios and develop risk models for each using Monte Carlo simulation (<em>Deloitte, 2020</em>). Integrate the simulation outcomes into an executive dashboard and evaluate how the results inform business decision-making.</li>
+    <li><strong>Long-Term:</strong> Enrol in a CISSP or CISM certification course, schedule regular study sessions, and set a target date for exam completion within the next year to consolidate technical expertise and acquire management-level competencies (<em>Majola, 2025</em>).</li>
+  </ul>
+</section>
 
-### Reflective Review
+<hr>
 
+<section id="key-takeaways">
+  <h3>Key Takeaways</h3>
+  <p>This module taught me that effective security is technical and strategic (<em>Christopher, 2016</em>). Key turning points included recognising that compliance builds trust (<em>Huda, 2024</em>), risk quantification supports informed decisions (<em>ENISA, 2023</em>), and reflection drives ongoing growth (<em>Rolfe, Freshwater and Jasper, 2001</em>).</p>
+  <p>This module has enabled me to approach cybersecurity with analytical rigour, ethical awareness, and strategic vision—core competencies I intend to apply in my professional practice (<em>Majola, 2025</em>). Moving forward, I am confident in leveraging these skills to drive effective security strategies, foster trust within organisations, and adapt to emerging risks through continued learning and reflection (<em>The University of Edinburgh, 2024; Walland and Shaw, 2020</em>).</p>
+</section>
 
-<p> Unit 12 Reflective Piece  <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/ReflectiveReviewSecurityandRiskMan.pdf" title="Link here">Link here</a></p>
+<hr>
 
-
-### References
-
-Huda, M. (2024) ‘Trust as a key element for quality communication and information management: insights into developing safe cyber-organisational sustainability’, International Journal of Organisational Analysis.
-
-Prasun Singh, L.L.M. and Gautam, R. (2022) ‘Privacy and data protection in social media and liabilities of intermediaries’, About the conference. academia.edu. 
-
-Christopher, M. (2016) Logistics & Supply Chain Management. 5th edn. Harlow: Pearson.
-
-Deloitte (2020) The Future of Manufacturing: Insights on Automation and Quality Risk. Deloitte.
-
-ENISA (2023) ENISA Threat Landscape Report. ENISA.
-
-McKinsey & Company (2021) Industry 4.0 and the Future of Manufacturing.  McKinsey & Company.
-
-Rolfe, G., Freshwater, D. and Jasper, M. (2001) Critical reflection in nursing and the helping professions: a user’s guide. Basingstoke: Palgrave Macmillan.
-
-The University of Edinburgh (n.d.) Reflection Toolkit. 
-
-UoEO (n.d.) Short Guide to Reflective Writing. 
-
-
+<section id="references">
+  <h3>References</h3>
+  <p>Christopher, M. (2016) <em>Logistics &amp; Supply Chain Management</em>. 5th edn. Harlow: Pearson Education Limited.</p>
+  <p>Deloitte (2020) <em>The Future of Manufacturing: Insights on Automation and Quality Risk</em>. Available at: <a href="https://www2.deloitte.com/global/en/pages/manufacturing/articles/future-of-manufacturing.html" target="_blank" rel="noopener">https://www2.deloitte.com/global/en/pages/manufacturing/articles/future-of-manufacturing.html</a> [Accessed 15 Oct 2024].</p>
+  <p>ENISA (2023) <em>ENISA Threat Landscape Report</em>. European Union Agency for Cybersecurity. Available at: <a href="https://www.enisa.europa.eu/publications/enisa-threat-landscape-2023" target="_blank" rel="noopener">https://www.enisa.europa.eu/publications/enisa-threat-landscape-2023</a> [Accessed 18 Oct 2024].</p>
+  <p>Huda, M. (2024) ‘Trust as a key element for quality communication and information management’, <em>International Journal of Organisational Analysis</em>, 32(10), pp. 2156–2174.</p>
+  <p>Majola, M.X. (2025) ‘A Proposed Framework For E-portfolio Use to Enhance Teaching and Learning: Process E-portfolio’, <em>International Journal of Educational Management</em>.</p>
+  <p>Rolfe, G., Freshwater, D. and Jasper, M. (2001) <em>Critical Reflection in Nursing and the Helping Professions</em>. Basingstoke: Palgrave Macmillan.</p>
+  <p>The University of Edinburgh (2024) <em>Reflection Toolkit: Gibbs’ Reflective Cycle</em>. Available at: <a href="https://reflection.ed.ac.uk/reflectors-toolkit/reflecting-on-experience/gibbs-reflective-cycle" target="_blank" rel="noopener">https://reflection.ed.ac.uk/reflectors-toolkit/reflecting-on-experience/gibbs-reflective-cycle</a>.</p>
+  <p>Walland, E. and Shaw, S. (2020) ‘E-portfolios in Teaching, Learning and Assessment’, <em>Technology, Pedagogy and Education</em>, 31(4), pp. 455–470.</p>
+</section>
