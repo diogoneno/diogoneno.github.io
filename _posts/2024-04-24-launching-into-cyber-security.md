@@ -29,8 +29,18 @@ tags: [module, cybersecurity]
     I gained a comprehensive understanding of cybersecurity, its organisational importance, and the value professionals bring. I explored core principles, infrastructure components, and their interactions within information systems, and examined how ethics and governance shape responsible practice (<em>ISO, 2022</em>; <em>NCSC, 2021</em>). By the end of the unit, I could explain cybersecurity’s significance, relate infrastructure to risk, identify threats and mitigations, and integrate ethical considerations into threat analysis.
   </p>
   <ul>
-    <li>Initial Post for Collaborative Learning Discussion 1: <a href="#" aria-label="Initial Post PDF link">“The Critical Importance of Cybersecurity: Lessons from the Log4j Vulnerability” (PDF)</a></li>
-    <li>Peer Response: <a href="#" aria-label="Peer Response PDF link">“Initial Post — Peer Response” (PDF)</a></li>
+    <li>
+      Initial Post for Collaborative Learning Discussion 1:
+      <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/Initial%20Post.pdf" target="_blank" rel="noopener" aria-label="Initial Post PDF">
+        “The Critical Importance of Cybersecurity: Lessons from the Log4j Vulnerability” (PDF)
+      </a>
+    </li>
+    <li>
+      Peer Response:
+      <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/Initial%20Post%20-%20Peer%20Response.pdf" target="_blank" rel="noopener" aria-label="Peer Response PDF">
+        “Initial Post — Peer Response” (PDF)
+      </a>
+    </li>
   </ul>
 
   <h4>Unit&nbsp;3 — Designing Secure Architectures</h4>
@@ -38,8 +48,18 @@ tags: [module, cybersecurity]
     I learned to design cybersecurity solutions by translating threat and vulnerability analysis into architecture decisions. I revisited network fundamentals, assessed how topology and performance affect security, and mapped devices and protocols to appropriate controls. I applied key design principles and used structured threat modelling to prioritise mitigations, developing practical patterns and linking software risks to the SDLC (<em>Microsoft, 2022</em>; <em>NCSC, 2021</em>). By the end of the unit, I could justify design choices, evaluate trade-offs, and align recommendations with business goals.
   </p>
   <ul>
-    <li>Summary Post: <a href="#" aria-label="Unit 3 Summary Post PDF link">“Unit 3 — Summary Post” (PDF)</a></li>
-    <li>Peer Response: <a href="#" aria-label="Unit 3 Peer Response PDF link">“Unit 3 — Peer Response” (PDF)</a></li>
+    <li>
+      Summary Post:
+      <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/Summary%20Post.pdf" target="_blank" rel="noopener" aria-label="Unit 3 Summary Post PDF">
+        “Unit 3 — Summary Post” (PDF)
+      </a>
+    </li>
+    <li>
+      Peer Response:
+      <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/Summary%20Post%20-%20Peer%20response.pdf" target="_blank" rel="noopener" aria-label="Unit 3 Peer Response PDF">
+        “Unit 3 — Peer Response” (PDF)
+      </a>
+    </li>
   </ul>
 
   <h4>Unit&nbsp;9 — Individual Essay</h4>
@@ -47,7 +67,12 @@ tags: [module, cybersecurity]
     I wrote a research-based essay synthesising concepts to address a specific security problem. I focused on stakeholder needs, defined the risk landscape, and justified control selection with clear criteria grounded in recognised frameworks (<em>NIST, 2024</em>; <em>ISO, 2022</em>). The essay emphasised structured analysis, transparent assumptions, and actionable recommendations to support decision-making.
   </p>
   <ul>
-    <li>Individual Essay: <a href="#" aria-label="Individual Report PDF link">“Report” (PDF)</a></li>
+    <li>
+      Individual Essay:
+      <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/Essay9.pdf" target="_blank" rel="noopener" aria-label="Unit 9 Individual Essay PDF">
+        “Report” (PDF)
+      </a>
+    </li>
   </ul>
 
   <h4>Unit&nbsp;12 — Secure Backup App</h4>
@@ -61,14 +86,46 @@ tags: [module, cybersecurity]
     <li><strong>Integrity Checks:</strong> Verifies data integrity during and after transfer.</li>
   </ul>
 
-  <p><strong>Submission files include:</strong></p>
+  <p><strong>Browse the submission files:</strong></p>
   <ul>
-    <li>Folder: <code>assets/LauchingIntoCybersecurityApril2024/unit12</code></li>
-    <li><code>secure_backup.py</code></li>
-    <li><code>requirements.txt</code></li>
-    <li><code>README.md</code></li>
-    <li><code>TestData/requirements.png</code></li>
-    <li><code>TestData/ResultsScreenshots.pdf</code></li>
+    <li>
+      Folder:
+      <a href="https://github.com/diogoneno/diogoneno.github.io/tree/main/assets/LauchingIntoCybersecurityApril2024/unit12" target="_blank" rel="noopener" aria-label="Unit 12 folder">
+        assets/LauchingIntoCybersecurityApril2024/unit12
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/secure_backup.py" target="_blank" rel="noopener" aria-label="secure_backup.py">
+        secure_backup.py
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/requirements.txt" target="_blank" rel="noopener" aria-label="requirements.txt">
+        requirements.txt
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/README.md" target="_blank" rel="noopener" aria-label="README.md">
+        README.md
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/diogoneno/diogoneno.github.io/tree/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData" target="_blank" rel="noopener" aria-label="Unit 12 TestData folder">
+        TestData/
+      </a>
+      <ul>
+        <li>
+          <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/ResultsScreenshots.pdf" target="_blank" rel="noopener" aria-label="Results & Screenshots PDF">
+            ResultsScreenshots.pdf
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/LauchingIntoCybersecurityApril2024/unit12/TestData/requirements.png" target="_blank" rel="noopener" aria-label="requirements.png">
+            requirements.png
+          </a>
+        </li>
+      </ul>
+    </li>
   </ul>
 
   <h3>Reflections and Learning Highlights</h3>
