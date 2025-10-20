@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Backup & Resilience — Security Assessment
-subtitle: October 2024
+title: Network Security
+subtitle: July 2024
 categories: Module
 tags: [module, cybersecurity, backups, resilience]
 ---
 
-<section aria-labelledby="brsa-title" class="prose max-w-none">
-  <h2 id="brsa-title">Backup &amp; Resilience — Security Assessment Module</h2>
+<section id="introduction">
+  <h2>Network Security Module</h2>
 
   <p>
     This module sharpened how I design, evidence, and communicate secure backup and recovery—treating resilience as a <em>measurable outcome</em> rather than an aspiration. I translated risk findings into concrete controls (offline/immutable copies, independent key custody, admin-plane hardening) and operating procedures mapped to recognised guidance, so that recovery time and data loss can be forecast, tested, and governed (<a href="#ref-nist80034">NIST, 2010</a>; <a href="#ref-ncsc-offline">NCSC, 2019</a>; <a href="#ref-iso27031">ISO/IEC, 2011/2025</a>). A brief personal lens: in my SRE role at Cohesity—plus prior years supporting NetBackup at Veritas—I’ve seen first-hand that the difference between a <em>backup</em> and a <em>restore</em> is governance, testing cadence, and clean separation from the blast radius (<a href="#ref-nist-csf20">NIST, 2024</a>).
@@ -116,3 +116,4 @@ tags: [module, cybersecurity, backups, resilience]
     </li>
   </ul>
 </section>
+
