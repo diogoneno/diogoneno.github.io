@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Security- Module</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0a0e27;
+            --bg-secondary: #1a1f3a;
+            --bg-card: #252b48;
+            --text-primary: #e0e7ff;
+            --text-secondary: #94a3b8;
+            --accent: #10b981;
+            --accent-bright: #34d399;
+            --accent-glow: rgba(16, 185, 129, 0.3);
+            --warning: #f59e0b;
+            --info: #3b82f6;
+        }
+
+        body.light-mode {
+            --bg-primary: #f8fafc;
+            --bg-secondary: #f1f5f9;
+            --bg-card: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --accent: #059669;
+            --accent-bright: #10b981;
+            --accent-glow: rgba(5, 150, 105, 0.2);
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '🔒';
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            font-size: 8rem;
+            opacity: 0.05;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.1); opacity: 0.5; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-bright), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease 0.2s backwards;
+        }
+
+        .intro-text {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease 0.4s backwards;
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            z-index: 1000;
+            background: var(--bg-card);
+            border: 2px solid var(--accent);
+            border-radius: 50px;
+            padding: 0.7rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px var(--accent-glow);
+        }
+
+        .theme-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px var(--accent-glow);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+            border-radius: 2px;
+        }
+
+        /* Learning Outcomes */
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .outcome-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 16px;
+            border-left: 4px solid var(--accent);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .outcome-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px var(--accent-glow);
+        }
+
+        .outcome-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Artefacts Section */
+        .artefacts-section {
+            background: var(--bg-secondary);
+            padding: 4rem 0;
+            margin: 4rem 0;
+        }
+
+        .artefact {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .artefact:hover {
+            border-color: var(--accent);
+            box-shadow: 0 8px 30px var(--accent-glow);
+        }
+
+        .artefact h3 {
+            color: var(--accent-bright);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .artefact h4 {
+            color: var(--text-primary);
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .artefact ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .artefact ul li {
+            padding: 0.7rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .artefact ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* Document Links */
+        .doc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, var(--accent), var(--accent-bright));
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+            font-weight: 600;
+        }
+
+        .doc-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px var(--accent-glow);
+        }
+
+        .doc-link::before {
+            content: '📄';
+        }
+
+        /* Skills Matrix */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .skill-badge {
+            background: linear-gradient(135deg, var(--accent), var(--accent-bright));
+            padding: 1.2rem 1.5rem;
+            border-radius: 12px;
+            color: white;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .skill-badge:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 25px var(--accent-glow);
+        }
+
+        /* Action Plan */
+        .action-plan {
+            display: grid;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .action-item {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 16px;
+            border-left: 6px solid var(--accent);
+            transition: all 0.3s ease;
+        }
+
+        .action-item.medium {
+            border-left-color: var(--info);
+        }
+
+        .action-item.long {
+            border-left-color: var(--warning);
+        }
+
+        .action-item:hover {
+            transform: translateX(10px);
+        }
+
+        .action-item strong {
+            font-size: 1.3rem;
+            color: var(--accent-bright);
+            display: block;
+            margin-bottom: 0.8rem;
+        }
+
+        /* Key Takeaways */
+        .takeaway-box {
+            background: linear-gradient(135deg, var(--accent-glow), transparent);
+            border: 2px solid var(--accent);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+        }
+
+        .takeaway-box h3 {
+            color: var(--accent-bright);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .takeaway-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .takeaway-box li {
+            padding: 1rem 0;
+            padding-left: 2.5rem;
+            position: relative;
+            font-size: 1.05rem;
+        }
+
+        .takeaway-box li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-bright);
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .takeaway-box li strong {
+            color: var(--accent-bright);
+        }
+
+        /* References */
+        .references {
+            background: var(--bg-secondary);
+            padding: 3rem;
+            border-radius: 16px;
+            margin-top: 4rem;
+        }
+
+        .references h3 {
+            color: var(--accent-bright);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .references ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .references li {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--bg-card);
+            color: var(--text-secondary);
+        }
+
+        .references li:last-child {
+            border-bottom: none;
+        }
+
+        /* Links */
+        a {
+            color: var(--accent-bright);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        a:hover {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 50vh;
+                padding: 2rem 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .theme-toggle {
+                top: 1rem;
+                right: 1rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .doc-link {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Module files section */
+        .module-files {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 16px;
+            margin-top: 3rem;
+            border: 2px solid var(--accent);
+        }
+
+        .module-files h3 {
+            color: var(--accent-bright);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+        <span id="theme-text">Dark</span>
+    </button>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>{{ page.title }}</h1>
+            <p class="subtitle">{{ page.subtitle }}</p>
+            <p class="intro-text">
+                This module sharpened how I design, evidence, and communicate secure backup and recovery—treating resilience as a <em>measurable outcome</em> rather than an aspiration. I translated risk findings into concrete controls and operating procedures mapped to recognised guidance.
+            </p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2>Learning Outcomes</h2>
+        </div>
+
+        <div class="outcomes-grid">
+            <div class="outcome-card fade-in">
+                <div class="icon">⚠️</div>
+                <h3>Risk Prioritisation</h3>
+                <p>Identify and prioritise backup-related risks (ransomware reach, weak identity, recovery unknowns) and map them to proportionate controls such as 3-2-1 with offline/immutable copies and MFA-protected admin access.</p>
+            </div>
+
+            <div class="outcome-card fade-in">
+                <div class="icon">🏗️</div>
+                <h3>Resilient Architecture</h3>
+                <p>Design and justify resilient architectures with segregated credentials, encrypted data/keys, and scheduled restore drills with RPO/RTO targets aligned to contingency planning guidance.</p>
+            </div>
+
+            <div class="outcome-card fade-in">
+                <div class="icon">📊</div>
+                <h3>Governance Connection</h3>
+                <p>Connect technical measures to governance and assurance using CSF 2.0 outcomes to show ownership, metrics, and accountability at executive level.</p>
+            </div>
+
+            <div class="outcome-card fade-in">
+                <div class="icon">📋</div>
+                <h3>Compliance Framework</h3>
+                <p>Frame backup and recovery within ICT-readiness, business continuity expectations (ISO/IEC 27031), and GDPR reality.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="artefacts-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Artefacts and Feedback</h2>
+            </div>
+
+            <div class="artefact fade-in">
+                <h3>📊 Assignment (Unit 3) — Backup System Security Analysis & Baseline</h3>
+                <p>
+                    I assessed an estate against common failure modes: unencrypted media, shared credentials, always-hot replicas, and untested restores. The plan introduced offline/immutable copies, separated key custody, MFA on the backup control plane, and a restore-testing calendar with success-rate KPIs.
+                </p>
+                <p style="margin-top: 1.5rem;">
+                    <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/NetworkSecurity/assignmentunit3.docx" target="_blank" rel="noopener" class="doc-link">
+                        Assignment Unit 3
+                    </a>
+                </p>
+            </div>
+
+            <div class="artefact fade-in">
+                <h3>📝 Executive Summary — OSS Backup & Recovery Posture</h3>
+                <p>
+                    For non-technical stakeholders, I prioritised three moves: (1) close identity gaps on backup/admin interfaces; (2) enforce end-to-end encryption with independent key custody; (3) guarantee a timed offline/immutable copy with verified restores. Impact was framed in business terms with testable KPIs.
+                </p>
+                <p style="margin-top: 1.5rem;">
+                    <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/NetworkSecurity/Executive%20Summary.docx" target="_blank" rel="noopener" class="doc-link">
+                        Executive Summary
+                    </a>
+                </p>
+            </div>
+
+            <div class="artefact fade-in">
+                <h3>🔍 Reflective Piece — Method Choices, Multiple Perspectives, PDP</h3>
+                <p>
+                    I critiqued my assumptions (e.g., over-reliance on cloud snapshots that remain logically "hot") and incorporated literature on offline backups and GDPR-aligned continuity. I set a plan to include comparative tool analyses, ransomware case studies, and evidence packs for audits.
+                </p>
+                <p style="margin-top: 1.5rem;">
+                    <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/NetworkSecurity/NSoctober2024ReflecPiec.docx" target="_blank" rel="noopener" class="doc-link">
+                        Reflective Piece
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2>Reflections and Learning Highlights</h2>
+        </div>
+
+        <div class="takeaway-box fade-in">
+            <ul>
+                <li><strong>Resilience is testable.</strong> A backup without scheduled restore drills is an assumption, not a control; I now treat success-rate, RPO hit-rate, and MTTR as non-negotiable metrics.</li>
+                <li><strong>Modern 3-2-1.</strong> One copy must be offline/immutable, with identity controls that assume the adversary already has footholds. This mirrors what I've seen in incident calls: identity is the hinge.</li>
+                <li><strong>Governance connects the layers.</strong> CSF 2.0's GOVERN function helped link technical detail to ownership, budget, and reporting—useful when briefing senior leaders.</li>
+                <li><strong>Compliance nuance.</strong> GDPR expects protection and recoverability of personal data; where immediate deletion from backups is infeasible, retention control and "beyond-use" safeguards must be demonstrable.</li>
+            </ul>
+        </div>
+
+        <div class="section-header fade-in">
+            <h2>Professional Skills Matrix</h2>
+        </div>
+
+        <div class="skills-grid fade-in">
+            <div class="skill-badge">Backup Architecture & Contingency Planning</div>
+            <div class="skill-badge">Ransomware-Resilient Designs</div>
+            <div class="skill-badge">Executive Communication via CSF 2.0</div>
+            <div class="skill-badge">GDPR Framing for Backups</div>
+            <div class="skill-badge">3-2-1 with Identity Controls</div>
+            <div class="skill-badge">RPO/RTO Testing & KPIs</div>
+            <div class="skill-badge">Critical Reflection & Practitioner Experience</div>
+            <div class="skill-badge">Offline/Immutable Copy Design</div>
+        </div>
+
+        <div class="section-header fade-in">
+            <h2>Action Plan</h2>
+        </div>
+
+        <div class="action-plan fade-in">
+            <div class="action-item">
+                <strong>Short Term (4–6 weeks)</strong>
+                <p>Stand up a restore-testing calendar and dashboard (restore success %, MTTR, RPO adherence). Prove one offline/immutable path with segregated credentials and audited key custody.</p>
+            </div>
+
+            <div class="action-item medium">
+                <strong>Medium Term (This Term)</strong>
+                <p>Map current controls to CSF 2.0 categories; produce a one-page scorecard for executives and run a table-top exercise using current ransomware guidance.</p>
+            </div>
+
+            <div class="action-item long">
+                <strong>Long Term</strong>
+                <p>Align ICT-readiness with ISO/IEC 27031; evidence GDPR-aligned continuity (retention, "beyond-use" controls), then schedule an annual contingency test.</p>
+            </div>
+        </div>
+
+        <div class="module-files fade-in">
+            <h3>📁 Module Files</h3>
+            <p style="margin-bottom: 1rem;">All documents and resources for this module:</p>
+            <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/NetworkSecurity/assignmentunit3.docx" target="_blank" rel="noopener" class="doc-link">
+                Assignment Unit 3
+            </a>
+            <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/NetworkSecurity/Executive%20Summary.docx" target="_blank" rel="noopener" class="doc-link">
+                Executive Summary
+            </a>
+            <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/NetworkSecurity/NSoctober2024ReflecPiec.docx" target="_blank" rel="noopener" class="doc-link">
+                Reflective Piece
+            </a>
+        </div>
+
+        <div class="references fade-in">
+            <h3>References</h3>
+            <ul>
+                <li id="ref-nist80034"><strong>NIST</strong> (2010) <em>SP 800-34 Rev.1 — Contingency Planning Guide for Federal Information Systems</em>. National Institute of Standards and Technology. <a href="https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-34r1.pdf" target="_blank" rel="noopener">PDF</a> | <a href="https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final" target="_blank" rel="noopener">Overview</a></li>
+                <li id="ref-ncsc-offline"><strong>NCSC</strong> (2019) <em>Offline backups in an online world</em>. National Cyber Security Centre. <a href="https://www.ncsc.gov.uk/blog-post/offline-backups-in-an-online-world" target="_blank" rel="noopener">ncsc.gov.uk</a></li>
+                <li id="ref-iso27031"><strong>ISO/IEC</strong> (2011/2025) <em>ISO/IEC 27031 — ICT Readiness for Business Continuity</em>. <a href="https://www.iso.org/standard/44374.html" target="_blank" rel="noopener">iso.org/44374</a> | <a href="https://www.iso.org/standard/27031" target="_blank" rel="noopener">iso.org/27031</a></li>
+                <li id="ref-nist-csf20"><strong>NIST</strong> (2024) <em>Cybersecurity Framework (CSF) 2.0</em>. <a href="https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf" target="_blank" rel="noopener">PDF</a> | <a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener">nist.gov/cyberframework</a></li>
+                <li id="ref-ico-bcdr"><strong>ICO</strong> (2023) <em>Business continuity, disaster recovery and back-ups</em>. Information Commissioner's Office. <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/accountability-framework/records-management-and-security/business-continuity-disaster-recovery-and-back-ups/" target="_blank" rel="noopener">ico.org.uk</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Theme Toggle
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+            const icon = document.getElementById('theme-icon');
+            const text = document.getElementById('theme-text');
+            
+            if (document.body.classList.contains('light-mode')) {
+                icon.textContent = '☀️';
+                text.textContent = 'Light';
+            } else {
+                icon.textContent = '🌙';
+                text.textContent = 'Dark';
+            }
+        }
+
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
