@@ -3,6 +3,7 @@ layout: page
 title: Secure Software Development
 description: January 2025
 nav-menu: true
+nav-order: 5
 summary: >-
   Integrated SSDF and OWASP SAMM practices across the agile SDLC, combining UML
   modelling, secure coding guidance, and automated testing to reduce risk early.

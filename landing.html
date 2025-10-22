@@ -34,10 +34,9 @@ layout: null
                                                 <ul class="links">
                                                         {% include nav-links.html %}
                                                 </ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
+                                                <ul class="actions stacked">
+                                                        <li><a href="#" class="button primary fit">Get Started</a></li>
+                                                </ul>
 					</nav>
 
 				<!-- Banner -->
@@ -59,7 +58,7 @@ layout: null
 
 				<!-- Main -->
                                         <div id="main">
-                                                {% assign module_pages = site.pages | where_exp: 'item', 'item["nav-menu"]' | sort: 'title' %}
+                                               {% assign module_pages = site.pages | where_exp: 'item', 'item["nav-menu"]' | sort: 'nav-order' %}
 
 						<!-- One -->
 							<section id="one">
