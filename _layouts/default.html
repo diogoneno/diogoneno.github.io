@@ -8,22 +8,17 @@
       {% if page.title %}{{ page.title }} · {{ site.title | default: site.github.repository_name }}{% else %}{{ site.title | default: site.github.repository_name }}{% endif %}
     </title>
 
-    {%- comment -%}
-      Primer theme CSS via your site bundle. If you already use /assets/css/main.scss,
-      keep it — we also link /assets/css/style.css which imports the theme.
-    {%- endcomment -%}
+    <!-- Theme stylesheet (compiled from assets/css/style.scss) -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.github.build_revision }}">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css'  | relative_url }}?v={{ site.github.build_revision }}">
+    <!-- Your custom styles for nav + floating menu -->
     <link rel="stylesheet" href="{{ '/assets/css/quick-nav.css' | relative_url }}?v={{ site.github.build_revision }}">
 
-    {%- if site.feed -%}{% feed_meta %}{%- endif -%}
-    {%- seo -%}
+    {% feed_meta %}{% seo %}
   </head>
 
   <body>
     <a class="sr-only sr-only-focusable" href="#main">Skip to content</a>
 
-    {%- comment -%} Top bar + floating quick menu {%- endcomment -%}
     {% include site-nav.html %}
     {% include quick-nav.html %}
 
@@ -31,6 +26,7 @@
       {{ content }}
     </main>
 
+    <!-- Optional footer; remove this include if you don’t add the file -->
     {% include footer.html %}
   </body>
 </html>
