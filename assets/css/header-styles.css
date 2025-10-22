@@ -1,0 +1,53 @@
+/* Theme Toggle Button Styles */
+.theme-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: var(--accent-glow);
+    transform: translateY(-2px);
+}
+
+/* Responsive Navigation */
+@media screen and (max-width: 600px) {
+    .site-nav {
+        position: absolute;
+        top: 9px;
+        right: 15px;
+        background-color: var(--bg-card);
+        border-radius: 5px;
+        text-align: right;
+    }
+
+    .theme-toggle {
+        margin: 5px 10px;
+    }
+}
+
+/* Additional Header Styles */
+.site-header {
+    border-bottom: 1px solid var(--accent-glow);
+    min-height: 55.95px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: var(--bg-card);
+}
+
+.site-header-transparent {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+/* Adjust main content for fixed header */
+.page-content {
+    padding-top: 70px;
+}

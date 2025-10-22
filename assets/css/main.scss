@@ -2,37 +2,40 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// Default theme colors
 $theme-colors: (
   "coolblack": #090a0b,
   "spacegrey": #353535,
-  "snowwhite": #ffffff,
+  "snowwhite": #ffffff
 );
 
-// Default brand colors
 $brand-colors: (
   "orangered": #ff5100,
   "greatgold": #f2cb05,
-  "greenblue": #389092,
+  "greenblue": #389092
 );
 
-$theme-name: "{{ site.theme_color }}";
-$brand-name: "{{ site.brand_color }}";
+// Theme variables - using simple quotes and default filter
+$theme-name: '{{ site.theme_color | default: "snowwhite" }}';
+$brand-name: '{{ site.brand_color | default: "orangered" }}';
+
 $theme-color: map-get($theme-colors, "snowwhite");
 $brand-color: map-get($brand-colors, "orangered");
 
-@if map-has-key($theme-colors, $theme-name) {
-  $theme-color: map-get($theme-colors, $theme-name);
-} @else if str-index($theme-name, "#") == 1 {
-  $theme-color: {{ site.theme_color | default: '#ffffff' }};
+// Theme color logic - simplified
+@if map-has-key($theme-colors, str-slice($theme-name, 2, -2)) {
+  $theme-color: map-get($theme-colors, str-slice($theme-name, 2, -2));
+} @else {
+  $theme-color: unquote($theme-name);
 }
 
-@if map-has-key($brand-colors, $brand-name) {
-  $brand-color: map-get($brand-colors, $brand-name);
-} @else if str-index($brand-name, "#") == 1 {
-  $brand-color: {{ site.brand_color | default: '#ff5100' }};
+// Brand color logic - simplified
+@if map-has-key($brand-colors, str-slice($brand-name, 2, -2)) {
+  $brand-color: map-get($brand-colors, str-slice($brand-name, 2, -2));
+} @else {
+  $brand-color: unquote($brand-name);
 }
 
-$content-width: {{ site.content_width | default: '920px' }};
+$content-width: '{{ site.content_width | default: "920px" }}';
 
+// Import the main framework
 @import "yat";
