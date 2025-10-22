@@ -59,7 +59,7 @@ layout: null
 
 				<!-- Main -->
                                         <div id="main">
-                                                {% assign module_pages = site.pages | where_exp: 'item', 'item["nav-menu"]' | sort: 'title' %}
+                                               {% assign module_pages = site.pages | where_exp: 'item', 'item["nav-menu"]' | sort: 'nav-order' %}
 
 						<!-- One -->
 							<section id="one">
