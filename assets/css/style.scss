@@ -1,14 +1,5 @@
 ---
 ---
-@import "jekyll-theme-primer";
+@import "{{ site.theme }}";   /* Loads jekyll-theme-primer via GitHub Pages */
 
-/* Optional: your tweaks (or put them in a separate CSS): */
-.site-nav { position: sticky; top: 0; z-index: 1000; background:#fff; border-bottom:1px solid #eaeaea; }
-.site-nav__inner { max-width:980px; margin:0 auto; display:flex; gap:1rem; align-items:center; padding:.75rem 1rem; }
-.site-nav__links { margin-left:auto; display:flex; gap:.75rem; }
-.quick-nav { position: fixed; bottom: 1rem; right: 1rem; z-index:1100; }
-.qn-toggle { border:0; border-radius:999px; padding:.7rem .9rem; box-shadow:0 6px 18px rgba(0,0,0,.15); cursor:pointer; }
-.qn-items { display:none; margin-top:.5rem; background:#fff; border:1px solid #e5e7eb; border-radius:.75rem; padding:.5rem; box-shadow:0 10px 30px rgba(0,0,0,.15); min-width:180px; }
-.qn-items.open { display:flex; flex-direction:column; }
-.qn-items a, .qn-items button { display:block; padding:.5rem .9rem; text-align:left; background:none; border:0; color:inherit; text-decoration:none; cursor:pointer; }
-.qn-items a:hover, .qn-items button:hover { background:#f5f5f5; }
+/* Optional: tiny global tweaks can go here if you want */

@@ -1,12 +1,16 @@
 <div class="quick-nav" aria-label="Quick navigation">
   <button class="qn-toggle" type="button" aria-expanded="false" aria-controls="qn-items" title="Quick menu">☰</button>
+
   <div id="qn-items" class="qn-items" role="menu">
     <a role="menuitem" href="{{ '/' | relative_url }}">Home</a>
     <a role="menuitem" href="{{ '/categories.html' | relative_url }}">Categories</a>
     <a role="menuitem" href="{{ '/about.html' | relative_url }}">About</a>
-    <button role="menuitem" type="button" onclick="history.back()" title="Go back">← Back</button>
+    <button role="menuitem" type="button"
+      onclick="(document.referrer && (new URL(document.referrer).origin===location.origin)) ? history.back() : (location.href='{{ '/categories.html' | relative_url }}')"
+      title="Go back">← Back</button>
   </div>
 </div>
+
 <script>
 (function () {
   var t = document.querySelector('.qn-toggle');
