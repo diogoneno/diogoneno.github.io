@@ -1,25 +1,36 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  {%- include head.html -%}
+    <title>
+      {% if page.title %}{{ page.title }} · {{ site.title | default: site.github.repository_name }}{% else %}{{ site.title | default: site.github.repository_name }}{% endif %}
+    </title>
+
+    {%- comment -%}
+      Primer theme CSS via your site bundle. If you already use /assets/css/main.scss,
+      keep it — we also link /assets/css/style.css which imports the theme.
+    {%- endcomment -%}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.github.build_revision }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css'  | relative_url }}?v={{ site.github.build_revision }}">
+    <link rel="stylesheet" href="{{ '/assets/css/quick-nav.css' | relative_url }}?v={{ site.github.build_revision }}">
+
+    {%- if site.feed -%}{% feed_meta %}{%- endif -%}
+    {%- seo -%}
+  </head>
 
   <body>
+    <a class="sr-only sr-only-focusable" href="#main">Skip to content</a>
 
-    {%- include views/header.html -%}
+    {%- comment -%} Top bar + floating quick menu {%- endcomment -%}
+    {% include site-nav.html %}
+    {% include quick-nav.html %}
 
-    {%- include views/banner.html -%}
-
-    {%- include extensions/hashlocate.html -%}
-
-    {%- include extensions/theme-toggle.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <main id="main" class="container-lg px-3 my-5 markdown-body" role="main">
+      {{ content }}
     </main>
 
-    {%- include views/footer.html -%}
-
+    {% include footer.html %}
   </body>
 </html>

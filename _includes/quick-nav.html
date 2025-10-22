@@ -1,0 +1,21 @@
+<div class="quick-nav" id="quick-nav">
+  <button class="quick-nav__toggle" aria-expanded="false" aria-controls="quick-nav__list" title="Menu">☰</button>
+  <ul class="quick-nav__list" id="quick-nav__list">
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    <li><a href="{{ '/categories.html' | relative_url }}">Categories</a></li>
+    <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+  </ul>
+</div>
+
+<script>
+(function () {
+  var btn = document.querySelector('.quick-nav__toggle');
+  var list = document.getElementById('quick-nav__list');
+  if (!btn || !list) return;
+  btn.addEventListener('click', function () {
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    list.classList.toggle('is-open');
+  });
+})();
+</script>
