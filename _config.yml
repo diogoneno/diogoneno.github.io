@@ -152,6 +152,16 @@ yat:
 #   - categories.html
 #   - tags.html
 #   - about.md
+header_pages:
+  - index.html
+  - archives.html
+  - categories.html
+  - tags.html
+  - about.md
+
+theme_color: snowwhite
+brand_color: orangered
+content_width: "920px"
 
 # Page default value
 # defaults:
