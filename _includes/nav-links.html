@@ -4,12 +4,6 @@
 <li{% if page.url == '/landing.html' %} class="active"{% endif %}>
   <a href="{{ '/landing.html' | relative_url }}">Landing</a>
 </li>
-<li{% if page.url == '/generic.html' %} class="active"{% endif %}>
-  <a href="{{ '/generic.html' | relative_url }}">Generic</a>
-</li>
-<li{% if page.url == '/elements.html' %} class="active"{% endif %}>
-  <a href="{{ '/elements.html' | relative_url }}">Elements</a>
-</li>
 {% assign module_pages = site.pages | where_exp: 'item', 'item["nav-menu"]' | sort: 'title' %}
 {% for module in module_pages %}
 <li{% if module.url == page.url %} class="active"{% endif %}>
