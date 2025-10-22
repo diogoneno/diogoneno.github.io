@@ -1,20 +1,20 @@
-<div class="quick-nav" id="quick-nav">
-  <button class="quick-nav__toggle" aria-expanded="false" aria-controls="quick-nav__list" title="Menu">☰</button>
-  <ul class="quick-nav__list" id="quick-nav__list">
-    <li><a href="{{ '/' | relative_url }}">Home</a></li>
-    <li><a href="{{ '/categories.html' | relative_url }}">Categories</a></li>
-    <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-  </ul>
+<div class="quick-nav" aria-label="Quick navigation">
+  <button class="qn-toggle" type="button" aria-expanded="false" aria-controls="qn-items" title="Quick menu">☰</button>
+  <div id="qn-items" class="qn-items" role="menu">
+    <a role="menuitem" href="{{ '/' | relative_url }}">Home</a>
+    <a role="menuitem" href="{{ '/categories.html' | relative_url }}">Categories</a>
+    <a role="menuitem" href="{{ '/about.html' | relative_url }}">About</a>
+    <button role="menuitem" type="button" onclick="history.back()" title="Go back">← Back</button>
+  </div>
 </div>
 <script>
 (function () {
-  var btn = document.querySelector('.quick-nav__toggle');
-  var list = document.getElementById('quick-nav__list');
-  if (!btn || !list) return;
-  btn.addEventListener('click', function () {
-    var open = btn.getAttribute('aria-expanded') === 'true';
-    btn.setAttribute('aria-expanded', String(!open));
-    list.classList.toggle('is-open');
+  var t = document.querySelector('.qn-toggle');
+  var items = document.getElementById('qn-items');
+  if (!t || !items) return;
+  t.addEventListener('click', function () {
+    var open = items.classList.toggle('open');
+    t.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 })();
 </script>
