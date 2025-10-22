@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!DOCTYPE HTML>
 <!--
 	Forty by HTML5 UP
@@ -18,21 +21,18 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+                                        <header id="header">
+                                                <a href="{{ '/' | relative_url }}" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
 					</header>
 
 				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
+                                        <nav id="menu">
+                                                <ul class="links">
+                                                        {% include nav-links.html %}
+                                                </ul>
 						<ul class="actions stacked">
 							<li><a href="#" class="button primary fit">Get Started</a></li>
 							<li><a href="#" class="button fit">Log In</a></li>

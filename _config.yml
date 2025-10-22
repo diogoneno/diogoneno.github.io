@@ -1,0 +1,7 @@
+title: Forty
+author: Diogo Neno
+subtitle: by HTML5 UP
+markdown: kramdown
+exclude:
+  - README.txt
+  - LICENSE.txt
