@@ -3,6 +3,7 @@ layout: page
 title: Security and Risk Management
 description: October 2024
 nav-menu: true
+nav-order: 4
 summary: >-
   Investigated security governance and quantitative risk assessment, aligning
   NIST, ISO 27001, and STRIDE practices with legal, ethical, and communication
