@@ -18,7 +18,9 @@ layout: null
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+                        <div id="wrapper">
+                                {% assign module_pages = site.pages | where_exp: 'item', 'item["nav-menu"]' | sort: 'nav-order' %}
+                                {% assign launching_page = site.pages | where: 'title', 'Launching into Cyber Security' | first %}
 
 				<!-- Header -->
 				<!-- Note: The "styleN" class below should match that of the banner element. -->
@@ -35,9 +37,11 @@ layout: null
                                                         {% include nav-links.html %}
                                                 </ul>
                                                 <ul class="actions stacked">
-                                                        <li><a href="#" class="button primary fit">Get Started</a></li>
+                                                        <li>
+                                                                <a href="{{ launching_page.url | default: '#' | relative_url }}" class="button primary fit">Get Started</a>
+                                                        </li>
                                                 </ul>
-					</nav>
+                                        </nav>
 
 				<!-- Banner -->
 				<!-- Note: The "styleN" class below should match that of the header element. -->
@@ -46,33 +50,59 @@ layout: null
 							<span class="image">
 								<img src="images/pic07.jpg" alt="" />
 							</span>
-							<header class="major">
-								<h1>Landing</h1>
-							</header>
-							<div class="content">
-								<p>Lorem ipsum dolor sit amet nullam consequat<br />
-								sed veroeros. tempus adipiscing nulla.</p>
-							</div>
-						</div>
-					</section>
+                                                        <header class="major">
+                                                                <h1>Hi, my name is Diogo</h1>
+                                                        </header>
+                                                        <div class="content">
+                                                                <p>Welcome to my MSc Cyber Security portfolio, where I document the skills, artefacts, and reflections developed across each module of the programme.</p>
+                                                                {% if launching_page %}
+                                                                <ul class="actions">
+                                                                        <li><a href="{{ launching_page.url | relative_url }}" class="button primary">Start with Launching into Cyber Security</a></li>
+                                                                </ul>
+                                                                {% endif %}
+                                                        </div>
+                                                </div>
+                                        </section>
 
-				<!-- Main -->
+                                <!-- Main -->
                                         <div id="main">
-                                               {% assign module_pages = site.pages | where_exp: 'item', 'item["nav-menu"]' | sort: 'nav-order' %}
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>Sed amet aliquam</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
-								</div>
-							</section>
+                                                <!-- One -->
+                                                        <section id="one">
+                                                                <div class="inner">
+                                                                        <header class="major">
+                                                                                <h2>Your Study Guide</h2>
+                                                                        </header>
+                                                                        <p>This landing page mirrors the navigation menu so you can quickly access each focus area of the MSc programme. Explore them in order or jump straight to the topics that align with your current goals.</p>
+                                                                        <div class="module-directory">
+                                                                                <ul class="alt">
+                                                                                        {% for module in module_pages %}
+                                                                                        {% assign module_overview = module.summary | default: module.description %}
+                                                                                        <li>
+                                                                                                <strong><a href="{{ module.url | relative_url }}">{{ module.title }}</a></strong><br />
+                                                                                                {% if module_overview %}
+                                                                                                <span>{{ module_overview | strip_html | strip_newlines | truncate: 140 }}</span>
+                                                                                                {% endif %}
+                                                                                        </li>
+                                                                                        {% endfor %}
+                                                                                </ul>
+                                                                        </div>
+                                                                </div>
+                                                        </section>
 
                                                 <!-- Two -->
                                                         <section id="two" class="spotlights">
 {% if module_pages.size > 0 %}
+                                                                <section class="intro">
+                                                                        <div class="content">
+                                                                                <div class="inner">
+                                                                                        <header class="major">
+                                                                                                <h2>Module Spotlights</h2>
+                                                                                                <p>Preview the reflections and artefacts from each module before exploring the full write-ups.</p>
+                                                                                        </header>
+                                                                                </div>
+                                                                        </div>
+                                                                </section>
 {% for module in module_pages %}
 {% capture module_image %}{% cycle 'module_image': 'images/pic08.jpg', 'images/pic09.jpg', 'images/pic10.jpg', 'images/pic11.jpg' %}{% endcapture %}
                                                                 <section>
@@ -113,20 +143,20 @@ layout: null
 {% endif %}
                                                         </section>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-{% if module_pages.size > 0 %}
+                                                <!-- Three -->
+                                                        <section id="three">
+                                                                <div class="inner">
+                                                                        <header class="major">
+                                                                                <h2>Ready to Begin?</h2>
+                                                                        </header>
+                                                                        <p>Kick off the journey with the Launching into Cyber Security module, then follow through the remaining topics to see how my knowledge and practice evolved.</p>
+{% if launching_page %}
                                                                         <ul class="actions">
-                                                                                <li><a href="{{ module_pages.first.url | relative_url }}" class="button next">Get Started</a></li>
+                                                                                <li><a href="{{ launching_page.url | relative_url }}" class="button next">Go to Launching into Cyber Security</a></li>
                                                                         </ul>
 {% endif %}
-								</div>
-							</section>
+                                                                </div>
+                                                        </section>
 
 					</div>
 
@@ -134,10 +164,10 @@ layout: null
                                         <footer id="footer">
                                                 <div class="inner">
                                                         <ul class="copyright">
-                                                                <li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                                                                <li>&copy; {{ site.time | date: '%Y' }} {{ site.title | default: 'Untitled' }}</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
                                                         </ul>
-						</div>
-					</footer>
+                                                </div>
+                                        </footer>
 
 			</div>
 

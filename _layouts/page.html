@@ -28,12 +28,15 @@
       </header>
 
       <!-- Menu -->
+      {% assign launching_page = site.pages | where: 'title', 'Launching into Cyber Security' | first %}
       <nav id="menu">
         <ul class="links">
           {% include nav-links.html %}
         </ul>
         <ul class="actions stacked">
-          <li><a href="#" class="button primary fit">Get Started</a></li>
+          <li>
+            <a href="{{ launching_page.url | default: '#' | relative_url }}" class="button primary fit">Get Started</a>
+          </li>
         </ul>
       </nav>
 

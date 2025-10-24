@@ -18,7 +18,9 @@ layout: null
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+                        <div id="wrapper">
+                                {% assign module_pages = site.pages | where_exp: 'item', 'item["nav-menu"]' | sort: 'nav-order' %}
+                                {% assign launching_page = site.pages | where: 'title', 'Launching into Cyber Security' | first %}
 
 				<!-- Header -->
                                         <header id="header" class="alt">
@@ -34,99 +36,81 @@ layout: null
                                                         {% include nav-links.html %}
                                                 </ul>
                                                 <ul class="actions stacked">
-                                                        <li><a href="#" class="button primary fit">Get Started</a></li>
+                                                        <li>
+                                                                <a href="{{ launching_page.url | default: '#' | relative_url }}" class="button primary fit">Get Started</a>
+                                                        </li>
                                                 </ul>
-					</nav>
+                                        </nav>
 
 				<!-- Banner -->
 					<section id="banner" class="major">
 						<div class="inner">
-							<header class="major">
-								<h1>Hi, my name is Forty</h1>
-							</header>
-							<div class="content">
-								<p>A responsive site template designed by HTML5 UP<br />
-								and released under the Creative Commons.</p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Get Started</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
+                                                        <header class="major">
+                                                                <h1>Hi, my name is Diogo</h1>
+                                                        </header>
+                                                        <div class="content">
+                                                                <p>This portfolio captures my MSc Cyber Security journey, highlighting modules, artefacts, and reflections that chart my growth as a practitioner.</p>
+                                                                {% if launching_page %}
+                                                                <ul class="actions">
+                                                                        <li><a href="{{ launching_page.url | relative_url }}" class="button next">Get Started</a></li>
+                                                                </ul>
+                                                                {% endif %}
+                                                        </div>
+                                                </div>
+                                        </section>
 
-				<!-- Main -->
-					<div id="main">
+                                <!-- Main -->
+                                        <div id="main">
 
-						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Aliquam</a></h3>
-										<p>Ipsum dolor sit amet</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Tempus</a></h3>
-										<p>feugiat amet tempus</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Magna</a></h3>
-										<p>Lorem etiam nullam</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Ipsum</a></h3>
-										<p>Nisl sed aliquam</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Consequat</a></h3>
-										<p>Ipsum dolor sit amet</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Etiam</a></h3>
-										<p>Feugiat amet tempus</p>
-									</header>
-								</article>
-							</section>
+                                                <!-- One -->
+                                                        <section id="one" class="tiles">
+                                                                {% assign module_images = 'images/pic01.jpg|images/pic02.jpg|images/pic03.jpg|images/pic04.jpg|images/pic05.jpg|images/pic06.jpg|images/pic07.jpg|images/pic08.jpg' | split: '|' %}
+                                                                {% assign module_images_count = module_images | size %}
+                                                                {% for module in module_pages %}
+                                                                {% assign image_index = forloop.index0 | modulo: module_images_count %}
+                                                                {% assign module_image = module_images[image_index] %}
+                                                                <article>
+                                                                        <span class="image">
+                                                                                <img src="{{ module_image | relative_url }}" alt="" />
+                                                                        </span>
+                                                                        <header class="major">
+                                                                                <h3><a href="{{ module.url | relative_url }}" class="link">{{ module.title }}</a></h3>
+                                                                                {% assign module_overview = module.description | default: module.summary | default: module.excerpt %}
+                                                                                {% if module_overview %}
+                                                                                <p>{{ module_overview | strip_html | strip_newlines | truncate: 140 }}</p>
+                                                                                {% endif %}
+                                                                        </header>
+                                                                </article>
+                                                                {% endfor %}
+                                                        </section>
 
-						<!-- Two -->
-							<section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="landing.html" class="button next">Get Started</a></li>
-									</ul>
-								</div>
-							</section>
+                                                <!-- Two -->
+                                                        <section id="two">
+                                                                <div class="inner">
+                                                                        <header class="major">
+                                                                                <h2>Navigate the MSc Journey</h2>
+                                                                        </header>
+                                                                        <p>Use these module highlights to dive directly into each area of the programme, from foundational principles to advanced architecture and research practice.</p>
+                                                                        <div class="module-directory">
+                                                                                <ul class="alt">
+                                                                                        {% for module in module_pages %}
+                                                                                        {% assign module_overview = module.summary | default: module.description %}
+                                                                                        <li>
+                                                                                                <strong><a href="{{ module.url | relative_url }}">{{ module.title }}</a></strong><br />
+                                                                                                {% if module_overview %}
+                                                                                                <span>{{ module_overview | strip_html | strip_newlines | truncate: 140 }}</span>
+                                                                                                {% endif %}
+                                                                                        </li>
+                                                                                        {% endfor %}
+                                                                                </ul>
+                                                                        </div>
+                                                                        {% if launching_page %}
+                                                                        <ul class="actions">
+                                                                                <li><a href="{{ launching_page.url | relative_url }}" class="button primary">Begin with Launching into Cyber Security</a></li>
+                                                                        </ul>
+                                                                        {% endif %}
+                                                                </div>
+                                                        </section>
 
 					</div>
 
@@ -134,10 +118,10 @@ layout: null
                                         <footer id="footer">
                                                 <div class="inner">
                                                         <ul class="copyright">
-                                                                <li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                                                                <li>&copy; {{ site.time | date: '%Y' }} {{ site.title | default: 'Untitled' }}</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
                                                         </ul>
-						</div>
-					</footer>
+                                                </div>
+                                        </footer>
 
 			</div>
 
