@@ -157,7 +157,7 @@ summary: >-
 
   <div style="overflow-x: auto;">
     <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
-      <thead style="background: linear-gradient(135deg, #5e60ce, #ff9a8b); color: white;">
+      <thead style="background: #f4f6ff; color: #2c3e50; border-bottom: 2px solid #d7defb;">
         <tr>
           <th style="padding: 1rem; text-align: left; font-weight: 600;">Action area</th>
           <th style="padding: 1rem; text-align: left; font-weight: 600;">What will be done</th>
@@ -167,43 +167,43 @@ summary: >-
       </thead>
       <tbody>
         <tr style="border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #5e60ce;">Evidence base &amp; currency</td>
+          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #2c3e50;">Evidence base &amp; currency</td>
           <td style="padding: 1rem; vertical-align: top;">Add recent peer-reviewed studies and current industry statistics (insider prevalence, error rates) to essay and slides.</td>
           <td style="padding: 1rem; vertical-align: top;">Updated reference list; new in-text citations and figures.</td>
           <td style="padding: 1rem; vertical-align: top;">Week 2</td>
         </tr>
         <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
-          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #5e60ce;">Concrete examples</td>
+          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #2c3e50;">Concrete examples</td>
           <td style="padding: 1rem; vertical-align: top;">Insert short, relevant case examples to support each factor and recommendation in the essay.</td>
           <td style="padding: 1rem; vertical-align: top;">Revised essay sections with example call-outs.</td>
           <td style="padding: 1rem; vertical-align: top;">Week 2</td>
         </tr>
         <tr style="border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #5e60ce;">Theoretical grounding</td>
+          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #2c3e50;">Theoretical grounding</td>
           <td style="padding: 1rem; vertical-align: top;">Map proposed controls to a behavioural framework (e.g., COM-B) and link to measurement/metrics.</td>
           <td style="padding: 1rem; vertical-align: top;">Slide(s) with COM-B mapping; essay paragraph aligning controls to theory.</td>
           <td style="padding: 1rem; vertical-align: top;">Week 3</td>
         </tr>
         <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
-          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #5e60ce;">Monitoring &amp; improvement</td>
+          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #2c3e50;">Monitoring &amp; improvement</td>
           <td style="padding: 1rem; vertical-align: top;">Define feedback loop: KPIs, pulse surveys, training A/B tests, incident trend reviews.</td>
           <td style="padding: 1rem; vertical-align: top;">One-page continuous-improvement plan appended to presentation/essay.</td>
           <td style="padding: 1rem; vertical-align: top;">Week 4</td>
         </tr>
         <tr style="border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #5e60ce;">Peer-review rigour</td>
+          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #2c3e50;">Peer-review rigour</td>
           <td style="padding: 1rem; vertical-align: top;">Replace non-peer-reviewed sources in the review with peer-reviewed equivalents where possible; annotate rationale.</td>
           <td style="padding: 1rem; vertical-align: top;">Updated review with notes on source quality.</td>
           <td style="padding: 1rem; vertical-align: top;">Week 3</td>
         </tr>
         <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
-          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #5e60ce;">Presentation polish</td>
+          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #2c3e50;">Presentation polish</td>
           <td style="padding: 1rem; vertical-align: top;">Add in-slide citations and full references slide; re-record audio with script; tighten timing.</td>
           <td style="padding: 1rem; vertical-align: top;">New slide export; audio transcript; checklist tick-off.</td>
           <td style="padding: 1rem; vertical-align: top;">Week 3</td>
         </tr>
         <tr>
-          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #5e60ce;">Accessibility &amp; usable security</td>
+          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #2c3e50;">Accessibility &amp; usable security</td>
           <td style="padding: 1rem; vertical-align: top;">Add plain-language summaries and task-based guidance to recommendations (readability checks; alt text).</td>
           <td style="padding: 1rem; vertical-align: top;">Readability scores; updated slides with alt text and plain-English call-outs.</td>
           <td style="padding: 1rem; vertical-align: top;">Week 4</td>
@@ -222,7 +222,7 @@ summary: >-
 
   <div style="overflow-x: auto;">
     <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
-      <thead style="background: linear-gradient(135deg, #5e60ce, #ff9a8b); color: white;">
+      <thead style="background: #f4f6ff; color: #2c3e50; border-bottom: 2px solid #d7defb;">
         <tr>
           <th style="padding: 1rem; text-align: left; font-weight: 600;">Competency</th>
           <th style="padding: 1rem; text-align: left; font-weight: 600;">Current level</th>
@@ -232,37 +232,37 @@ summary: >-
       </thead>
       <tbody>
         <tr style="border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #5e60ce;">Human-centred security &amp; usability</td>
+          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #2c3e50;">Human-centred security &amp; usability</td>
           <td style="padding: 1rem; vertical-align: top;">Proficient</td>
           <td style="padding: 1rem; vertical-align: top;">Identified cognitive limits, design–behaviour mismatches, and mitigations; clear start-up context.</td>
           <td style="padding: 1rem; vertical-align: top;">Tie recommendations to COM-B; embed measurement and feedback loops.</td>
         </tr>
         <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
-          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #5e60ce;">Insider-risk analysis</td>
+          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #2c3e50;">Insider-risk analysis</td>
           <td style="padding: 1rem; vertical-align: top;">Proficient</td>
           <td style="padding: 1rem; vertical-align: top;">Differentiated malicious vs unintentional insiders; practical implications for access/monitoring.</td>
           <td style="padding: 1rem; vertical-align: top;">Add current prevalence data and concrete controls with thresholds.</td>
         </tr>
         <tr style="border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #5e60ce;">Evidence-based writing</td>
+          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #2c3e50;">Evidence-based writing</td>
           <td style="padding: 1rem; vertical-align: top;">Developing → Proficient</td>
           <td style="padding: 1rem; vertical-align: top;">Appropriate sources used; peer review added references.</td>
           <td style="padding: 1rem; vertical-align: top;">Increase peer-reviewed sources; update statistics; strengthen in-text citation placement.</td>
         </tr>
         <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
-          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #5e60ce;">Critical review &amp; feedback</td>
+          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #2c3e50;">Critical review &amp; feedback</td>
           <td style="padding: 1rem; vertical-align: top;">Proficient</td>
           <td style="padding: 1rem; vertical-align: top;">Balanced, constructive critique with actionable suggestions.</td>
           <td style="padding: 1rem; vertical-align: top;">Add quality flags for source types; provide alternative peer-reviewed citations.</td>
         </tr>
         <tr style="border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #5e60ce;">Presentation &amp; storytelling</td>
+          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #2c3e50;">Presentation &amp; storytelling</td>
           <td style="padding: 1rem; vertical-align: top;">Proficient</td>
           <td style="padding: 1rem; vertical-align: top;">Structure and visuals communicate data-driven recommendations.</td>
           <td style="padding: 1rem; vertical-align: top;">Improve audio; add on-slide citations; include a references slide.</td>
         </tr>
         <tr>
-          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #5e60ce;">Academic practice &amp; referencing</td>
+          <td style="padding: 1rem; vertical-align: top; font-weight: 600; color: #2c3e50;">Academic practice &amp; referencing</td>
           <td style="padding: 1rem; vertical-align: top;">Developing</td>
           <td style="padding: 1rem; vertical-align: top;">Correct structure with some dated/limited sources; citations present.</td>
           <td style="padding: 1rem; vertical-align: top;">Apply Cite-Them-Right consistently; alphabetise; ensure in-slide citations and full lists.</td>
