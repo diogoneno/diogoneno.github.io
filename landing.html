@@ -9,7 +9,7 @@ layout: null
 -->
 <html>
 	<head>
-		<title>Landing - Forty by HTML5 UP</title>
+               <title>Landing | {{ site.title | default: 'Msc Cyber Security Portfolio' }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -23,7 +23,7 @@ layout: null
 				<!-- Header -->
 				<!-- Note: The "styleN" class below should match that of the banner element. -->
                                         <header id="header" class="alt style2">
-                                                <a href="{{ '/' | relative_url }}" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
+                                               <a href="{{ '/' | relative_url }}" class="logo"><strong>{{ site.title | default: 'Msc Cyber Security Portfolio' }}</strong>{% if site.subtitle %} <span>{{ site.subtitle }}</span>{% endif %}</a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>

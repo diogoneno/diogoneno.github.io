@@ -9,7 +9,7 @@ layout: null
 -->
 <html>
 	<head>
-		<title>Forty by HTML5 UP</title>
+               <title>{{ site.title | default: 'Msc Cyber Security Portfolio' }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +22,7 @@ layout: null
 
 				<!-- Header -->
                                         <header id="header" class="alt">
-                                                <a href="{{ '/' | relative_url }}" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
+                                               <a href="{{ '/' | relative_url }}" class="logo"><strong>{{ site.title | default: 'Msc Cyber Security Portfolio' }}</strong>{% if site.subtitle %} <span>{{ site.subtitle }}</span>{% endif %}</a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>

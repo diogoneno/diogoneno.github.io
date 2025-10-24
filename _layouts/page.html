@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: 'Forty by HTML5 UP' }}</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: 'Msc Cyber Security Portfolio' }}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     {% assign meta_description = page.summary | default: page.description %}
@@ -21,7 +21,7 @@
     <div id="wrapper">
       <!-- Header -->
       <header id="header">
-        <a href="{{ '/' | relative_url }}" class="logo"><strong>{{ site.title | default: 'Forty' }}</strong> <span>{{ site.subtitle | default: 'by HTML5 UP' }}</span></a>
+        <a href="{{ '/' | relative_url }}" class="logo"><strong>{{ site.title | default: 'Msc Cyber Security Portfolio' }}</strong>{% if site.subtitle %} <span>{{ site.subtitle }}</span>{% endif %}</a>
         <nav>
           <a href="#menu">Menu</a>
         </nav>
