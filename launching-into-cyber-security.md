@@ -205,14 +205,14 @@ summary: >-
         <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 6px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
           <p style="margin: 0 0 0.5rem 0; font-weight: 600;">📁 Evidence folder:</p>
           <code style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.9rem;">
-            assets/LaunchingIntoCybersecurityApril2024/unit12
+            assets/LauchingIntoCybersecurity/unit12
           </code>
           <p style="margin: 1rem 0 0.3rem 0; font-weight: 600;">🗂️ Key files:</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-            <span style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.85rem;">secure_backup.py</span>
-            <span style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.85rem;">requirements.txt</span>
-            <span style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.85rem;">README.md</span>
-            <span style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.85rem;">TestData/ResultsScreenshots.pdf</span>
+            <a style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.85rem; color: inherit; text-decoration: none;" href="/assets/LauchingIntoCybersecurity/unit12/secure_backup.py" target="_blank" rel="noopener">secure_backup.py</a>
+            <a style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.85rem; color: inherit; text-decoration: none;" href="/assets/LauchingIntoCybersecurity/unit12/requirements.txt" target="_blank" rel="noopener">requirements.txt</a>
+            <a style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.85rem; color: inherit; text-decoration: none;" href="/assets/LauchingIntoCybersecurity/unit12/README.md" target="_blank" rel="noopener">README.md</a>
+            <a style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.85rem; color: inherit; text-decoration: none;" href="/assets/LauchingIntoCybersecurity/unit12/TestData/ResultsScreenshots.pdf" target="_blank" rel="noopener">TestData/ResultsScreenshots.pdf</a>
           </div>
         </div>
 
@@ -250,7 +250,7 @@ summary: >-
             (p.1);
             <a href="/assets/LauchingIntoCybersecurity/Essay9.pdf" target="_blank" rel="noopener">Essay9.pdf</a>
             (pp.1–3);
-            Unit 12 README.
+            <a href="/assets/LauchingIntoCybersecurity/unit12/README.md" target="_blank" rel="noopener">Unit 12 README</a>.
           </p>
         </div>
       </div>
