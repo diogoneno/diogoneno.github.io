@@ -121,7 +121,7 @@ summary: >-
       <div style="flex: 1; min-width: 280px;">
         <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
           <span style="font-size: 2rem;">📊</span>
-          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Collaborative Discussion 1 — Summary Post</h3>
+          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Unit 3 - Summary Post</h3>
         </div>
         <div style="display: inline-block; background: #e0f2f1; color: #00695c; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;">
           UNIT 3
