@@ -1,187 +1,297 @@
 ---
 layout: page
-title: Security and Risk Management
-description: October 2024
+title: Security & Risk Management
+description: Translating socio-technical risk analysis into prescriptive, GDPR-aligned controls
 nav-menu: true
 nav-order: 4
 summary: >-
-  Investigated security governance and quantitative risk assessment, aligning
-  NIST, ISO 27001, and STRIDE practices with legal, ethical, and communication
-  requirements for stakeholders.
+  Identified, modelled, and quantified risk across socio-technical systems, then
+  translated insight into prescriptive controls, continuity strategies, and
+  executive-ready communication.
 ---
 
-<section id="introduction">
-  <h2>Security and Risk Management</h2>
-  <p>
-    This module introduced the fundamentals of information security and risk 
-    management, focusing on how organisations identify, analyse, and mitigate risks 
-    in response to evolving cyber threats. Analysing real-world case studies 
-    deepened my understanding of how legal, social, and ethical considerations shape
-    professional practice and taught me to align security controls with 
-    organisational objectives. Collaborative and individual projects enhanced my 
-    skills in threat assessment, risk quantification, and effective communication 
-    with technical and non-technical audiences (<em>ENISA, 2023</em>).
+<!-- Module Overview Hero -->
+<section style="background: linear-gradient(135deg, #0c6b8c 0%, #38ef7d 100%); color: white; padding: 3rem 2rem; border-radius: 8px; margin-bottom: 3rem; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);">
+  <div style="max-width: 900px; margin: 0 auto;">
+    <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; margin-bottom: 1rem; font-weight: 600; letter-spacing: 0.04em;">
+      SECURITY &amp; RISK MANAGEMENT MODULE
+    </div>
+    <h1 style="font-size: 2.5rem; margin-bottom: 1rem; font-weight: 700; line-height: 1.2;">Security &amp; Risk Management</h1>
+    <p style="font-size: 1.15rem; line-height: 1.7; opacity: 0.95; margin: 0;">
+      This module focused on identifying, modelling, and quantifying risk in socio-technical systems, then translating analysis into
+      proportionate controls and continuity strategies. It covered NIST CSF and STRIDE for threat modelling, FMEA and probability–impact
+      matrices for prioritisation, EMV and Monte Carlo for quantitative modelling, and GDPR-aligned governance with explicit RTO/RPO targets
+      for BC/DR.
+    </p>
+  </div>
+</section>
+
+<!-- Learning Outcomes -->
+<section style="max-width: 1200px; margin: 0 auto 4rem;">
+  <div style="text-align: center; margin-bottom: 2.5rem;">
+    <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 0.5rem;">Learning Outcomes</h2>
+    <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #0c6b8c, #38ef7d); margin: 0 auto;"></div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+    <div style="background: white; border: 2px solid #0c6b8c; border-radius: 10px; padding: 1.8rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(12,107,140,0.18)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+      <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #0c6b8c, #38ef7d); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">
+        🧩
+      </div>
+      <h4 style="color: #0c6b8c; margin: 0 0 0.8rem 0; font-size: 1.1rem;">Threat &amp; Risk Analysis</h4>
+      <p style="color: #4a5568; line-height: 1.6; margin: 0; font-size: 0.95rem;">
+        Identify and analyse threats using STRIDE; prioritise risks with FMEA and probability–impact techniques.
+      </p>
+    </div>
+
+    <div style="background: white; border: 2px solid #0c6b8c; border-radius: 10px; padding: 1.8rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(12,107,140,0.18)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+      <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #0c6b8c, #38ef7d); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">
+        📈
+      </div>
+      <h4 style="color: #0c6b8c; margin: 0 0 0.8rem 0; font-size: 1.1rem;">Quantitative Modelling</h4>
+      <p style="color: #4a5568; line-height: 1.6; margin: 0; font-size: 0.95rem;">
+        Quantify risk with Expected Monetary Value and Monte Carlo simulations to justify security investment.
+      </p>
+    </div>
+
+    <div style="background: white; border: 2px solid #0c6b8c; border-radius: 10px; padding: 1.8rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(12,107,140,0.18)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+      <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #0c6b8c, #38ef7d); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">
+        🛡️
+      </div>
+      <h4 style="color: #0c6b8c; margin: 0 0 0.8rem 0; font-size: 1.1rem;">Prescriptive Control Design</h4>
+      <p style="color: #4a5568; line-height: 1.6; margin: 0; font-size: 0.95rem;">
+        Design controls mapped to risk appetite, KPIs (MTTD/MTTR), ownership, and GDPR (privacy by design/by default).
+      </p>
+    </div>
+
+    <div style="background: white; border: 2px solid #0c6b8c; border-radius: 10px; padding: 1.8rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(12,107,140,0.18)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+      <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #0c6b8c, #38ef7d); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">
+        🔄
+      </div>
+      <h4 style="color: #0c6b8c; margin: 0 0 0.8rem 0; font-size: 1.1rem;">Resilience &amp; Continuity</h4>
+      <p style="color: #4a5568; line-height: 1.6; margin: 0; font-size: 0.95rem;">
+        Develop BC/DR strategies with explicit RTO/RPO targets and tested failover procedures.
+      </p>
+    </div>
+
+    <div style="background: white; border: 2px solid #0c6b8c; border-radius: 10px; padding: 1.8rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(12,107,140,0.18)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+      <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #0c6b8c, #38ef7d); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">
+        🗣️
+      </div>
+      <h4 style="color: #0c6b8c; margin: 0 0 0.8rem 0; font-size: 1.1rem;">Executive Communication</h4>
+      <p style="color: #4a5568; line-height: 1.6; margin: 0; font-size: 0.95rem;">
+        Communicate findings to technical and executive audiences via structured reports and summaries.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Artefacts and Feedback -->
+<section style="max-width: 1200px; margin: 0 auto 4rem;">
+  <div style="text-align: center; margin-bottom: 2.5rem;">
+    <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 0.5rem;">Artefacts and Feedback</h2>
+    <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #0c6b8c, #38ef7d); margin: 0 auto;"></div>
+  </div>
+
+  <article style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; border-left: 5px solid #0c6b8c; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+    <div style="display: flex; align-items: start; gap: 1.5rem; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 280px;">
+        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+          <span style="font-size: 2rem;">🤝</span>
+          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Team Project — Pampered Pets Risk Identification Report (Group D)</h3>
+        </div>
+        <p style="color: #4a5568; line-height: 1.7; margin-bottom: 1rem;">
+          I contributed to a comprehensive risk assessment for a fictional digital transformation, framing capabilities with NIST CSF and modelling threats via STRIDE, then using FMEA to prioritise remediation. We addressed compliance, data protection, operational continuity, and stakeholder engagement, proposing next steps for mitigation planning, testing, and continuous monitoring.
+        </p>
+        <div style="background: #e3f4fb; border-left: 3px solid #0c6b8c; padding: 1rem 1.2rem; border-radius: 4px;">
+          <p style="margin: 0; color: #0b4b63; font-size: 0.95rem;">
+            <strong style="color: #0c6b8c;">📝 Feedback:</strong> Commended structure; strengthen by making controls more prescriptive and explicitly linking each control to a risk, KPI, and owner.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; border-left: 5px solid #0c6b8c; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+    <div style="display: flex; align-items: start; gap: 1.5rem; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 280px;">
+        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+          <span style="font-size: 2rem;">📊</span>
+          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Individual Executive Summary — Security Risk Management</h3>
+        </div>
+        <p style="color: #4a5568; line-height: 1.7; margin-bottom: 1rem;">
+          I integrated prior units into an executive-level report that quantified disruption and quality-risk exposure using EMV and a 10,000-run Monte Carlo. Outputs informed a budget-aware roadmap: QMS uplift and training, zero-trust enhancements, supplier diversification, and an active-active BC/DR pattern aligned to sub-minute RTO/RPO.
+        </p>
+        <div style="background: #e2f7ec; border-left: 3px solid #0fa971; padding: 1rem 1.2rem; border-radius: 4px;">
+          <p style="margin: 0; color: #15694e; font-size: 0.95rem;">
+            <strong style="color: #0c6b8c;">📝 Feedback:</strong> Clear linkage from analysis to actions; strong justification of investment through quantitative evidence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; border-left: 5px solid #0c6b8c; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+    <div style="display: flex; align-items: start; gap: 1.5rem; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 280px;">
+        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+          <span style="font-size: 2rem;">🪞</span>
+          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Reflective Review — Professional Growth</h3>
+        </div>
+        <p style="color: #4a5568; line-height: 1.7; margin-bottom: 1rem;">
+          I evaluated my progression from a tool-centred practitioner to a strategy-oriented professional, integrating ethics, analytics, and communication. I emphasised stakeholder engagement, horizon-scanning, and pairing technical controls with compliance and user awareness.
+        </p>
+        <div style="background: #fcf2e6; border-left: 3px solid #f4a259; padding: 1rem 1.2rem; border-radius: 4px;">
+          <p style="margin: 0; color: #8a5d2b; font-size: 0.95rem;">
+            <strong style="color: #0c6b8c;">📝 Feedback:</strong> Recognised progress in integrating ethics, analytics, and communication into a coherent professional narrative.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- Reflections and Notes -->
+<section style="max-width: 1200px; margin: 0 auto 4rem;">
+  <div style="text-align: center; margin-bottom: 2.5rem;">
+    <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 0.5rem;">Reflections and Notes</h2>
+    <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #0c6b8c, #38ef7d); margin: 0 auto;"></div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+    <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #0c6b8c; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
+      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
+        <span style="font-size: 1.3rem;">🧭</span>
+        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Control traceability</h4>
+      </div>
+      <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0;">
+        Added a STRIDE → control mapping with KPIs (e.g., % encryption coverage, MTTD/MTTR) and owners.
+      </p>
+    </div>
+
+    <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #0c6b8c; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
+      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
+        <span style="font-size: 1.3rem;">📐</span>
+        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Quantitative rigour</h4>
+      </div>
+      <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0;">
+        Documented Monte Carlo inputs, ranges, correlations, and sensitivity checks to support decisions.
+      </p>
+    </div>
+
+    <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #0c6b8c; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
+      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
+        <span style="font-size: 1.3rem;">🧪</span>
+        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Resilience evidence</h4>
+      </div>
+      <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0;">
+        Defined RTO/RPO targets and scheduled failover drills with logs for verification.
+      </p>
+    </div>
+
+    <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #0c6b8c; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
+      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
+        <span style="font-size: 1.3rem;">⚖️</span>
+        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Governance &amp; GDPR</h4>
+      </div>
+      <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0;">
+        Reinforced privacy-by-design practices through DPIAs, training, and periodic audits.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Professional Skills Matrix -->
+<section style="max-width: 1200px; margin: 0 auto 4rem;">
+  <div style="text-align: center; margin-bottom: 2.5rem;">
+    <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 0.5rem;">Professional Skills Matrix (Learnt)</h2>
+    <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #0c6b8c, #38ef7d); margin: 0 auto;"></div>
+  </div>
+
+  <div style="overflow-x: auto;">
+    <table style="width: 100%; border-collapse: collapse; min-width: 640px;">
+      <thead>
+        <tr style="background: #0c6b8c; color: white;">
+          <th style="padding: 1rem; text-align: left; font-weight: 600;">Skill</th>
+          <th style="padding: 1rem; text-align: left; font-weight: 600;">Summary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background: white; border-bottom: 1px solid #e2e8f0;">
+          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Risk Identification &amp; Modelling</td>
+          <td style="padding: 1rem; color: #4a5568;">Applied NIST CSF, STRIDE, and FMEA to surface and prioritise risks.</td>
+        </tr>
+        <tr style="background: #f7fafc; border-bottom: 1px solid #e2e8f0;">
+          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Quantitative Risk Analysis</td>
+          <td style="padding: 1rem; color: #4a5568;">Built EMV and Monte Carlo models; interpreted distributions and sensitivity findings.</td>
+        </tr>
+        <tr style="background: white; border-bottom: 1px solid #e2e8f0;">
+          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Control Design &amp; KPIs</td>
+          <td style="padding: 1rem; color: #4a5568;">Linked controls to risks; defined ownership and measurable outcomes (MTTD/MTTR).</td>
+        </tr>
+        <tr style="background: #f7fafc; border-bottom: 1px solid #e2e8f0;">
+          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Resilience &amp; Continuity</td>
+          <td style="padding: 1rem; color: #4a5568;">Set RTO/RPO targets; planned and evaluated failover and restoration drills.</td>
+        </tr>
+        <tr style="background: white; border-bottom: 1px solid #e2e8f0;">
+          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Governance &amp; Compliance</td>
+          <td style="padding: 1rem; color: #4a5568;">Embedded GDPR privacy-by-design/default; maintained audit-ready artefacts.</td>
+        </tr>
+        <tr style="background: #f7fafc;">
+          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Executive Communication</td>
+          <td style="padding: 1rem; color: #4a5568;">Produced concise executive summaries and action-oriented roadmaps.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Action Plan -->
+<section style="max-width: 1200px; margin: 0 auto 4rem;">
+  <div style="text-align: center; margin-bottom: 2.5rem;">
+    <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 0.5rem;">Action Plan</h2>
+    <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #0c6b8c, #38ef7d); margin: 0 auto;"></div>
+  </div>
+
+  <div style="overflow-x: auto;">
+    <table style="width: 100%; border-collapse: collapse; min-width: 640px;">
+      <thead>
+        <tr style="background: #0c6b8c; color: white;">
+          <th style="padding: 1rem; text-align: left; font-weight: 600;">Action</th>
+          <th style="padding: 1rem; text-align: left; font-weight: 600;">Steps</th>
+          <th style="padding: 1rem; text-align: left; font-weight: 600;">Target</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background: white; border-bottom: 1px solid #e2e8f0;">
+          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Control specificity &amp; ownership</td>
+          <td style="padding: 1rem; color: #4a5568;">Map each control to a STRIDE risk, KPI, and accountable owner; publish traceability.</td>
+          <td style="padding: 1rem; color: #4a5568;">Dec 2025</td>
+        </tr>
+        <tr style="background: #f7fafc; border-bottom: 1px solid #e2e8f0;">
+          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Quantitative model transparency</td>
+          <td style="padding: 1rem; color: #4a5568;">Publish Monte Carlo assumptions, ranges, correlations, and sensitivity analysis.</td>
+          <td style="padding: 1rem; color: #4a5568;">Dec 2025</td>
+        </tr>
+        <tr style="background: white; border-bottom: 1px solid #e2e8f0;">
+          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">BC/DR evidence cadence</td>
+          <td style="padding: 1rem; color: #4a5568;">Run quarterly failover tests; track RTO/RPO results and remediation actions.</td>
+          <td style="padding: 1rem; color: #4a5568;">Jan 2026</td>
+        </tr>
+        <tr style="background: #f7fafc;">
+          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">GDPR-by-design checklist</td>
+          <td style="padding: 1rem; color: #4a5568;">Adopt a DPIA template and a one-page control checklist; audit quarterly.</td>
+          <td style="padding: 1rem; color: #4a5568;">Jan 2026</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Conclusion -->
+<section style="max-width: 900px; margin: 0 auto 4rem; background: white; border-radius: 10px; padding: 2.5rem; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); border-left: 6px solid #0c6b8c;">
+  <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 1rem;">Conclusion</h2>
+  <p style="color: #4a5568; line-height: 1.7; font-size: 1rem; margin-bottom: 0;">
+    This module synthesised my approach to defensible, metrics-driven risk management: coherent threat modelling, quantitative justification of investment, prescriptive controls with ownership, and verifiable continuity. Tutor feedback directly shaped the action plan to improve control specificity, model transparency, resilience evidence, and GDPR operationalisation.
   </p>
-</section>
-
-<hr>
-
-<section id="learning-outcomes">
-  <h3>Learning Outcomes</h3>
-  <p>I will be able to:</p>
-  <ul>
-    <li>Identify and analyse critical security risks, threats, and 
-vulnerabilities in information systems.</li>
-    <li>Evaluate methodologies, tools, and frameworks (NIST, ISO 27001, STRIDE) 
-for mitigating business risks (<em>Deloitte, 2020</em>).</li>
-    <li>Apply legal, ethical, and social principles to decision-making in 
-information security (<em>Huda, 2024</em>).</li>
-    <li>Communicate and justify risk management strategies to diverse 
-audiences.</li>
-    <li>Reflect on professional growth and continuous learning in 
-cybersecurity.</li>
-  </ul>
-</section>
-
-<hr>
-
-<section id="artefacts-feedback">
-  <h3>Artefacts and Feedback</h3>
-  
-  <p><strong>Team Project – Pampered Pets Risk Identification 
-Report:</strong><br>
-  As a member of Group D, I contributed to a comprehensive risk assessment for a
- fictional company’s digital transformation, focusing on the NIST framework and 
- STRIDE methodology. Our report was commended for its structure but needed more 
- detailed control recommendations. This experience highlighted the need to 
- connect each control to measurable business value and develop mitigation 
- strategies tailored to specific risks.</p>
-
-  <p>
-    <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/Development%20Team%20Project%20Group%20D.pdf" 
-       target="_blank" rel="noopener">
-        📄 Risk Identification Report – Group D (PDF)
-    </a>
-  </p>
-
-  <p><strong>Individual Executive Summary – Security Risk 
-Management:</strong><br>
-  This project marked a significant milestone as I integrated knowledge from 
-previous units into a strategic report using Monte Carlo simulations for 
-quantitative risk modelling. Transitioning from qualitative to probabilistic 
-analysis enhanced my ability to justify security investments with data-driven 
-insights.</p>
-
-  <p>
-    <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/executivesummarysecurityRisk.pdf" 
-       target="_blank" rel="noopener">
-        📄 Executive Summary – Security Risk Management (PDF)
-    </a>
-  </p>
-
-  <p><strong>Reflective Review – Professional Growth:</strong><br>
-  The reflective review allowed me to evaluate my development from a technically
- oriented practitioner to a strategic security professional. Tutor feedback 
- recognised my progress in integrating ethics, analytics, and communication into 
- a coherent professional narrative.</p>
-
-  <p>
-    <a href="https://github.com/diogoneno/diogoneno.github.io/blob/main/assets/SecurityandRiskManagement/Assignments/ReflectiveReviewSecurityandRiskMan.pdf" 
-       target="_blank" rel="noopener">
-        📄 Reflective Review – Professional Growth (PDF)
-    </a>
-  </p>
-</section>
-
-<hr>
-
-<section id="reflections">
-  <h3>Reflections and Learning Highlights</h3>
-
-  <p>Examining privacy laws showed that security involves not only technical 
-systems but also people, accountability, trust, and ethical responsibility 
-beyond compliance.</p>
-
-  <p><strong>Team Project:</strong><br>
-  This project reinforced the value of teamwork and effective stakeholder 
-communication. Handling disagreements required balancing perspectives and 
-achieving evidence-based consensus.</p>
-
-  <p><strong>Individual Executive Project:</strong><br>
-  Developing quantitative risk models expanded my technical skills, while 
-explaining Monte Carlo simulations in business terms improved executive 
-communication and increased confidence in data-driven decision-making.</p>
-
-  <p><strong>Reflective Practice:</strong><br>
-  Continuous reflection using Gibbs’ and Rolfe’s models enabled me to identify 
-areas for improvement, adapt my learning strategies, and apply theory to 
-professional practice (<em>Rolfe, Freshwater and Jasper, 2001</em>).</p>
-</section>
-
-<hr>
-
-<section id="skills-matrix">
-  <h3>Professional Skills Matrix and Action Plan</h3>
-
-  <h4>Skills Gained or Enhanced</h4>
-  <ul>
-    <li>Strategic risk thinking and alignment with business goals (<em>Deloitte,
- 2020</em>)</li>
-    <li>Quantitative analysis using probabilistic methods (<em>ENISA, 
- 2023</em>)</li>
-    <li>Threat modelling and attack tree analysis</li>
-    <li>Stakeholder communication and executive reporting</li>
-    <li>Ethical reasoning and legal compliance awareness</li>
-    <li>Teamwork and collaborative decision-making</li>
-    <li>Resilience planning and incident response design</li>
-    <li>Reflective practice and lifelong learning</li>
-  </ul>
-
-  <h4>Action Plan</h4>
-  <ul>
-    <li><strong>Short-Term:</strong> Each week, review the latest ENISA threat 
-reports and summarise key findings to track emerging attack vectors.</li>
-    <li><strong>Medium-Term:</strong> Develop risk models for two business 
-scenarios using Monte Carlo simulation and integrate the results into an 
-executive dashboard.</li>
-    <li><strong>Long-Term:</strong> Enrol in a CISSP or CISM certification 
-course to consolidate technical expertise and acquire management-level 
-competencies.</li>
-  </ul>
-</section>
-
-<hr>
-
-<section id="key-takeaways">
-  <h3>Key Takeaways</h3>
-  <p>This module taught me that effective security is both technical and 
-strategic. Key turning points included recognising that compliance builds trust,
- risk quantification supports informed decisions, and reflection drives ongoing 
- growth.</p>
-  <p>This module has enabled me to approach cybersecurity with analytical 
-rigour, ethical awareness, and strategic vision—core competencies I intend to 
-apply in my professional practice. Moving forward, I am confident in leveraging 
-these skills to drive effective security strategies, foster trust within 
-organisations, and adapt to emerging risks through continued learning and 
-reflection.</p>
-</section>
-
-<hr>
-
-<section id="references">
-  <h3>References</h3>
-  <p>Christopher, M. (2016) <em>Logistics &amp; Supply Chain Management</em>. 
-5th edn. Harlow: Pearson Education Limited.</p>
-  <p>Deloitte (2020) <em>The Future of Manufacturing: Insights on Automation and
-Quality Risk</em>. Available at: <a href="https://www2.deloitte.com/global/en/pages/manufacturing/articles/future-of-manufacturing.html" target="_blank" rel="noopener">https://www2.deloitte.com/global/en/pages/manufacturing/articles/future-of-manufacturing.html</a> [Accessed 15 Oct 2024].</p>
-  <p>ENISA (2023) <em>ENISA Threat Landscape Report</em>. European Union Agency 
-for Cybersecurity. Available at: <a href="https://www.enisa.europa.eu/publications/enisa-threat-landscape-2023" target="_blank" rel="noopener">https://www.enisa.europa.eu/publications/enisa-threat-landscape-2023</a> [Accessed 18 Oct 2024].</p>
-  <p>Huda, M. (2024) ‘Trust as a key element for quality communication and 
-information management’, <em>International Journal of Organisational 
-Analysis</em>, 32(10), pp. 2156–2174.</p>
-  <p>Majola, M.X. (2025) ‘A Proposed Framework For E-portfolio Use to Enhance 
-Teaching and Learning: Process E-portfolio’, <em>International Journal of 
-Educational Management</em>.</p>
-  <p>Rolfe, G., Freshwater, D. and Jasper, M. (2001) <em>Critical Reflection in 
-Nursing and the Helping Professions</em>. Basingstoke: Palgrave Macmillan.</p>
 </section>
