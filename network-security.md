@@ -90,7 +90,7 @@ summary: >-
         </p>
         <div style="background: #e0f7f1; border-left: 3px solid #0b8c7a; padding: 1rem 1.2rem; border-radius: 4px;">
           <p style="margin: 0; color: #0f4c45; font-size: 0.95rem;">
-            <strong>📝 Feedback:</strong> Demonstrated solid knowledge and application to the case study; next iteration
+            <strong style="color: #0b8c7a;">📝 Feedback:</strong> Demonstrated solid knowledge and application to the case study; next iteration
             should deepen supporting research and referencing.
           </p>
         </div>
@@ -112,7 +112,7 @@ summary: >-
         </p>
         <div style="background: #dcf5eb; border-left: 3px solid #1d9a74; padding: 1rem 1.2rem; border-radius: 4px;">
           <p style="margin: 0; color: #1f6f57; font-size: 0.95rem;">
-            <strong>📝 Feedback:</strong> Praised for clear structure and sourcing; highlighted effective discussion of
+            <strong style="color: #0b8c7a;">📝 Feedback:</strong> Praised for clear structure and sourcing; highlighted effective discussion of
             methods and linkage between recommendations and findings.
           </p>
         </div>
@@ -134,7 +134,7 @@ summary: >-
         </p>
         <div style="background: #fcf6e7; border-left: 3px solid #f9a73e; padding: 1rem 1.2rem; border-radius: 4px;">
           <p style="margin: 0; color: #8a5a15; font-size: 0.95rem;">
-            <strong>📝 Feedback:</strong> Encouraged broader discussion of collaboration and attention to alphabetical
+            <strong style="color: #0b8c7a;">📝 Feedback:</strong> Encouraged broader discussion of collaboration and attention to alphabetical
             referencing in both application and presentation materials.
           </p>
         </div>
