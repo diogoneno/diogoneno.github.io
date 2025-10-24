@@ -158,7 +158,7 @@ summary: >-
   <div style="overflow-x: auto;">
     <table style="width: 100%; border-collapse: collapse; min-width: 640px;">
       <thead>
-        <tr style="background: #0c6b8c; color: white;">
+        <tr style="background: linear-gradient(90deg, #1d2671, #c33764); color: white;">
           <th style="padding: 1rem; text-align: left; font-weight: 600;">Action</th>
           <th style="padding: 1rem; text-align: left; font-weight: 600;">Steps &amp; evidence</th>
           <th style="padding: 1rem; text-align: left; font-weight: 600;">Target</th>
@@ -166,32 +166,32 @@ summary: >-
       </thead>
       <tbody>
         <tr style="background: white; border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Design hygiene</td>
+          <td style="padding: 1rem; font-weight: 600; color: #1d2671;">Design hygiene</td>
           <td style="padding: 1rem; color: #4a5568;">Add cover page/ToC, introduce an upfront “Security Features” list, refine use-case relationships, define acronyms, and alphabetise references — evidenced by an updated design document and refreshed UML exports.</td>
           <td style="padding: 1rem; color: #4a5568;">Week 2</td>
         </tr>
-        <tr style="background: #f7fafc; border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Modularity</td>
+        <tr style="background: #f8f5ff; border-bottom: 1px solid #e2e8f0;">
+          <td style="padding: 1rem; font-weight: 600; color: #1d2671;">Modularity</td>
           <td style="padding: 1rem; color: #4a5568;">Break the CLI into auth, crypto, storage, CLI, and models packages with updated imports and tests — confirmed via the repository tree and passing unit tests.</td>
           <td style="padding: 1rem; color: #4a5568;">Week 4</td>
         </tr>
         <tr style="background: white; border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Hardening &amp; UX</td>
+          <td style="padding: 1rem; font-weight: 600; color: #1d2671;">Hardening &amp; UX</td>
           <td style="padding: 1rem; color: #4a5568;">Implement secure password input, governed account creation, file validation, retry limits, lockout, and richer audit logging — evidenced through new test cases, README notes, and sample audit logs.</td>
           <td style="padding: 1rem; color: #4a5568;">Week 5</td>
         </tr>
-        <tr style="background: #f7fafc; border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Evidence &amp; docs</td>
+        <tr style="background: #f8f5ff; border-bottom: 1px solid #e2e8f0;">
+          <td style="padding: 1rem; font-weight: 600; color: #1d2671;">Evidence &amp; docs</td>
           <td style="padding: 1rem; color: #4a5568;">Record a short demo video, restructure the README for quick starts and task flows, and expand comments/docstrings — evidenced by the published video link, README diff, and improved linter scores.</td>
           <td style="padding: 1rem; color: #4a5568;">Week 3</td>
         </tr>
         <tr style="background: white; border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Automation</td>
+          <td style="padding: 1rem; font-weight: 600; color: #1d2671;">Automation</td>
           <td style="padding: 1rem; color: #4a5568;">Introduce pre-commit hooks (Black, Flake8, Bandit, Pylint) and a CI pipeline, tracking trend data — evidenced by pipeline logs, a badge, and committed hook configuration.</td>
           <td style="padding: 1rem; color: #4a5568;">Week 3</td>
         </tr>
-        <tr style="background: #f7fafc;">
-          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Reflection quality</td>
+        <tr style="background: #f8f5ff;">
+          <td style="padding: 1rem; font-weight: 600; color: #1d2671;">Reflection quality</td>
           <td style="padding: 1rem; color: #4a5568;">Embed specific incidents, emotions, and corrected citations in the reflection, with the final document noting word count — evidenced by the revised submission.</td>
           <td style="padding: 1rem; color: #4a5568;">Week 2</td>
         </tr>
@@ -210,34 +210,34 @@ summary: >-
   <div style="overflow-x: auto;">
     <table style="width: 100%; border-collapse: collapse; min-width: 640px;">
       <thead>
-        <tr style="background: #0c6b8c; color: white;">
+        <tr style="background: linear-gradient(90deg, #1d2671, #c33764); color: white;">
           <th style="padding: 1rem; text-align: left; font-weight: 600;">Skill</th>
           <th style="padding: 1rem; text-align: left; font-weight: 600;">Summary</th>
         </tr>
       </thead>
       <tbody>
         <tr style="background: white; border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Secure design &amp; UML</td>
+          <td style="padding: 1rem; font-weight: 600; color: #1d2671;">Secure design &amp; UML</td>
           <td style="padding: 1rem; color: #4a5568;">Proficient level evidenced by clear use-case, class, and sequence diagrams with early security requirements; next step is refining relationships and standardising a pre-diagram “Security Features” list.</td>
         </tr>
-        <tr style="background: #f7fafc; border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Secure coding (Python)</td>
+        <tr style="background: #f8f5ff; border-bottom: 1px solid #e2e8f0;">
+          <td style="padding: 1rem; font-weight: 600; color: #1d2671;">Secure coding (Python)</td>
           <td style="padding: 1rem; color: #4a5568;">Proficient implementation of bcrypt/Fernet, checksums, timestamps, and RBAC; plan to improve via modular packaging and stronger validation plus lockout controls.</td>
         </tr>
         <tr style="background: white; border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Testing &amp; automation</td>
+          <td style="padding: 1rem; font-weight: 600; color: #1d2671;">Testing &amp; automation</td>
           <td style="padding: 1rem; color: #4a5568;">Progressing from developing to proficient with unit tests and static/security analysis in place; focus is on formalising pre-commit and CI to enforce coverage and quality gates.</td>
         </tr>
-        <tr style="background: #f7fafc; border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Code quality &amp; maintainability</td>
+        <tr style="background: #f8f5ff; border-bottom: 1px solid #e2e8f0;">
+          <td style="padding: 1rem; font-weight: 600; color: #1d2671;">Code quality &amp; maintainability</td>
           <td style="padding: 1rem; color: #4a5568;">Currently developing, with Flake8/Pylint highlighting docstring and complexity gaps; action is to refactor into modules, add documentation, and simplify functions.</td>
         </tr>
         <tr style="background: white; border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Technical communication &amp; documentation</td>
+          <td style="padding: 1rem; font-weight: 600; color: #1d2671;">Technical communication &amp; documentation</td>
           <td style="padding: 1rem; color: #4a5568;">Proficient communication through the design document and README; improvement focuses on scan-readability and producing a short demo video.</td>
         </tr>
-        <tr style="background: #f7fafc;">
-          <td style="padding: 1rem; font-weight: 600; color: #0c6b8c;">Reflective practice</td>
+        <tr style="background: #f8f5ff;">
+          <td style="padding: 1rem; font-weight: 600; color: #1d2671;">Reflective practice</td>
           <td style="padding: 1rem; color: #4a5568;">At a developing stage, using Rolfe’s model effectively; next step is adding personal challenges, decisions, emotions, and tighter citation placement.</td>
         </tr>
       </tbody>
