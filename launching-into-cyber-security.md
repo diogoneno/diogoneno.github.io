@@ -17,14 +17,11 @@ summary: >-
     </div>
     <h1 style="font-size: 2.5rem; margin-bottom: 1rem; font-weight: 700; line-height: 1.2;">Launching into Cyber Security</h1>
     <p style="font-size: 1.15rem; line-height: 1.7; opacity: 0.95; margin: 0;">
-      This module provided a comprehensive overview of cyber security principles, secure system design, and professional 
-      standards. I implemented foundational concepts, regulatory frameworks, and ethical considerations in practical scenarios 
-      using portfolio artefacts. Throughout the process, I emphasised quantifiable results, effective communication, and 
+      This module provided a comprehensive overview of cyber security principles, secure system design, and professional
+      standards. I implemented foundational concepts, regulatory frameworks, and ethical considerations in practical scenarios
+      using portfolio artefacts. Throughout the process, I emphasised quantifiable results, effective communication, and
       systematic evaluation to foster ongoing enhancements.
     </p>
-    <div style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.9;">
-      <em>References: ENISA, 2023; NIST, 2024; Gibbs, 1988; Rolfe, Freshwater and Jasper, 2001</em>
-    </div>
   </div>
 </section>
 
@@ -36,14 +33,13 @@ summary: >-
   </div>
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-    
     <div style="background: white; border: 2px solid #11998e; border-radius: 10px; padding: 1.8rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(17,153,142,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
       <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #11998e, #38ef7d); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">
         🛡️
       </div>
       <h4 style="color: #11998e; margin: 0 0 0.8rem 0; font-size: 1.1rem;">Core Concepts Mastery</h4>
       <p style="color: #4a5568; line-height: 1.6; margin: 0; font-size: 0.95rem;">
-        Exhibit a comprehensive grasp of essential cyber security concepts (least privilege, defence-in-depth, 
+        Exhibit a comprehensive grasp of essential cyber security concepts (least privilege, defence-in-depth,
         secure-by-design, Zero Trust) and their foundational role in the development of resilient systems.
       </p>
     </div>
@@ -54,7 +50,7 @@ summary: >-
       </div>
       <h4 style="color: #11998e; margin: 0 0 0.8rem 0; font-size: 1.1rem;">Security Implementation</h4>
       <p style="color: #4a5568; line-height: 1.6; margin: 0; font-size: 0.95rem;">
-        Implement security techniques (threat modelling, risk assessment, control selection) to guide design and 
+        Implement security techniques (threat modelling, risk assessment, control selection) to guide design and
         operational decision-making within organisations.
       </p>
     </div>
@@ -78,7 +74,6 @@ summary: >-
         Appraise and communicate security findings to diverse audiences on risks and assurance.
       </p>
     </div>
-
   </div>
 </section>
 
@@ -89,72 +84,92 @@ summary: >-
     <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #11998e, #38ef7d); margin: 0 auto;"></div>
   </div>
 
-  <!-- Artefact 1: Collaborative Discussion -->
+  <!-- Artefact 1: CD1 Initial Post -->
   <article style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; border-left: 5px solid #11998e; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
     <div style="display: flex; align-items: start; gap: 1.5rem; flex-wrap: wrap;">
       <div style="flex: 1; min-width: 280px;">
         <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
           <span style="font-size: 2rem;">💬</span>
-          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Collaborative Discussion 1</h3>
+          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Collaborative Discussion 1 — Initial Post</h3>
         </div>
-        <h4 style="color: #11998e; margin: 0 0 1rem 0; font-size: 1.1rem;">Log4j Vulnerability and Business Risks</h4>
+        <div style="display: inline-block; background: #e0f2f1; color: #00695c; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;">
+          UNIT 1
+        </div>
         <p style="color: #4a5568; line-height: 1.7; margin-bottom: 1rem;">
-          I examined the Log4j vulnerability to categorise technical failures as risks that impact economic, legal, 
-          and reputational aspects of a business. I connected mitigation strategies (such as patch governance, software 
-          bill of materials, web application firewall rules, and compensating controls) to service continuity and 
-          stakeholder expectations.
+          Introduced the Log4j case to frame economic, legal (GDPR), and reputational impacts of cyber security;
+          advocated for proactive investment over reactive spending and underlined the relationship between compliance
+          and trust.
         </p>
+        <div style="background: #f0f4ff; border-left: 3px solid #667eea; padding: 1rem 1.2rem; border-radius: 4px; margin-bottom: 1rem;">
+          <p style="margin: 0; color: #4a5568; font-size: 0.9rem;">
+            <strong>📁 Evidence:</strong> Initial Post.pdf
+          </p>
+        </div>
         <div style="background: #f0fdf4; border-left: 3px solid #38ef7d; padding: 1rem 1.2rem; border-radius: 4px;">
           <p style="margin: 0; color: #166534; font-size: 0.95rem;">
-            <strong>📝 Feedback:</strong> Peer engagement sharpened the business case for patching and monitoring; 
-            improved risk-to-control clarity.
+            <strong>📝 Feedback:</strong> Formative comments suggested including specific case examples and clearer
+            connections from risk to control to outcome in future posts.
           </p>
         </div>
       </div>
     </div>
   </article>
 
-  <!-- Artefact 2: Threat & Vulnerability Assessments -->
+  <!-- Artefact 2: CD1 Summary Post -->
   <article style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; border-left: 5px solid #11998e; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
     <div style="display: flex; align-items: start; gap: 1.5rem; flex-wrap: wrap;">
       <div style="flex: 1; min-width: 280px;">
         <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-          <span style="font-size: 2rem;">🔍</span>
-          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Threat &amp; Vulnerability Assessments</h3>
+          <span style="font-size: 2rem;">📊</span>
+          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Unit 3 - Summary Post</h3>
         </div>
-        <h4 style="color: #11998e; margin: 0 0 1rem 0; font-size: 1.1rem;">Summary</h4>
+        <div style="display: inline-block; background: #e0f2f1; color: #00695c; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;">
+          UNIT 3
+        </div>
         <p style="color: #4a5568; line-height: 1.7; margin-bottom: 1rem;">
-          Evaluated STRIDE and attack trees, converting results into targeted controls and architectural choices. 
-          Enhanced capacity to rationalise mitigations based on risk and operational effects.
+          Consolidated insights from the Log4j discussion, highlighting economic impacts, regulatory obligations
+          (GDPR Art. 32), and reputational effects, with peer-suggested real-world examples.
         </p>
+        <div style="background: #f0f4ff; border-left: 3px solid #667eea; padding: 1rem 1.2rem; border-radius: 4px; margin-bottom: 1rem;">
+          <p style="margin: 0; color: #4a5568; font-size: 0.9rem;">
+            <strong>📁 Evidence:</strong> Summary Post.pdf
+          </p>
+        </div>
         <div style="background: #f0fdf4; border-left: 3px solid #38ef7d; padding: 1rem 1.2rem; border-radius: 4px;">
           <p style="margin: 0; color: #166534; font-size: 0.95rem;">
-            <strong>📝 Feedback:</strong> Highlighted prioritisation and supporting evidence. I enhanced artefacts 
-            to clearly illustrate connections from threat to control to outcome.
+            <strong>📝 Feedback:</strong> Involvement of peers enhanced the justification for implementing patching
+            and monitoring, while the precision of the recommendations was improved.
           </p>
         </div>
       </div>
     </div>
   </article>
 
-  <!-- Artefact 3: E-commerce Backup & Recovery -->
+  <!-- Artefact 3: Unit 9 Essay -->
   <article style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; border-left: 5px solid #11998e; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
     <div style="display: flex; align-items: start; gap: 1.5rem; flex-wrap: wrap;">
       <div style="flex: 1; min-width: 280px;">
         <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-          <span style="font-size: 2rem;">💾</span>
-          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">E-commerce Backup &amp; Recovery Strategy</h3>
+          <span style="font-size: 2rem;">📝</span>
+          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Unit 9 — Essay 9</h3>
+        </div>
+        <div style="display: inline-block; background: #e0f2f1; color: #00695c; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;">
+          UNIT 9
         </div>
         <p style="color: #4a5568; line-height: 1.7; margin-bottom: 1rem;">
-          Established a backup and recovery framework in accordance with stakeholder-defined RTO/RPO parameters, 
-          testing frequency, and integrity checks. The strategy incorporated role responsibilities, audit logging, 
-          and regular restoration exercises to ensure reliability.
+          Key considerations for an e-commerce backup and recovery plan include risk assessment, layered controls,
+          failover, redundancy, RTO/RPO alignment, integrity checks, log monitoring, and routine recovery validation,
+          highlighting governance and testing for resilient service continuity.
         </p>
+        <div style="background: #f0f4ff; border-left: 3px solid #667eea; padding: 1rem 1.2rem; border-radius: 4px; margin-bottom: 1rem;">
+          <p style="margin: 0; color: #4a5568; font-size: 0.9rem;">
+            <strong>📁 Evidence:</strong> Essay9.pdf
+          </p>
+        </div>
         <div style="background: #f0fdf4; border-left: 3px solid #38ef7d; padding: 1rem 1.2rem; border-radius: 4px;">
           <p style="margin: 0; color: #166534; font-size: 0.95rem;">
-            <strong>📝 Feedback:</strong> Effective alignment of objectives (RTO/RPO) with controls and testing 
-            procedures was noted as a positive aspect. I incorporated a straightforward dashboard for executive 
-            reporting purposes.
+            <strong>📝 Feedback:</strong> Prioritise risk-to-control traceability and include dashboardable metrics
+            for executives.
           </p>
         </div>
       </div>
@@ -169,12 +184,15 @@ summary: >-
           <span style="font-size: 2rem;">🔒</span>
           <h3 style="margin: 0; font-size: 1.4rem;">Unit 12 — Secure Backup Application (Python)</h3>
         </div>
+        <div style="display: inline-block; background: rgba(255,255,255,0.25); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;">
+          UNIT 12
+        </div>
         <p style="line-height: 1.7; margin-bottom: 1rem; opacity: 0.95;">
-          Developed a secure backup prototype incorporating secure-by-design and Zero Trust principles, including 
-          TLS-secured transport, credential authentication, encryption for data at rest and in transit, and integrity 
-          verification. The README outlines the underlying assumptions, threat model, and testing procedures.
+          Created a secure backup prototype using secure-by-design and Zero Trust principles: TLS transport,
+          credential authentication, encryption at rest and in transit, and integrity checks. The README covers
+          assumptions, threat model, and testing methods.
         </p>
-        
+
         <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 6px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
           <p style="margin: 0 0 0.5rem 0; font-weight: 600;">📁 Evidence folder:</p>
           <code style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.9rem;">
@@ -191,13 +209,48 @@ summary: >-
 
         <div style="background: rgba(255,255,255,0.95); border-left: 3px solid #38ef7d; padding: 1rem 1.2rem; border-radius: 4px;">
           <p style="margin: 0; color: #166534; font-size: 0.95rem;">
-            <strong>📝 Feedback:</strong> The detailed test plan and integrity verification met with positive feedback. 
-            I observed areas for future improvement: management of secrets, rotation of keys, and testing for automated 
-            restoration.
+            <strong>📝 Feedback:</strong> Test plan and integrity verification received positive feedback.
+            Next steps include secret management, key rotation, and automated restoration tests.
           </p>
         </div>
       </div>
     </div>
+  </article>
+
+  <!-- Risk Analysis Summary -->
+  <article style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; border-left: 5px solid #f59e0b; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+    <div style="display: flex; align-items: start; gap: 1.5rem; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 280px;">
+        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+          <span style="font-size: 2rem;">📈</span>
+          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Risk Analysis — Summary</h3>
+        </div>
+        <p style="color: #4a5568; line-height: 1.7; margin-bottom: 1rem;">
+          During the Log4j analysis and backup/recovery efforts, I focused on practical risk management over
+          theoretical catalogues. Decisions were driven by regulatory requirements (notably GDPR Article 32),
+          service-continuity objectives (including Recovery Time Objectives and Recovery Point Objectives),
+          and validated controls such as Transport Layer Security, encryption, credential verification, and
+          integrity checks.
+        </p>
+        <div style="background: #fffbeb; border-left: 3px solid #f59e0b; padding: 1rem 1.2rem; border-radius: 4px;">
+          <p style="margin: 0; color: #92400e; font-size: 0.9rem;">
+            <strong>📁 Evidence:</strong> Initial Post.pdf (p.1); Summary Post.pdf (p.1); Essay9.pdf (pp.1–3);
+            Unit 12 README.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Reflection Note -->
+  <article style="background: #f8f9fa; border-radius: 10px; padding: 1.5rem; border-left: 5px solid #6c757d;">
+    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.5rem;">
+      <span style="font-size: 1.5rem;">🪞</span>
+      <h4 style="color: #2c3e50; margin: 0; font-size: 1.1rem;">Reflection Note</h4>
+    </div>
+    <p style="color: #5a6c7d; line-height: 1.6; margin: 0; font-size: 0.95rem;">
+      Gibbs' Reflective Cycle was used as the framework, with no standalone reflection produced.
+    </p>
   </article>
 </section>
 
@@ -209,144 +262,108 @@ summary: >-
   </div>
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
-
-    <!-- CD1 Reflection -->
     <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
       <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
         <span style="font-size: 1.3rem;">💭</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Collaborative Discussion 1 (Log4j)</h4>
+        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Collaborative Discussion 1 (Log4j) — Summary</h4>
       </div>
       <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        I conducted an analysis of the Log4j vulnerability, evaluating its economic, legal, and reputational consequences 
-        while incorporating feedback from peers. This process enhanced my capability to articulate technical challenges 
-        in terms of business-related risks and control measures.
+        As detailed in the Artefacts section, this effort enhanced my skill in converting technical problems
+        into business-risk narratives, accompanied by appropriate controls and more defined lines of accountability.
       </p>
     </div>
 
-    <!-- CD2 Reflection - Warning Style -->
     <div style="background: #fef3c7; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
       <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
         <span style="font-size: 1.3rem;">⚠️</span>
-        <h4 style="color: #92400e; margin: 0; font-size: 1rem;">Collaborative Discussion 2</h4>
+        <h4 style="color: #92400e; margin: 0; font-size: 1rem;">Collaborative Discussion 2 — Reflection</h4>
       </div>
       <p style="color: #78350f; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        <strong>Not submitted (0%).</strong> This underscores the necessity for improved scheduling guidelines. 
-        I will introduce a more flexible strategy to prevent deadline overlaps and reduce the need for late-night efforts.
+        <strong>Not submitted (0%).</strong> This highlights the need for better scheduling. I will use a flexible
+        weekly plan to reduce deadline clashes and avoid late work.
       </p>
     </div>
 
-    <!-- Threat Assessment -->
-    <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
-        <span style="font-size: 1.3rem;">🔎</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Threat &amp; Vulnerability Assessments</h4>
-      </div>
-      <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        I conducted assessments of threats and vulnerabilities and utilised the results to create secure systems 
-        that meet business requirements. This enhanced my ability to translate risks into specific controls and 
-        architectural solutions.
-      </p>
-    </div>
-
-    <!-- E-commerce Strategy -->
     <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
       <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
         <span style="font-size: 1.3rem;">🛒</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">E-commerce Backup &amp; Recovery Strategy</h4>
+        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">E-commerce Backup &amp; Recovery Strategy — Summary</h4>
       </div>
       <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        I developed backup and recovery strategies for e-commerce platforms, ensuring that the measures aligned 
-        with stakeholder expectations and reduced operational risk.
+        Aligned policies with stakeholder RTO/RPO, integrity checks, audit logging, and restoration drills.
       </p>
     </div>
 
-    <!-- Python Project -->
     <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
       <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
         <span style="font-size: 1.3rem;">🐍</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Secure Backup Application (Python, Unit 12)</h4>
+        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Secure Backup Application (Python, Unit 12) — Project Note</h4>
       </div>
       <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        A secure backup prototype was developed utilising TLS for encryption, user credential authentication, 
-        and data integrity verification. Specific objectives were established, and design decisions were effectively 
-        communicated to both technical and non-technical stakeholders.
+        See Artefacts for design choices, testing, and planned improvements (secrets management, key rotation,
+        automated restores).
       </p>
     </div>
 
-    <!-- Secure-by-Design -->
     <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
       <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
         <span style="font-size: 1.3rem;">🏗️</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Secure-by-Design &amp; Resilience</h4>
+        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Secure-by-Design &amp; Resilience — Note</h4>
       </div>
       <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        Creating the application enhanced my understanding of secure-by-design principles in both coding and architecture. 
-        I acknowledged that resilience encompasses supply-chain security and the implementation of more robust protocols, 
-        which are strengthened through ongoing testing.
+        Building the prototype reinforced secure-by-design in code and architecture; resilience relies on
+        supply-chain diligence and verification.
       </p>
     </div>
 
-    <!-- Socio-Technical -->
     <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
       <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
         <span style="font-size: 1.3rem;">👥</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Socio-Technical &amp; Ethical Awareness</h4>
+        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Socio-Technical &amp; Ethical Awareness — Note</h4>
       </div>
       <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        Effective security integrates technology, policy, personnel, and organisational culture. This discussion 
-        will underline user training and enhancing incident reporting to achieve a balance between human and 
-        technical elements.
+        Effective security combines technology, policy, people, and culture, focusing on user training and
+        incident reporting.
       </p>
     </div>
 
-    <!-- Risk Analysis -->
     <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
       <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
         <span style="font-size: 1.3rem;">📊</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Risk Analysis &amp; Threat Modelling</h4>
+        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Risk Analysis &amp; Threat Modelling — Note</h4>
       </div>
       <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        I transitioned from basic risk listings to utilising STRIDE and attack-tree analysis, which enhanced 
-        the understanding of the connections between threats and controls. My work with TLS configuration and 
-        credential hashing in Python contributed to confirming my assumptions. Moving forward, I plan to incorporate 
-        numerical examples and scenarios into the models.
+        Transitioned from informal risk lists to structured prioritisation; practical TLS configuration and
+        credential handling in Python validated assumptions.
       </p>
     </div>
 
-    <!-- Communication -->
     <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
       <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
         <span style="font-size: 1.3rem;">📢</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Communication &amp; Storytelling</h4>
+        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Communication &amp; Storytelling — Note</h4>
       </div>
       <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        My reports and diagrams are articulated in a clear manner and presented using business terminology, 
-        emphasising how controls can prevent fines and losses. For audiences without a technical background, 
-        I utilise straightforward language and logical narratives. I will continue to enhance my communication 
-        strategies aimed at leadership.
+        I use plain language and clear sequences in writing and visuals for non-technical audiences.
       </p>
     </div>
 
-    <!-- Time Management -->
     <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
       <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
         <span style="font-size: 1.3rem;">⏰</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Time Management &amp; Reflection</h4>
+        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Time Management — Note</h4>
       </div>
       <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        I successfully met project deadlines and utilised reflection to enhance quality; however, the demanding 
-        workloads resulted in extended hours. By implementing a more adaptable weekly plan, I can effectively 
-        minimise the risk of burnout and maintain my productivity.
+        Met milestones with extended hours; adopting a lighter weekly cadence to prevent burnout.
       </p>
     </div>
-
   </div>
 </section>
 
 <!-- Professional Skills Matrix -->
 <section style="max-width: 1200px; margin: 0 auto 4rem;">
   <div style="text-align: center; margin-bottom: 2.5rem;">
-    <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 0.5rem;">Professional Skills Matrix</h2>
+    <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 0.5rem;">Professional Skills Matrix (Learnt)</h2>
     <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #667eea, #764ba2); margin: 0 auto;"></div>
     <p style="color: #5a6c7d; margin-top: 1rem; font-size: 0.95rem;">Skills acquired and developed throughout the module</p>
   </div>
@@ -362,35 +379,35 @@ summary: >-
       <tbody>
         <tr style="border-bottom: 1px solid #e2e8f0;">
           <td style="padding: 1rem; color: #667eea; font-weight: 600;">Analytical Skills</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Comprehensive evaluation from identifying vulnerabilities to their business impact.</td>
+          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Comprehensive evaluation from vulnerabilities through to business impact.</td>
         </tr>
         <tr style="background: #f8f9fa; border-bottom: 1px solid #e2e8f0;">
           <td style="padding: 1rem; color: #667eea; font-weight: 600;">Secure-by-Design Engineering</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Implemented secure practices in code and architecture, emphasising resilience and supply-chain security.</td>
+          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Embedded secure practices in code and architecture; emphasised resilience and supply-chain assurance.</td>
         </tr>
         <tr style="border-bottom: 1px solid #e2e8f0;">
           <td style="padding: 1rem; color: #667eea; font-weight: 600;">Risk Analysis &amp; Threat Modelling</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Adopted structured methods like STRIDE and attack trees to connect threats to controls.</td>
+          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Linked risks to controls and outcomes using structured, evidence-backed prioritisation.</td>
         </tr>
         <tr style="background: #f8f9fa; border-bottom: 1px solid #e2e8f0;">
           <td style="padding: 1rem; color: #667eea; font-weight: 600;">Prototype Engineering (Python)</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Created a secure backup workflow with TLS, authentication, and integrity checks, including tests and documentation.</td>
+          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Built a secure backup workflow with TLS, authentication, and integrity checks, plus tests and documentation.</td>
         </tr>
         <tr style="border-bottom: 1px solid #e2e8f0;">
           <td style="padding: 1rem; color: #667eea; font-weight: 600;">Communication</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Enhanced stakeholder reporting and visuals; better non-technical storytelling.</td>
+          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Stakeholder reporting features insightful visuals, making storytelling clearer and more engaging.</td>
         </tr>
         <tr style="background: #f8f9fa; border-bottom: 1px solid #e2e8f0;">
           <td style="padding: 1rem; color: #667eea; font-weight: 600;">Governance &amp; Ethics Awareness</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Legal and ethical responsibilities were consistently upheld in all design choices.</td>
+          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Consistently applied legal and ethical responsibilities in design.</td>
         </tr>
         <tr style="border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; color: #667eea; font-weight: 600;">Collaboration &amp; Professional Practice</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Engaged peers through responses and summaries; noted scheduling improvements post-CD2.</td>
+          <td style="padding: 1rem; color: #667eea; font-weight: 600;">Collaboration &amp; Professional</td>
+          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Engaged peers through posts and summaries; improvements noted after CD2.</td>
         </tr>
         <tr style="background: #f8f9fa;">
           <td style="padding: 1rem; color: #667eea; font-weight: 600; border-radius: 0 0 0 8px;">Time Management</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6; border-radius: 0 0 8px 0;">Delivered key items on time; implementing a plan to avoid overload.</td>
+          <td style="padding: 1rem; color: #4a5568; line-height: 1.6; border-radius: 0 0 8px 0;">Delivered core items on time; measures in place to prevent overload.</td>
         </tr>
       </tbody>
     </table>
@@ -406,8 +423,6 @@ summary: >-
   </div>
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-
-    <!-- Action 1 -->
     <div style="background: white; border-radius: 10px; padding: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #11998e; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
       <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
         <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #11998e, #38ef7d); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
@@ -417,57 +432,51 @@ summary: >-
       </div>
       <div style="margin-bottom: 1rem;">
         <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0 0 0.8rem 0;">
-          <strong>Steps:</strong> Subscribe to CVE/ENISA/NCSC feeds; review weekly and log a relevant vulnerability/TTP 
-          mapped to current controls.
+          <strong>Steps:</strong> Subscribe to CVE/ENISA/NCSC feeds; weekly review and log one relevant vulnerability/TTP mapped to current controls.
         </p>
       </div>
       <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
-        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target Date</span>
+        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target</span>
         <span style="background: #dcfce7; color: #166534; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2024-12-15</span>
       </div>
     </div>
 
-    <!-- Action 2 -->
-    <div style="background: white; border-radius: 10px; padding: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #667eea; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
+    <div style="background: white; border-radius: 10px; padding: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #0ea5e9; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
       <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
-          📈
+        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #0ea5e9, #38bdf8); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+          📊
         </div>
         <h4 style="color: #2c3e50; margin: 0; font-size: 1.1rem;">Build Quantitative Risk Scenarios</h4>
       </div>
       <div style="margin-bottom: 1rem;">
         <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0 0 0.8rem 0;">
-          <strong>Steps:</strong> Develop scenario models (ransomware vs insider breach) and dashboards of 
-          assumptions/impacts; set action thresholds.
+          <strong>Steps:</strong> Develop scenario models (ransomware vs insider breach) and dashboards of assumptions/impacts; define action thresholds.
         </p>
       </div>
       <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
-        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target Date</span>
-        <span style="background: #dbeafe; color: #1e40af; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2025-02-01</span>
+        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target</span>
+        <span style="background: #e0f2fe; color: #075985; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2025-02-01</span>
       </div>
     </div>
 
-    <!-- Action 3 -->
-    <div style="background: white; border-radius: 10px; padding: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #f59e0b; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
+    <div style="background: white; border-radius: 10px; padding: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #f97316; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
       <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #f59e0b, #f97316); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
-          🎓
+        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #f97316, #fb923c); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+          🏛️
         </div>
         <h4 style="color: #2c3e50; margin: 0; font-size: 1.1rem;">Enhance Governance Capability</h4>
       </div>
       <div style="margin-bottom: 1rem;">
         <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0 0 0.8rem 0;">
-          <strong>Steps:</strong> Study for CISSP/CISM, join a group, apply governance in projects, pass exams, 
-          integrate new controls.
+          <strong>Steps:</strong> Study for CISSP/CISM; join a study group; apply governance patterns in projects; attempt exams; integrate new controls.
         </p>
       </div>
       <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
-        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target Date</span>
+        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target</span>
         <span style="background: #fef3c7; color: #92400e; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2025-08-01</span>
       </div>
     </div>
 
-    <!-- Action 4 -->
     <div style="background: white; border-radius: 10px; padding: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #ec4899; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
       <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
         <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #ec4899, #f43f5e); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
@@ -477,17 +486,15 @@ summary: >-
       </div>
       <div style="margin-bottom: 1rem;">
         <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0 0 0.8rem 0;">
-          <strong>Steps:</strong> Practise narrative slide walkthroughs; gather peer feedback on clarity; present 
-          Unit 12 to a non-technical audience.
+          <strong>Steps:</strong> Practise narrative slide walkthroughs; collect peer feedback on clarity; present Unit 12 to a non-technical audience.
         </p>
       </div>
       <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
-        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target Date</span>
+        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target</span>
         <span style="background: #fce7f3; color: #9f1239; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2025-01-15</span>
       </div>
     </div>
 
-    <!-- Action 5 -->
     <div style="background: white; border-radius: 10px; padding: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #8b5cf6; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
       <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
         <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #8b5cf6, #a78bfa); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
@@ -497,15 +504,14 @@ summary: >-
       </div>
       <div style="margin-bottom: 1rem;">
         <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0 0 0.8rem 0;">
-          <strong>Steps:</strong> Publish 3 short posts explaining threat modelling and backups; track engagement.
+          <strong>Steps:</strong> Publish three short posts on threat modelling and backups; track engagement.
         </p>
       </div>
       <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
-        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target Date</span>
+        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target</span>
         <span style="background: #ede9fe; color: #5b21b6; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2025-03-01</span>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -519,13 +525,13 @@ summary: >-
       <h2 style="margin: 0; font-size: 2rem;">Conclusion</h2>
     </div>
     <p style="line-height: 1.8; font-size: 1.05rem; opacity: 0.95; margin: 0 0 1.2rem 0;">
-      I entered confident in my technical skills and learned that resilience and ethics are central. I improved my 
-      ability to express risk in business terms while deepening governance and ethical awareness. I view security as 
+      I entered confident in my technical skills and learned that resilience and ethics are central. I improved my
+      ability to express risk in business terms while deepening governance and ethical awareness. I view security as
       an ongoing process requiring continuous threat assessment, collaboration, and evidence-based decisions.
     </p>
     <p style="line-height: 1.8; font-size: 1.05rem; opacity: 0.95; margin: 0;">
-      Reflection produced concrete next steps that I'll apply in future projects to ensure security measures positively 
-      impact the organisation. I'm committed to lifelong learning, sharing best practice, and addressing emerging 
+      Reflection produced concrete next steps that I'll apply in future projects to ensure security measures positively
+      impact the organisation. I'm committed to lifelong learning, sharing best practice, and addressing emerging
       cybersecurity challenges.
     </p>
   </div>
@@ -544,6 +550,10 @@ summary: >-
       </li>
       <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
         <span style="position: absolute; left: 0; color: #11998e;">•</span>
+        European Parliament and Council (2016) <em>Regulation (EU) 2016/679 (General Data Protection Regulation), Article 32</em>.
+      </li>
+      <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+        <span style="position: absolute; left: 0; color: #11998e;">•</span>
         Gibbs, G. (1988) <em>Learning by Doing: A Guide to Teaching and Learning Methods</em>. Oxford: Oxford Further Education Unit.
       </li>
       <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
@@ -557,10 +567,6 @@ summary: >-
       <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
         <span style="position: absolute; left: 0; color: #11998e;">•</span>
         NIST (2024) <em>Cybersecurity Framework (CSF) 2.0</em>. National Institute of Standards and Technology.
-      </li>
-      <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-        <span style="position: absolute; left: 0; color: #11998e;">•</span>
-        Rolfe, G., Freshwater, D. and Jasper, M. (2001) <em>Critical Reflection for Nursing and the Helping Professions: A User's Guide</em>. Basingstoke: Palgrave Macmillan.
       </li>
       <li style="padding-left: 1.5rem; position: relative;">
         <span style="position: absolute; left: 0; color: #11998e;">•</span>
