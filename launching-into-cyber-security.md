@@ -102,7 +102,10 @@ summary: >-
         </p>
         <div style="background: #f0f4ff; border-left: 3px solid #667eea; padding: 1rem 1.2rem; border-radius: 4px; margin-bottom: 1rem;">
           <p style="margin: 0; color: #4a5568; font-size: 0.9rem;">
-            <strong>📁 Evidence:</strong> Initial Post.pdf
+            <strong>📁 Evidence:</strong>
+            <a href="/assets/LauchingIntoCybersecurity/Initial%20Post.pdf" target="_blank" rel="noopener">
+              Initial Post.pdf
+            </a>
           </p>
         </div>
         <div style="background: #f0fdf4; border-left: 3px solid #38ef7d; padding: 1rem 1.2rem; border-radius: 4px;">
@@ -132,7 +135,10 @@ summary: >-
         </p>
         <div style="background: #f0f4ff; border-left: 3px solid #667eea; padding: 1rem 1.2rem; border-radius: 4px; margin-bottom: 1rem;">
           <p style="margin: 0; color: #4a5568; font-size: 0.9rem;">
-            <strong>📁 Evidence:</strong> Summary Post.pdf
+            <strong>📁 Evidence:</strong>
+            <a href="/assets/LauchingIntoCybersecurity/Summary%20Post.pdf" target="_blank" rel="noopener">
+              Summary Post.pdf
+            </a>
           </p>
         </div>
         <div style="background: #f0fdf4; border-left: 3px solid #38ef7d; padding: 1rem 1.2rem; border-radius: 4px;">
@@ -163,7 +169,10 @@ summary: >-
         </p>
         <div style="background: #f0f4ff; border-left: 3px solid #667eea; padding: 1rem 1.2rem; border-radius: 4px; margin-bottom: 1rem;">
           <p style="margin: 0; color: #4a5568; font-size: 0.9rem;">
-            <strong>📁 Evidence:</strong> Essay9.pdf
+            <strong>📁 Evidence:</strong>
+            <a href="/assets/LauchingIntoCybersecurity/Essay9.pdf" target="_blank" rel="noopener">
+              Essay9.pdf
+            </a>
           </p>
         </div>
         <div style="background: #f0fdf4; border-left: 3px solid #38ef7d; padding: 1rem 1.2rem; border-radius: 4px;">
@@ -234,7 +243,13 @@ summary: >-
         </p>
         <div style="background: #fffbeb; border-left: 3px solid #f59e0b; padding: 1rem 1.2rem; border-radius: 4px;">
           <p style="margin: 0; color: #92400e; font-size: 0.9rem;">
-            <strong>📁 Evidence:</strong> Initial Post.pdf (p.1); Summary Post.pdf (p.1); Essay9.pdf (pp.1–3);
+            <strong>📁 Evidence:</strong>
+            <a href="/assets/LauchingIntoCybersecurity/Initial%20Post.pdf" target="_blank" rel="noopener">Initial Post.pdf</a>
+            (p.1);
+            <a href="/assets/LauchingIntoCybersecurity/Summary%20Post.pdf" target="_blank" rel="noopener">Summary Post.pdf</a>
+            (p.1);
+            <a href="/assets/LauchingIntoCybersecurity/Essay9.pdf" target="_blank" rel="noopener">Essay9.pdf</a>
+            (pp.1–3);
             Unit 12 README.
           </p>
         </div>
