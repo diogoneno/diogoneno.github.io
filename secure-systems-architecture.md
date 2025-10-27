@@ -8,7 +8,7 @@ summary: >-
   Architecture-led approach to threat modelling, control selection, and
   verification across complex systems.
 ---
-<!DOCTYPE html>
+
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
