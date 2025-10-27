@@ -1,3 +1,13 @@
+---
+layout: page
+title: Secure Systems Architecture
+description: Designing resilient platforms through layered security patterns
+nav-menu: true
+nav-order: 7
+summary: >-
+  Architecture-led approach to threat modelling, control selection, and
+  verification across complex systems.
+---
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
