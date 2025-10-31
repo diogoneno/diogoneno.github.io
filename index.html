@@ -1,138 +1,707 @@
 ---
 layout: null
 ---
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-               <title>{{ site.title | default: 'Msc Cyber Security Portfolio' }}</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title | default: 'Msc Cyber Security Portfolio' }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		<!-- Wrapper -->
-                        <div id="wrapper">
-                                {% assign module_pages = site.pages | where_exp: 'item', 'item["nav-menu"]' | sort: 'nav-order' %}
-                                {% assign launching_page = site.pages | where: 'title', 'Launching into Cyber Security' | first %}
+        :root {
+            --primary: #00d4ff;
+            --secondary: #0066ff;
+            --dark: #0a0e27;
+            --darker: #050816;
+            --text: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --accent: #7c3aed;
+        }
 
-				<!-- Header -->
-                                        <header id="header" class="alt">
-                                               <a href="{{ '/' | relative_url }}" class="logo"><strong>{{ site.title | default: 'Msc Cyber Security Portfolio' }}</strong>{% if site.subtitle %} <span>{{ site.subtitle }}</span>{% endif %}</a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: var(--darker);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-				<!-- Menu -->
-                                        <nav id="menu">
-                                                <ul class="links">
-                                                        {% include nav-links.html %}
-                                                </ul>
-                                                <ul class="actions stacked">
-                                                        <li>
-                                                                <a href="{{ launching_page.url | default: '#' | relative_url }}" class="button primary fit">Get Started</a>
-                                                        </li>
-                                                </ul>
-                                        </nav>
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+        }
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-                                                        <header class="major">
-                                                                <h1>Hi, my name is Diogo</h1>
-                                                        </header>
-                                                        <div class="content">
-                                                                <p>This portfolio captures my MSc Cyber Security journey, highlighting modules, artefacts, and reflections that chart my growth as a practitioner.</p>
-                                                                {% if launching_page %}
-                                                                <ul class="actions">
-                                                                        <li><a href="{{ launching_page.url | relative_url }}" class="button next">Get Started</a></li>
-                                                                </ul>
-                                                                {% endif %}
-                                                        </div>
-                                                </div>
-                                        </section>
+        .animated-bg::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(124, 58, 237, 0.1) 0%, transparent 50%);
+            animation: gradientShift 20s ease infinite;
+        }
 
-                                <!-- Main -->
-                                        <div id="main">
+        @keyframes gradientShift {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(-50px, -50px); }
+        }
 
-                                                <!-- One -->
-                                                        <section id="one" class="tiles">
-                                                                {% assign module_images = 'images/pic01.jpg|images/pic02.jpg|images/pic03.jpg|images/pic04.jpg|images/pic05.jpg|images/pic06.jpg|images/pic07.jpg|images/pic08.jpg' | split: '|' %}
-                                                                {% assign module_images_count = module_images | size %}
-                                                                {% for module in module_pages %}
-                                                                {% assign image_index = forloop.index0 | modulo: module_images_count %}
-                                                                {% assign module_image = module_images[image_index] %}
-                                                                <article>
-                                                                        <span class="image">
-                                                                                <img src="{{ module_image | relative_url }}" alt="" />
-                                                                        </span>
-                                                                        <header class="major">
-                                                                                <h3><a href="{{ module.url | relative_url }}" class="link">{{ module.title }}</a></h3>
-                                                                                {% assign module_overview = module.description | default: module.summary | default: module.excerpt %}
-                                                                                {% if module_overview %}
-                                                                                <p>{{ module_overview | strip_html | strip_newlines | truncate: 140 }}</p>
-                                                                                {% endif %}
-                                                                        </header>
-                                                                </article>
-                                                                {% endfor %}
-                                                        </section>
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            background: rgba(10, 14, 39, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-                                                <!-- Two -->
-                                                        <section id="two">
-                                                                <div class="inner">
-                                                                        <header class="major">
-                                                                                <h2>Navigate the MSc Journey</h2>
-                                                                        </header>
-                                                                        <p>Use these module highlights to dive directly into each area of the programme, from foundational principles to advanced architecture and research practice.</p>
-                                                                        <div class="module-directory">
-                                                                                <ul class="alt">
-                                                                                        {% for module in module_pages %}
-                                                                                        {% assign module_overview = module.summary | default: module.description %}
-                                                                                        <li>
-                                                                                                <strong><a href="{{ module.url | relative_url }}">{{ module.title }}</a></strong><br />
-                                                                                                {% if module_overview %}
-                                                                                                <span>{{ module_overview | strip_html | strip_newlines | truncate: 140 }}</span>
-                                                                                                {% endif %}
-                                                                                        </li>
-                                                                                        {% endfor %}
-                                                                                </ul>
-                                                                        </div>
-                                                                        {% if launching_page %}
-                                                                        <ul class="actions">
-                                                                                <li><a href="{{ launching_page.url | relative_url }}" class="button primary">Begin with Launching into Cyber Security</a></li>
-                                                                        </ul>
-                                                                        {% endif %}
-                                                                </div>
-                                                        </section>
+        nav .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-					</div>
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-                                <!-- Footer -->
-                                        <footer id="footer">
-                                                <div class="inner">
-                                                        <ul class="copyright">
-                                                                <li>&copy; {{ site.time | date: '%Y' }} {{ site.title | default: 'Untitled' }}</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-                                                        </ul>
-                                                </div>
-                                        </footer>
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
 
-			</div>
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
 
-	</body>
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5%;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: clamp(1rem, 2vw, 1.5rem);
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero .cta-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2.5rem;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        .modules {
+            padding: 8rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .module-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .module-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(124, 58, 237, 0.1));
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .module-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.2);
+        }
+
+        .module-card:hover::before {
+            opacity: 1;
+        }
+
+        .module-image {
+            width: 100%;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+        }
+
+        .module-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, transparent 0%, rgba(10, 14, 39, 0.7) 100%);
+            z-index: 1;
+        }
+
+        .module-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 212, 255, 0.1);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 2;
+        }
+
+        .module-card:hover .module-image::after {
+            opacity: 1;
+        }
+
+        .module-content {
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .module-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .module-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .module-meta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-tag {
+            padding: 0.5rem 1rem;
+            background: rgba(0, 212, 255, 0.1);
+            border-radius: 20px;
+            font-size: 0.875rem;
+            color: var(--primary);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .module-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: gap 0.3s ease;
+        }
+
+        .module-link:hover {
+            gap: 1rem;
+        }
+
+        .cta-section {
+            padding: 8rem 5%;
+            text-align: center;
+        }
+
+        .cta-box {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(124, 58, 237, 0.1));
+            padding: 4rem 2rem;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.2), transparent);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .cta-box > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-box h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1rem;
+        }
+
+        .cta-box p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            padding: 3rem 5%;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-secondary);
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .module-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .cta-group {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        .scroll-indicator::before {
+            content: '↓';
+            color: var(--primary);
+            font-size: 2rem;
+        }
+
+        .section {
+            padding: 6rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .section p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    {% assign module_pages = site.pages | where_exp: 'item', 'item["nav-menu"]' | sort: 'nav-order' %}
+    {% assign launching_page = site.pages | where: 'title', 'Launching into Cyber Security' | first %}
+
+    <nav>
+        <div class="container">
+            <div class="logo">DIOGO • CYBER SEC</div>
+            <ul class="nav-links">
+                <li><a href="#modules">Modules</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>MSc Cyber Security Portfolio</h1>
+            <p class="subtitle">Documenting the journey through advanced cyber security concepts, practical implementations, and professional development across each module of the programme.</p>
+
+            <div class="cta-group">
+                <a href="#modules" class="btn btn-primary">Explore Modules</a>
+                {% if launching_page %}
+                <a href="{{ launching_page.url | relative_url }}" class="btn btn-secondary">Begin with Launching into Cyber Security</a>
+                {% endif %}
+            </div>
+
+            {% assign module_count = module_pages | size %}
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">{{ module_count | default: 0 }}+</div>
+                    <div class="stat-label">Core Modules</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Artefacts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Study Hours</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <section class="modules" id="modules">
+        <div class="section-header">
+            <h2>Module Spotlights</h2>
+            <p>Explore comprehensive documentation, reflections, and practical implementations from each module.</p>
+        </div>
+
+        {% assign module_images = 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80|https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80|https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80|https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80|https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80|https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=800&q=80|https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80|https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=800&q=80' | split: '|' %}
+        {% assign module_images_count = module_images | size %}
+
+        <div class="module-grid">
+            {% for module in module_pages %}
+            {% assign image_index = forloop.index0 | modulo: module_images_count %}
+            {% assign module_image = module_images[image_index] %}
+            <div class="module-card">
+                <div class="module-image" style="background-image: url('{{ module_image }}'); background-size: cover; background-position: center;"></div>
+                <div class="module-content">
+                    <h3 class="module-title">{{ module.title }}</h3>
+                    <div class="module-meta">
+                        {% if module.topic_tags %}
+                            {% for tag in module.topic_tags %}
+                            <span class="meta-tag">{{ tag }}</span>
+                            {% endfor %}
+                        {% else %}
+                            <span class="meta-tag">Cyber Security</span>
+                        {% endif %}
+                    </div>
+                    {% assign module_overview = module.description | default: module.summary | default: module.excerpt %}
+                    {% if module_overview %}
+                    <p class="module-description">{{ module_overview | strip_html | strip_newlines | truncate: 180 }}</p>
+                    {% endif %}
+                    <a href="{{ module.url | relative_url }}" class="module-link">
+                        Explore Module →
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-box">
+            <h2>Ready to Begin Your Journey?</h2>
+            <p>Start with the Launching into Cyber Security module and follow the progression through advanced topics.</p>
+            {% if launching_page %}
+            <a href="{{ launching_page.url | relative_url }}" class="btn btn-primary">Get Started</a>
+            {% endif %}
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About This Portfolio</h2>
+        <p>This site curates learning artefacts, reflections, and practical exercises from the MSc Cyber Security programme. Each module page captures research, hands-on investigations, and professional development milestones that demonstrate growth as a cyber security practitioner.</p>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Connect to discuss cyber security research, collaborative opportunities, or professional engagements.</p>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>Email</h3>
+                <p><a href="mailto:{{ site.email | default: 'hello@example.com' }}">{{ site.email | default: 'hello@example.com' }}</a></p>
+            </div>
+            <div class="contact-card">
+                <h3>LinkedIn</h3>
+                <p><a href="{{ site.linkedin | default: '#' }}" target="_blank" rel="noopener">{{ site.linkedin | default: 'linkedin.com/in/yourprofile' }}</a></p>
+            </div>
+            <div class="contact-card">
+                <h3>GitHub</h3>
+                <p><a href="{{ site.github | default: '#' }}" target="_blank" rel="noopener">{{ site.github | default: 'github.com/yourusername' }}</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title | default: 'Msc Cyber Security Portfolio' }} • Designed by Diogo • <a href="https://html5up.net">Original Template: HTML5 UP</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId.length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.module-card, .stat-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
 </html>
