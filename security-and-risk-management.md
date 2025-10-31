@@ -8,6 +8,9 @@ summary: >-
   Identified, modelled, and quantified risk across socio-technical systems, then
   translated insight into prescriptive controls, continuity strategies, and
   executive-ready communication.
+topic_tags:
+  - Risk Governance
+  - Compliance Strategy
 ---
 
 <!-- Module Overview Hero -->

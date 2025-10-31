@@ -7,6 +7,9 @@ nav-order: 7
 summary: >-
   Architecture-led approach to threat modelling, control selection, and
   verification across complex systems.
+topic_tags:
+  - Systems Design
+  - Zero Trust
 ---
 
 <html lang="en-GB">

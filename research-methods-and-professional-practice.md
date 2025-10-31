@@ -7,6 +7,9 @@ nav-order: 8
 summary: >-
   Documented the methodologies, literature reviews, and reflective practice used
   to plan and execute cyber security research.
+topic_tags:
+  - Academic Research
+  - Professional Practice
 ---
 
 <section aria-labelledby="research-overview" class="prose max-w-none">

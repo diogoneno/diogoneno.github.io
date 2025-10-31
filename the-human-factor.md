@@ -8,6 +8,9 @@ nav-order: 6
 summary: >-
   Behavioural and cultural interventions that embed privacy, accessibility,
   and ethics into security programmes by design.
+topic_tags:
+  - Security Awareness
+  - Human-Centred Design
 ---
 
 <!-- Module Overview Hero -->

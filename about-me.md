@@ -7,6 +7,9 @@ nav-order: 1
 summary: >-
   Overview of my journey into cyber security, professional focus areas, and the
   values that guide my work with teams and organisations.
+topic_tags:
+  - Professional Profile
+  - Career Journey
 ---
 
 <section aria-labelledby="about-overview" class="prose max-w-none">
