@@ -7,6 +7,9 @@ nav-order: 2
 summary: >-
   Foundation module covering cyber security principles, secure system design, and professional
   standards with practical implementation through portfolio artefacts.
+topic_tags:
+  - Security Foundations
+  - Systems Thinking
 ---
 
 <!-- Module Overview Hero -->

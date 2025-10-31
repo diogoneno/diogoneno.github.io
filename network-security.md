@@ -7,6 +7,9 @@ nav-order: 3
 summary: >-
   Highlights from audits and executive reporting that strengthened networked backup,
   failover, and encryption across enterprise environments.
+topic_tags:
+  - Network Defence
+  - Threat Response
 ---
 
 <!-- Module Overview Hero -->

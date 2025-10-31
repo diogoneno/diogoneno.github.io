@@ -8,6 +8,9 @@ summary: >-
   Architecture-led approach to secure software development, UML-driven design,
   and assurance activities that embed security as a first-class requirement
   across the SDLC.
+topic_tags:
+  - Application Security
+  - DevSecOps
 ---
 
 <!-- Module Overview Hero -->
