@@ -188,21 +188,21 @@ layout: null
     <div class="contact-method">
     <span class="icon solid alt fa-envelope"></span>
     <h3>Email</h3>
-    <a href="mailto:diogoneno@proton.me">diogoneno@proton.me</a>
+    <a href="mailto:{{ site.email | default: 'hello@example.com' }}">{{ site.email | default: 'hello@example.com' }}</a>
     </div>
     </section>
     <section>
     <div class="contact-method">
     <span class="icon brands alt fa-linkedin"></span>
     <h3>LinkedIn</h3>
-    <a href="https://www.linkedin.com/in/diogoamarantes/" target="_blank" rel="noopener">https://www.linkedin.com/in/diogoamarantes/</a>
+    <a href="{{ site.linkedin_url | default: '#' }}" target="_blank" rel="noopener">{{ site.linkedin_url | default: 'https://www.linkedin.com/in/yourprofile/' }}</a>
     </div>
     </section>
     <section>
     <div class="contact-method">
     <span class="icon brands alt fa-github"></span>
     <h3>GitHub</h3>
-    <a href="https://github.com/diogoneno" target="_blank" rel="noopener">https://github.com/diogoneno</a>
+    <a href="{{ site.github_url | default: '#' }}" target="_blank" rel="noopener">{{ site.github_url | default: 'https://github.com/yourusername' }}</a>
     </div>
     </section>
     </section>
