@@ -11,7 +11,7 @@ topic_tags:
   - Professional Profile
   - Career Journey
 profile_image:
-profile_image_alt: Diogo Correia - Cyber Security Professional
+profile_image_alt: Diogo Pereira - Cyber Security Professional
 azure_badge_image: https://learn.microsoft.com/training/achievements/azure-administrator.svg
 ---
 <!DOCTYPE html>
@@ -581,7 +581,7 @@ azure_badge_image: https://learn.microsoft.com/training/achievements/azure-admin
         <div class="hero-content">
             <div class="profile-image-container">
                 {% assign profile_image_src = page.profile_image | default: '' %}
-                {% assign profile_image_alt = page.profile_image_alt | default: 'Diogo Correia - Cyber Security Professional' %}
+                {% assign profile_image_alt = page.profile_image_alt | default: 'Diogo Pereira - Cyber Security Professional' %}
                 <div class="profile-image{% if profile_image_src == '' %} profile-image--no-photo{% endif %}">
                     {% if profile_image_src != '' %}
                         {% if profile_image_src contains '://' %}
@@ -761,11 +761,8 @@ azure_badge_image: https://learn.microsoft.com/training/achievements/azure-admin
         <section class="content-section">
             <h2>What I'm Looking For</h2>
             <p>
-                I am seeking roles in <strong>security engineering and architecture</strong>, focusing on 
-                secure-by-default platforms, bridging technology and governance, and driving customer outcomes 
-                in solutions, pre-sales, TAM, or advisory. I am also interested in teaching and mentoring, 
-                ideally within teams that value evidence-based approaches, effective communication, and 
-                shared risk ownership.
+               I collaborate on security engineering and architecture initiatives—building secure-by-default platforms, bridging technology and governance, and delivering measurable outcomes. 
+               I contribute through hands-on projects, mentoring, and knowledge-sharing with teams that value evidence-based practice, clear communication, and shared ownership of risk.
             </p>
         </section>
 
@@ -776,7 +773,7 @@ azure_badge_image: https://learn.microsoft.com/training/achievements/azure-admin
                 Interested in collaborating or discussing cyber security challenges? 
                 I'm always open to connecting with like-minded professionals.
             </p>
-            <a href="mailto:diogo.correia@proton.me" class="btn btn-primary">Get in Touch</a>
+            <a href="mailto:diogoneno@proton.me" class="btn btn-primary">Get in Touch</a>
         </section>
     </div>
 
