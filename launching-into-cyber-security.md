@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: null
 title: Launching into Cyber Security
 description: Comprehensive overview of cyber security principles and secure system design
 nav-menu: true
@@ -12,546 +12,1024 @@ topic_tags:
   - Systems Thinking
 ---
 
-<!-- Module Overview Hero -->
-<section style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white; padding: 3rem 2rem; border-radius: 8px; margin-bottom: 3rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
-  <div style="max-width: 900px; margin: 0 auto;">
-    <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; margin-bottom: 1rem; font-weight: 600;">
-      FOUNDATION MODULE
-    </div>
-    <h1 style="font-size: 2.5rem; margin-bottom: 1rem; font-weight: 700; line-height: 1.2;">Launching into Cyber Security</h1>
-    <p style="font-size: 1.15rem; line-height: 1.7; opacity: 0.95; margin: 0;">
-      This module provided a comprehensive overview of cyber security principles, secure system design, and professional
-      standards. I implemented foundational concepts, regulatory frameworks, and ethical considerations in practical scenarios
-      using portfolio artefacts. Throughout the process, I emphasised quantifiable results, effective communication, and
-      systematic evaluation to foster ongoing enhancements.
-    </p>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launching into Cyber Security | MSc Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<!-- Learning Outcomes -->
-<section style="max-width: 1200px; margin: 0 auto 4rem;">
-  <div style="text-align: center; margin-bottom: 2.5rem;">
-    <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 0.5rem;">Learning Outcomes</h2>
-    <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #11998e, #38ef7d); margin: 0 auto;"></div>
-  </div>
+        :root {
+            --primary: #00d4ff;
+            --secondary: #0066ff;
+            --dark: #0a0e27;
+            --darker: #050816;
+            --text: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --accent: #7c3aed;
+            --success: #10b981;
+            --warning: #f59e0b;
+        }
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-    <div style="background: white; border: 2px solid #11998e; border-radius: 10px; padding: 1.8rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(17,153,142,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-      <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #11998e, #38ef7d); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">
-        🛡️
-      </div>
-      <h4 style="color: #11998e; margin: 0 0 0.8rem 0; font-size: 1.1rem;">Core Concepts Mastery</h4>
-      <p style="color: #4a5568; line-height: 1.6; margin: 0; font-size: 0.95rem;">
-        Exhibit a comprehensive grasp of essential cyber security concepts (least privilege, defence-in-depth,
-        secure-by-design, Zero Trust) and their foundational role in the development of resilient systems.
-      </p>
-    </div>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: var(--darker);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-    <div style="background: white; border: 2px solid #11998e; border-radius: 10px; padding: 1.8rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(17,153,142,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-      <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #11998e, #38ef7d); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">
-        🎯
-      </div>
-      <h4 style="color: #11998e; margin: 0 0 0.8rem 0; font-size: 1.1rem;">Security Implementation</h4>
-      <p style="color: #4a5568; line-height: 1.6; margin: 0; font-size: 0.95rem;">
-        Implement security techniques (threat modelling, risk assessment, control selection) to guide design and
-        operational decision-making within organisations.
-      </p>
-    </div>
+        /* Animated Background */
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+        }
 
-    <div style="background: white; border: 2px solid #11998e; border-radius: 10px; padding: 1.8rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(17,153,142,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-      <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #11998e, #38ef7d); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">
-        📋
-      </div>
-      <h4 style="color: #11998e; margin: 0 0 0.8rem 0; font-size: 1.1rem;">Framework Assessment</h4>
-      <p style="color: #4a5568; line-height: 1.6; margin: 0; font-size: 0.95rem;">
-        Assess the efficacy of control frameworks (e.g., ISO/IEC 27001, NIST CSF 2.0) for aligned recommendations.
-      </p>
-    </div>
+        .animated-bg::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(124, 58, 237, 0.1) 0%, transparent 50%);
+            animation: gradientShift 20s ease infinite;
+        }
 
-    <div style="background: white; border: 2px solid #11998e; border-radius: 10px; padding: 1.8rem; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(17,153,142,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-      <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #11998e, #38ef7d); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">
-        💬
-      </div>
-      <h4 style="color: #11998e; margin: 0 0 0.8rem 0; font-size: 1.1rem;">Communication Excellence</h4>
-      <p style="color: #4a5568; line-height: 1.6; margin: 0; font-size: 0.95rem;">
-        Appraise and communicate security findings to diverse audiences on risks and assurance.
-      </p>
-    </div>
-  </div>
-</section>
+        @keyframes gradientShift {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(-50px, -50px); }
+        }
 
-<!-- Artefacts and Feedback -->
-<section style="max-width: 1200px; margin: 0 auto 4rem;">
-  <div style="text-align: center; margin-bottom: 2.5rem;">
-    <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 0.5rem;">Artefacts and Feedback</h2>
-    <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #11998e, #38ef7d); margin: 0 auto;"></div>
-  </div>
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            background: rgba(10, 14, 39, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-  <!-- Artefact 1: CD1 Initial Post -->
-  <article style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; border-left: 5px solid #11998e; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-    <div style="display: flex; align-items: start; gap: 1.5rem; flex-wrap: wrap;">
-      <div style="flex: 1; min-width: 280px;">
-        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-          <span style="font-size: 2rem;">💬</span>
-          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Collaborative Discussion 1 — Initial Post</h3>
+        nav .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        /* Module Hero */
+        .module-hero {
+            padding: 8rem 5% 4rem;
+            position: relative;
+        }
+
+        .module-hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(124, 58, 237, 0.1));
+            border-radius: 24px;
+            padding: 4rem 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .module-hero-content::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.1), transparent);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .module-hero-content > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .module-badge {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.2);
+            color: var(--primary);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+
+        .module-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .module-hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 900px;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 5%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .divider {
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+
+        /* Learning Outcomes Grid */
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 6rem;
+        }
+
+        .outcome-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .outcome-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--primary);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+        }
+
+        .outcome-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .outcome-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .outcome-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Artefacts Section */
+        .artefacts-section {
+            margin: 6rem 0;
+        }
+
+        .artefact {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: 5px solid var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .artefact:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateX(10px);
+        }
+
+        .artefact-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .artefact-icon {
+            font-size: 2.5rem;
+        }
+
+        .artefact-title {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .artefact-title h3 {
+            color: var(--text);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .unit-badge {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--primary);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .artefact-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .evidence-box {
+            background: rgba(124, 58, 237, 0.1);
+            border-left: 3px solid var(--accent);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .evidence-box p {
+            color: var(--text);
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .evidence-box a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .evidence-box a:hover {
+            color: var(--accent);
+        }
+
+        .feedback-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 3px solid var(--success);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .feedback-box strong {
+            color: var(--success);
+        }
+
+        /* SWOT Analysis */
+        .swot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .swot-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 2px solid;
+            transition: all 0.3s ease;
+        }
+
+        .swot-card.strengths {
+            border-color: var(--success);
+        }
+
+        .swot-card.weaknesses {
+            border-color: #ef4444;
+        }
+
+        .swot-card.opportunities {
+            border-color: var(--warning);
+        }
+
+        .swot-card.threats {
+            border-color: #8b5cf6;
+        }
+
+        .swot-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-5px);
+        }
+
+        .swot-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .swot-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .swot-card li {
+            padding: 0.8rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .swot-card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .swot-card.strengths li::before { color: var(--success); }
+        .swot-card.weaknesses li::before { color: #ef4444; }
+        .swot-card.opportunities li::before { color: var(--warning); }
+        .swot-card.threats li::before { color: #8b5cf6; }
+
+        /* Action Plan */
+        .action-plan {
+            margin: 6rem 0;
+        }
+
+        .action-items {
+            display: grid;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .action-item {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 2.5rem;
+            border-top: 4px solid;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .action-item:nth-child(1) { border-top-color: var(--success); }
+        .action-item:nth-child(2) { border-top-color: var(--primary); }
+        .action-item:nth-child(3) { border-top-color: var(--warning); }
+        .action-item:nth-child(4) { border-top-color: #ec4899; }
+        .action-item:nth-child(5) { border-top-color: var(--accent); }
+
+        .action-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-5px);
+        }
+
+        .action-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .action-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .action-item:nth-child(1) .action-icon { background: rgba(16, 185, 129, 0.2); }
+        .action-item:nth-child(2) .action-icon { background: rgba(0, 212, 255, 0.2); }
+        .action-item:nth-child(3) .action-icon { background: rgba(245, 158, 11, 0.2); }
+        .action-item:nth-child(4) .action-icon { background: rgba(236, 72, 153, 0.2); }
+        .action-item:nth-child(5) .action-icon { background: rgba(124, 58, 237, 0.2); }
+
+        .action-content h4 {
+            color: var(--text);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .action-content p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .action-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .target-date {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .action-item:nth-child(1) .target-date { background: rgba(16, 185, 129, 0.2); color: var(--success); }
+        .action-item:nth-child(2) .target-date { background: rgba(0, 212, 255, 0.2); color: var(--primary); }
+        .action-item:nth-child(3) .target-date { background: rgba(245, 158, 11, 0.2); color: var(--warning); }
+        .action-item:nth-child(4) .target-date { background: rgba(236, 72, 153, 0.2); color: #ec4899; }
+        .action-item:nth-child(5) .target-date { background: rgba(124, 58, 237, 0.2); color: var(--accent); }
+
+        /* Conclusion */
+        .conclusion-section {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(124, 58, 237, 0.1));
+            border-radius: 24px;
+            padding: 4rem 3rem;
+            margin: 6rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .conclusion-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .conclusion-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+
+        .conclusion-section h2 {
+            font-size: 2.5rem;
+            color: var(--text);
+        }
+
+        .conclusion-section p {
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 5%;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-secondary);
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-links {
+                display: none;
+            }
+
+            .module-hero {
+                padding: 6rem 5% 3rem;
+            }
+
+            .module-hero-content {
+                padding: 3rem 2rem;
+            }
+
+            .outcomes-grid,
+            .swot-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .artefact {
+                padding: 2rem;
+            }
+
+            .artefact-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">DIOGO • CYBER SEC</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="#outcomes">Outcomes</a></li>
+                <li><a href="#artefacts">Artefacts</a></li>
+                <li><a href="#action-plan">Action Plan</a></li>
+            </ul>
         </div>
-        <div style="display: inline-block; background: #e0f2f1; color: #00695c; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;">
-          UNIT 1
+    </nav>
+
+    <!-- Module Hero -->
+    <section class="module-hero">
+        <div class="module-hero-content">
+            <span class="module-badge">FOUNDATION MODULE</span>
+            <h1>Launching into Cyber Security</h1>
+            <p>
+                This module provided a comprehensive overview of cyber security principles, secure system design, and professional standards. I implemented foundational concepts, regulatory frameworks, and ethical considerations in practical scenarios using portfolio artefacts. Throughout the process, I emphasised quantifiable results, effective communication, and systematic evaluation to foster ongoing enhancements.
+            </p>
         </div>
-        <p style="color: #4a5568; line-height: 1.7; margin-bottom: 1rem;">
-          Introduced the Log4j case to frame economic, legal (GDPR), and reputational impacts of cyber security;
-          advocated for proactive investment over reactive spending and underlined the relationship between compliance
-          and trust.
-        </p>
-        <div style="background: #f0f4ff; border-left: 3px solid #667eea; padding: 1rem 1.2rem; border-radius: 4px; margin-bottom: 1rem;">
-          <p style="margin: 0; color: #4a5568; font-size: 0.9rem;">
-            <strong>📁 Evidence:</strong>
-            <a href="/assets/LauchingIntoCybersecurity/Initial%20Post.pdf" target="_blank" rel="noopener">
-              Initial Post.pdf
-            </a>
-          </p>
-        </div>
-        <div style="background: #f0fdf4; border-left: 3px solid #38ef7d; padding: 1rem 1.2rem; border-radius: 4px;">
-          <p style="margin: 0; color: #166534; font-size: 0.95rem;">
-            <strong>📝 Feedback:</strong> Formative comments suggested including specific case examples and clearer
-            connections from risk to control to outcome in future posts.
-          </p>
-        </div>
-      </div>
-    </div>
-  </article>
+    </section>
 
-  <!-- Artefact 2: CD1 Summary Post -->
-  <article style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; border-left: 5px solid #11998e; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-    <div style="display: flex; align-items: start; gap: 1.5rem; flex-wrap: wrap;">
-      <div style="flex: 1; min-width: 280px;">
-        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-          <span style="font-size: 2rem;">📊</span>
-          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Unit 3 - Summary Post</h3>
-        </div>
-        <div style="display: inline-block; background: #e0f2f1; color: #00695c; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;">
-          UNIT 3
-        </div>
-        <p style="color: #4a5568; line-height: 1.7; margin-bottom: 1rem;">
-          Consolidated insights from the Log4j discussion, highlighting economic impacts, regulatory obligations
-          (GDPR Art. 32), and reputational effects, with peer-suggested real-world examples.
-        </p>
-        <div style="background: #f0f4ff; border-left: 3px solid #667eea; padding: 1rem 1.2rem; border-radius: 4px; margin-bottom: 1rem;">
-          <p style="margin: 0; color: #4a5568; font-size: 0.9rem;">
-            <strong>📁 Evidence:</strong>
-            <a href="/assets/LauchingIntoCybersecurity/Summary%20Post.pdf" target="_blank" rel="noopener">
-              Summary Post.pdf
-            </a>
-          </p>
-        </div>
-        <div style="background: #f0fdf4; border-left: 3px solid #38ef7d; padding: 1rem 1.2rem; border-radius: 4px;">
-          <p style="margin: 0; color: #166534; font-size: 0.95rem;">
-            <strong>📝 Feedback:</strong> Involvement of peers enhanced the justification for implementing patching
-            and monitoring, while the precision of the recommendations was improved.
-          </p>
-        </div>
-      </div>
-    </div>
-  </article>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Learning Outcomes -->
+        <section id="outcomes">
+            <div class="section-header">
+                <h2>Learning Outcomes</h2>
+                <div class="divider"></div>
+                <p>Core competencies developed throughout this foundational module</p>
+            </div>
 
-  <!-- Artefact 3: Unit 9 Essay -->
-  <article style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; border-left: 5px solid #11998e; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-    <div style="display: flex; align-items: start; gap: 1.5rem; flex-wrap: wrap;">
-      <div style="flex: 1; min-width: 280px;">
-        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-          <span style="font-size: 2rem;">📝</span>
-          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Unit 9 — Essay 9</h3>
-        </div>
-        <div style="display: inline-block; background: #e0f2f1; color: #00695c; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;">
-          UNIT 9
-        </div>
-        <p style="color: #4a5568; line-height: 1.7; margin-bottom: 1rem;">
-          Key considerations for an e-commerce backup and recovery plan include risk assessment, layered controls,
-          failover, redundancy, RTO/RPO alignment, integrity checks, log monitoring, and routine recovery validation,
-          highlighting governance and testing for resilient service continuity.
-        </p>
-        <div style="background: #f0f4ff; border-left: 3px solid #667eea; padding: 1rem 1.2rem; border-radius: 4px; margin-bottom: 1rem;">
-          <p style="margin: 0; color: #4a5568; font-size: 0.9rem;">
-            <strong>📁 Evidence:</strong>
-            <a href="/assets/LauchingIntoCybersecurity/Essay9.pdf" target="_blank" rel="noopener">
-              Essay9.pdf
-            </a>
-          </p>
-        </div>
-        <div style="background: #f0fdf4; border-left: 3px solid #38ef7d; padding: 1rem 1.2rem; border-radius: 4px;">
-          <p style="margin: 0; color: #166534; font-size: 0.95rem;">
-            <strong>📝 Feedback:</strong> Prioritise risk-to-control traceability and include dashboardable metrics
-            for executives.
-          </p>
-        </div>
-      </div>
-    </div>
-  </article>
+            <div class="outcomes-grid">
+                <div class="outcome-card">
+                    <div class="outcome-icon">🛡️</div>
+                    <h3>Core Concepts Mastery</h3>
+                    <p>
+                        Exhibit a comprehensive grasp of essential cyber security concepts (least privilege, defence-in-depth, secure-by-design, Zero Trust) and their foundational role in the development of resilient systems.
+                    </p>
+                </div>
 
-  <!-- Artefact 4: Secure Backup Application -->
-  <article style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 6px 20px rgba(102,126,234,0.3); color: white;">
-    <div style="display: flex; align-items: start; gap: 1.5rem; flex-wrap: wrap;">
-      <div style="flex: 1; min-width: 280px;">
-        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-          <span style="font-size: 2rem;">🔒</span>
-          <h3 style="margin: 0; font-size: 1.4rem;">Unit 12 — Secure Backup Application (Python)</h3>
-        </div>
-        <div style="display: inline-block; background: rgba(255,255,255,0.25); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;">
-          UNIT 12
-        </div>
-        <p style="line-height: 1.7; margin-bottom: 1rem; opacity: 0.95;">
-          Created a secure backup prototype using secure-by-design and Zero Trust principles: TLS transport,
-          credential authentication, encryption at rest and in transit, and integrity checks. The README covers
-          assumptions, threat model, and testing methods.
-        </p>
+                <div class="outcome-card">
+                    <div class="outcome-icon">🎯</div>
+                    <h3>Security Implementation</h3>
+                    <p>
+                        Implement security techniques (threat modelling, risk assessment, control selection) to guide design and operational decision-making within organisations.
+                    </p>
+                </div>
 
-        <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 6px; padding: 1rem 1.2rem; margin-bottom: 1rem;">
-          <p style="margin: 0 0 0.5rem 0; font-weight: 600;">📁 Evidence folder:</p>
-          <code style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.9rem;">
-            assets/LauchingIntoCybersecurity/unit12
-          </code>
-          <p style="margin: 1rem 0 0.3rem 0; font-weight: 600;">🗂️ Key files:</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-            <a style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.85rem; color: inherit; text-decoration: none;" href="/assets/LauchingIntoCybersecurity/unit12/secure_backup.py" target="_blank" rel="noopener">secure_backup.py</a>
-            <a style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.85rem; color: inherit; text-decoration: none;" href="/assets/LauchingIntoCybersecurity/unit12/requirements.txt" target="_blank" rel="noopener">requirements.txt</a>
-            <a style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.85rem; color: inherit; text-decoration: none;" href="/assets/LauchingIntoCybersecurity/unit12/README.md" target="_blank" rel="noopener">README.md</a>
-            <a style="background: rgba(0,0,0,0.2); padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.85rem; color: inherit; text-decoration: none;" href="/assets/LauchingIntoCybersecurity/unit12/TestData/ResultsScreenshots.pdf" target="_blank" rel="noopener">TestData/ResultsScreenshots.pdf</a>
-          </div>
-        </div>
+                <div class="outcome-card">
+                    <div class="outcome-icon">📋</div>
+                    <h3>Framework Assessment</h3>
+                    <p>
+                        Assess the efficacy of control frameworks (e.g., ISO/IEC 27001, NIST CSF 2.0) for aligned recommendations.
+                    </p>
+                </div>
 
-        <div style="background: rgba(255,255,255,0.95); border-left: 3px solid #38ef7d; padding: 1rem 1.2rem; border-radius: 4px;">
-          <p style="margin: 0; color: #166534; font-size: 0.95rem;">
-            <strong>📝 Feedback:</strong> Test plan and integrity verification received positive feedback.
-            Next steps include secret management, key rotation, and automated restoration tests.
-          </p>
-        </div>
-      </div>
-    </div>
-  </article>
+                <div class="outcome-card">
+                    <div class="outcome-icon">💬</div>
+                    <h3>Communication Excellence</h3>
+                    <p>
+                        Appraise and communicate security findings to diverse audiences on risks and assurance.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-  <!-- Risk Analysis Summary -->
-  <article style="background: white; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; border-left: 5px solid #f59e0b; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-    <div style="display: flex; align-items: start; gap: 1.5rem; flex-wrap: wrap;">
-      <div style="flex: 1; min-width: 280px;">
-        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-          <span style="font-size: 2rem;">📈</span>
-          <h3 style="color: #2c3e50; margin: 0; font-size: 1.4rem;">Risk Analysis — Summary</h3>
-        </div>
-        <p style="color: #4a5568; line-height: 1.7; margin-bottom: 1rem;">
-          During the Log4j analysis and backup/recovery efforts, I focused on practical risk management over
-          theoretical catalogues. Decisions were driven by regulatory requirements (notably GDPR Article 32),
-          service-continuity objectives (including Recovery Time Objectives and Recovery Point Objectives),
-          and validated controls such as Transport Layer Security, encryption, credential verification, and
-          integrity checks.
-        </p>
-        <div style="background: #fffbeb; border-left: 3px solid #f59e0b; padding: 1rem 1.2rem; border-radius: 4px;">
-          <p style="margin: 0; color: #92400e; font-size: 0.9rem;">
-            <strong>📁 Evidence:</strong>
-            <a href="/assets/LauchingIntoCybersecurity/Initial%20Post.pdf" target="_blank" rel="noopener">Initial Post.pdf</a>
-            (p.1);
-            <a href="/assets/LauchingIntoCybersecurity/Summary%20Post.pdf" target="_blank" rel="noopener">Summary Post.pdf</a>
-            (p.1);
-            <a href="/assets/LauchingIntoCybersecurity/Essay9.pdf" target="_blank" rel="noopener">Essay9.pdf</a>
-            (pp.1–3);
-            <a href="/assets/LauchingIntoCybersecurity/unit12/README.md" target="_blank" rel="noopener">Unit 12 README</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </article>
+        <!-- Artefacts Section -->
+        <section class="artefacts-section" id="artefacts">
+            <div class="section-header">
+                <h2>Artefacts and Feedback</h2>
+                <div class="divider"></div>
+                <p>Practical implementations and peer review throughout the module</p>
+            </div>
 
-  <!-- Reflection Note -->
-  <article style="background: #f8f9fa; border-radius: 10px; padding: 1.5rem; border-left: 5px solid #6c757d;">
-    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.5rem;">
-      <span style="font-size: 1.5rem;">🪞</span>
-      <h4 style="color: #2c3e50; margin: 0; font-size: 1.1rem;">Reflection Note</h4>
-    </div>
-    <p style="color: #5a6c7d; line-height: 1.6; margin: 0; font-size: 0.95rem;">
-      Gibbs' Reflective Cycle was used as the framework, with no standalone reflection produced.
-    </p>
-  </article>
-</section>
+            <!-- Artefact 1 -->
+            <article class="artefact">
+                <div class="artefact-header">
+                    <span class="artefact-icon">💬</span>
+                    <div class="artefact-title">
+                        <h3>Collaborative Discussion 1 — Initial Post</h3>
+                        <span class="unit-badge">UNIT 1</span>
+                    </div>
+                </div>
+                <div class="artefact-content">
+                    <p>
+                        Introduced the Log4j case to frame economic, legal (GDPR), and reputational impacts of cyber security; advocated for proactive investment over reactive spending and underlined the relationship between compliance and trust.
+                    </p>
+                    <div class="evidence-box">
+                        <p>
+                            <strong>📁 Evidence:</strong>
+                            <a href="/assets/LauchingIntoCybersecurity/Initial%20Post.pdf" target="_blank" rel="noopener">Initial Post.pdf</a>
+                        </p>
+                    </div>
+                    <div class="feedback-box">
+                        <p>
+                            <strong>✓ Feedback:</strong> Formative comments suggested including specific case examples and clearer connections from risk to control to outcome in future posts.
+                        </p>
+                    </div>
+                </div>
+            </article>
 
-<!-- Reflections and Notes -->
-<section style="max-width: 1200px; margin: 0 auto 4rem;">
-  <div style="text-align: center; margin-bottom: 2.5rem;">
-    <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 0.5rem;">Reflections and Notes</h2>
-    <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #f59e0b, #f97316); margin: 0 auto;"></div>
-  </div>
+            <!-- Artefact 2 -->
+            <article class="artefact">
+                <div class="artefact-header">
+                    <span class="artefact-icon">📊</span>
+                    <div class="artefact-title">
+                        <h3>Unit 3 - Summary Post</h3>
+                        <span class="unit-badge">UNIT 3</span>
+                    </div>
+                </div>
+                <div class="artefact-content">
+                    <p>
+                        Consolidated insights from the Log4j discussion, highlighting economic impacts, regulatory obligations (GDPR Art. 32), and reputational effects, with peer-suggested real-world examples.
+                    </p>
+                    <div class="evidence-box">
+                        <p>
+                            <strong>📁 Evidence:</strong>
+                            <a href="/assets/LauchingIntoCybersecurity/Summary%20Post.pdf" target="_blank" rel="noopener">Summary Post.pdf</a>
+                        </p>
+                    </div>
+                    <div class="feedback-box">
+                        <p>
+                            <strong>✓ Feedback:</strong> Involvement of peers enhanced the justification for implementing patching and monitoring, while the precision of the recommendations was improved.
+                        </p>
+                    </div>
+                </div>
+            </article>
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
-    <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
-        <span style="font-size: 1.3rem;">💭</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Collaborative Discussion 1 (Log4j) — Summary</h4>
-      </div>
-      <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        As detailed in the Artefacts section, this effort enhanced my skill in converting technical problems
-        into business-risk narratives, accompanied by appropriate controls and more defined lines of accountability.
-      </p>
-    </div>
+            <!-- Artefact 3 -->
+            <article class="artefact">
+                <div class="artefact-header">
+                    <span class="artefact-icon">📊</span>
+                    <div class="artefact-title">
+                        <h3>Unit 3 - Summary Post</h3>
+                        <span class="unit-badge">UNIT 3</span>
+                    </div>
+                </div>
+                <div class="artefact-content">
+                    <p>
+                        Consolidated insights from the Log4j discussion, highlighting economic impacts, regulatory obligations (GDPR Art. 32), and reputational effects, with peer-suggested real-world examples.
+                    </p>
+                    <div class="evidence-box">
+                        <p>
+                            <strong>📁 Evidence:</strong>
+                            <a href="/assets/LauchingIntoCybersecurity/Summary%20Post.pdf" target="_blank" rel="noopener">Summary Post (PDF)</a>
+                        </p>
+                    </div>
+                    <div class="feedback-box">
+                        <p>
+                            <strong>✓ Feedback:</strong> Involvement of peers enhanced the justification for implementing patching and monitoring, while the precision of the recommendations was improved.
+                        </p>
+                    </div>
+                </div>
+            </article>
 
-    <div style="background: #fef3c7; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
-        <span style="font-size: 1.3rem;">⚠️</span>
-        <h4 style="color: #92400e; margin: 0; font-size: 1rem;">Collaborative Discussion 2 — Reflection</h4>
-      </div>
-      <p style="color: #78350f; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        <strong>Not submitted (0%).</strong> This highlights the need for better scheduling. I will use a flexible
-        weekly plan to reduce deadline clashes and avoid late work.
-      </p>
-    </div>
+            <!-- Artefact 4 -->
+            <article class="artefact">
+                <div class="artefact-header">
+                    <span class="artefact-icon">📝</span>
+                    <div class="artefact-title">
+                        <h3>Key Considerations for Implementing a Comprehensive Backup and Recovery Plan for an Online Shopping System (OSS)</h3>
+                        <span class="unit-badge">UNIT 9</span>
+                    </div>
+                </div>
+                <div class="artefact-content">
+                    <p>
+                        Key considerations for an e-commerce backup and recovery plan include risk assessment, layered controls, failover, redundancy, RTO/RPO alignment, integrity checks, log monitoring, and routine recovery validation, highlighting governance and testing for resilient service continuity.
+                    </p>
+                    <div class="evidence-box">
+                        <p>
+                            <strong>📁 Evidence:</strong>
+                            <a href="/assets/LauchingIntoCybersecurity/Essay9.pdf" target="_blank" rel="noopener">Essay9.pdf</a>
+                        </p>
+                    </div>
+                    <div class="feedback-box">
+                        <p>
+                            <strong>✓ Feedback:</strong> Prioritise risk-to-control traceability and include dashboardable metrics for executives.
+                        </p>
+                    </div>
+                </div>
+            </article>
 
-    <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
-        <span style="font-size: 1.3rem;">🛒</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">E-commerce Backup &amp; Recovery Strategy — Summary</h4>
-      </div>
-      <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        Aligned policies with stakeholder RTO/RPO, integrity checks, audit logging, and restoration drills.
-      </p>
-    </div>
+            <!-- Artefact 5 -->
+            <article class="artefact">
+                <div class="artefact-header">
+                    <span class="artefact-icon">🔒</span>
+                    <div class="artefact-title">
+                        <h3>Unit 12 — Secure Backup Application (Python)</h3>
+                        <span class="unit-badge">UNIT 12</span>
+                    </div>
+                </div>
+                <div class="artefact-content">
+                    <p>
+                        Created a secure backup prototype using secure-by-design and Zero Trust principles: TLS transport, credential authentication, encryption at rest and in transit, and integrity checks. The README covers assumptions, threat model, and testing methods.
+                    </p>
+                    <div class="evidence-box">
+                        <p style="margin-bottom: 0.8rem;">
+                            <strong>📁 Evidence folder:</strong> <code style="background: rgba(124, 58, 237, 0.1); padding: 0.3rem 0.6rem; border-radius: 4px;">assets/LauchingIntoCybersecurity/unit12</code>
+                        </p>
+                        <p>
+                            <strong>🗂️ Key files:</strong><br>
+                            <a href="/assets/LauchingIntoCybersecurity/unit12/secure_backup.py" target="_blank" rel="noopener">secure_backup.py</a> •
+                            <a href="/assets/LauchingIntoCybersecurity/unit12/requirements.txt" target="_blank" rel="noopener">requirements.txt</a> •
+                            <a href="/assets/LauchingIntoCybersecurity/unit12/README.md" target="_blank" rel="noopener">README.md</a> •
+                            <a href="/assets/LauchingIntoCybersecurity/unit12/TestData/ResultsScreenshots.pdf" target="_blank" rel="noopener">TestData/ResultsScreenshots.pdf</a>
+                        </p>
+                    </div>
+                    <div class="feedback-box">
+                        <p>
+                            <strong>✓ Feedback:</strong> Test plan and integrity verification received positive feedback. Next steps include secret management, key rotation, and automated restoration tests.
+                        </p>
+                    </div>
+                </div>
+            </article>
 
-    <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
-        <span style="font-size: 1.3rem;">🐍</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Secure Backup Application (Python, Unit 12) — Project Note</h4>
-      </div>
-      <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        See Artefacts for design choices, testing, and planned improvements (secrets management, key rotation,
-        automated restores).
-      </p>
-    </div>
+            <!-- Artefact 6 -->
+            <article class="artefact">
+                <div class="artefact-header">
+                    <span class="artefact-icon">📈</span>
+                    <div class="artefact-title">
+                        <h3>Risk Analysis — Summary</h3>
+                        <span class="unit-badge">SUMMARY</span>
+                    </div>
+                </div>
+                <div class="artefact-content">
+                    <p>
+                        During the Log4j analysis and backup/recovery efforts, I focused on practical risk management over theoretical catalogues. Decisions were driven by regulatory requirements (notably GDPR Article 32), service-continuity objectives (including Recovery Time Objectives and Recovery Point Objectives), and validated controls such as Transport Layer Security, encryption, credential verification, and integrity checks.
+                    </p>
+                    <div class="evidence-box">
+                        <p>
+                            <strong>📁 Evidence:</strong>
+                            <a href="/assets/LauchingIntoCybersecurity/Initial%20Post.pdf" target="_blank" rel="noopener">Initial Post.pdf</a> (p.1);
+                            <a href="/assets/LauchingIntoCybersecurity/Summary%20Post.pdf" target="_blank" rel="noopener">Summary Post.pdf</a> (p.1);
+                            <a href="/assets/LauchingIntoCybersecurity/Essay9.pdf" target="_blank" rel="noopener">Essay9.pdf</a> (pp.1–3);
+                            <a href="/assets/LauchingIntoCybersecurity/unit12/README.md" target="_blank" rel="noopener">Unit 12 README</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
 
-    <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
-        <span style="font-size: 1.3rem;">🏗️</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Secure-by-Design &amp; Resilience — Note</h4>
-      </div>
-      <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        Building the prototype reinforced secure-by-design in code and architecture; resilience relies on
-        supply-chain diligence and verification.
-      </p>
-    </div>
+        <!-- SWOT Analysis -->
+        <section id="swot">
+            <div class="section-header">
+                <h2>Personal SWOT Analysis</h2>
+                <div class="divider"></div>
+                <p>Self-evaluation of capabilities and development areas</p>
+            </div>
 
-    <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
-        <span style="font-size: 1.3rem;">👥</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Socio-Technical &amp; Ethical Awareness — Note</h4>
-      </div>
-      <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        Effective security combines technology, policy, people, and culture, focusing on user training and
-        incident reporting.
-      </p>
-    </div>
+            <div class="swot-grid">
+                <div class="swot-card strengths">
+                    <h3><span>💪</span> Strengths</h3>
+                    <ul>
+                        <li>Systematic approach to frameworks, assessments, and documentation</li>
+                        <li>Strong grasp of NIST, ISO/IEC 27001, OWASP</li>
+                        <li>Multilingual communication and cross-functional teamwork</li>
+                    </ul>
+                </div>
 
-    <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
-        <span style="font-size: 1.3rem;">📊</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Risk Analysis &amp; Threat Modelling — Note</h4>
-      </div>
-      <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        Transitioned from informal risk lists to structured prioritisation; practical TLS configuration and
-        credential handling in Python validated assumptions.
-      </p>
-    </div>
+                <div class="swot-card weaknesses">
+                    <h3><span>⚠️</span> Weaknesses</h3>
+                    <ul>
+                        <li>Limited experience in quantitative risk modelling</li>
+                        <li>Still building governance/policy-writing skills</li>
+                        <li>Need deeper hands-on penetration testing exposure</li>
+                    </ul>
+                </div>
 
-    <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
-        <span style="font-size: 1.3rem;">📢</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Communication &amp; Storytelling — Note</h4>
-      </div>
-      <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        I use plain language and clear sequences in writing and visuals for non-technical audiences.
-      </p>
-    </div>
+                <div class="swot-card opportunities">
+                    <h3><span>🚀</span> Opportunities</h3>
+                    <ul>
+                        <li>Gain formal certification (CISSP/CISM) to validate expertise</li>
+                        <li>Leverage e-portfolio for job applications in UK market</li>
+                        <li>Contribute to open-source security projects or publications</li>
+                    </ul>
+                </div>
 
-    <div style="background: white; border-radius: 8px; padding: 1.5rem; border-left: 4px solid #f59e0b; box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
-        <span style="font-size: 1.3rem;">⏰</span>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1rem;">Time Management — Note</h4>
-      </div>
-      <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.9rem; margin: 0;">
-        Met milestones with extended hours; adopting a lighter weekly cadence to prevent burnout.
-      </p>
-    </div>
-  </div>
-</section>
+                <div class="swot-card threats">
+                    <h3><span>⚡</span> Threats</h3>
+                    <ul>
+                        <li>Rapidly evolving threat landscape outpacing current knowledge</li>
+                        <li>High competition for senior security roles</li>
+                        <li>Potential burnout from balancing study, work, and upskilling</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-<!-- Professional Skills Matrix -->
-<section style="max-width: 1200px; margin: 0 auto 4rem;">
-  <div style="text-align: center; margin-bottom: 2.5rem;">
-    <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 0.5rem;">Professional Skills Matrix (Learnt)</h2>
-    <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #667eea, #764ba2); margin: 0 auto;"></div>
-    <p style="color: #5a6c7d; margin-top: 1rem; font-size: 0.95rem;">Skills acquired and developed throughout the module</p>
-  </div>
+        <!-- Action Plan -->
+        <section class="action-plan" id="action-plan">
+            <div class="section-header">
+                <h2>Action Plan</h2>
+                <div class="divider"></div>
+                <p>Concrete steps to address weaknesses and capitalize on opportunities</p>
+            </div>
 
-  <div style="background: white; border-radius: 10px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow-x: auto;">
-    <table style="width: 100%; border-collapse: separate; border-spacing: 0;">
-      <thead>
-        <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-          <th style="padding: 1rem; text-align: left; border-radius: 8px 0 0 0; font-weight: 600; width: 25%;">Skill</th>
-          <th style="padding: 1rem; text-align: left; border-radius: 0 8px 0 0; font-weight: 600;">Summary</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr style="border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; color: #667eea; font-weight: 600;">Analytical Skills</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Comprehensive evaluation from vulnerabilities through to business impact.</td>
-        </tr>
-        <tr style="background: #f8f9fa; border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; color: #667eea; font-weight: 600;">Secure-by-Design Engineering</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Embedded secure practices in code and architecture; emphasised resilience and supply-chain assurance.</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; color: #667eea; font-weight: 600;">Risk Analysis &amp; Threat Modelling</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Linked risks to controls and outcomes using structured, evidence-backed prioritisation.</td>
-        </tr>
-        <tr style="background: #f8f9fa; border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; color: #667eea; font-weight: 600;">Prototype Engineering (Python)</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Built a secure backup workflow with TLS, authentication, and integrity checks, plus tests and documentation.</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; color: #667eea; font-weight: 600;">Communication</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Stakeholder reporting features insightful visuals, making storytelling clearer and more engaging.</td>
-        </tr>
-        <tr style="background: #f8f9fa; border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; color: #667eea; font-weight: 600;">Governance &amp; Ethics Awareness</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Consistently applied legal and ethical responsibilities in design.</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #e2e8f0;">
-          <td style="padding: 1rem; color: #667eea; font-weight: 600;">Collaboration &amp; Professional</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6;">Engaged peers through posts and summaries; improvements noted after CD2.</td>
-        </tr>
-        <tr style="background: #f8f9fa;">
-          <td style="padding: 1rem; color: #667eea; font-weight: 600; border-radius: 0 0 0 8px;">Time Management</td>
-          <td style="padding: 1rem; color: #4a5568; line-height: 1.6; border-radius: 0 0 8px 0;">Delivered core items on time; measures in place to prevent overload.</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
+            <div class="action-items">
+                <div class="action-item">
+                    <div class="action-header">
+                        <div class="action-icon">🔍</div>
+                        <div class="action-content">
+                            <h4>Monitor Threat Landscape</h4>
+                            <p><strong>Steps:</strong> Subscribe to CVE/ENISA/NCSC feeds; weekly review and log one relevant vulnerability/TTP mapped to current controls.</p>
+                        </div>
+                    </div>
+                    <div class="action-footer">
+                        <span class="target-date">📅 Target: 2024-12-15</span>
+                    </div>
+                </div>
 
-<!-- Action Plan -->
-<section style="max-width: 1200px; margin: 0 auto 4rem;">
-  <div style="text-align: center; margin-bottom: 2.5rem;">
-    <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 0.5rem;">Action Plan</h2>
-    <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #11998e, #38ef7d); margin: 0 auto;"></div>
-    <p style="color: #5a6c7d; margin-top: 1rem; font-size: 0.95rem;">Concrete steps for continued professional development</p>
-  </div>
+                <div class="action-item">
+                    <div class="action-header">
+                        <div class="action-icon">📊</div>
+                        <div class="action-content">
+                            <h4>Build Quantitative Risk Scenarios</h4>
+                            <p><strong>Steps:</strong> Develop scenario models (ransomware vs insider breach) and dashboards of assumptions/impacts; define action thresholds.</p>
+                        </div>
+                    </div>
+                    <div class="action-footer">
+                        <span class="target-date">📅 Target: 2025-02-01</span>
+                    </div>
+                </div>
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-    <div style="background: white; border-radius: 10px; padding: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #11998e; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
-      <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #11998e, #38ef7d); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
-          🔔
-        </div>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1.1rem;">Monitor Threat Landscape</h4>
-      </div>
-      <div style="margin-bottom: 1rem;">
-        <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0 0 0.8rem 0;">
-          <strong>Steps:</strong> Subscribe to CVE/ENISA/NCSC feeds; weekly review and log one relevant vulnerability/TTP mapped to current controls.
-        </p>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
-        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target</span>
-        <span style="background: #dcfce7; color: #166534; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2024-12-15</span>
-      </div>
-    </div>
+                <div class="action-item">
+                    <div class="action-header">
+                        <div class="action-icon">🏛️</div>
+                        <div class="action-content">
+                            <h4>Enhance Governance Capability</h4>
+                            <p><strong>Steps:</strong> Study for CISSP/CISM; join a study group; apply governance patterns in projects; attempt exams; integrate new controls.</p>
+                        </div>
+                    </div>
+                    <div class="action-footer">
+                        <span class="target-date">📅 Target: 2025-08-01</span>
+                    </div>
+                </div>
 
-    <div style="background: white; border-radius: 10px; padding: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #0ea5e9; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
-      <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #0ea5e9, #38bdf8); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
-          📊
-        </div>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1.1rem;">Build Quantitative Risk Scenarios</h4>
-      </div>
-      <div style="margin-bottom: 1rem;">
-        <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0 0 0.8rem 0;">
-          <strong>Steps:</strong> Develop scenario models (ransomware vs insider breach) and dashboards of assumptions/impacts; define action thresholds.
-        </p>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
-        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target</span>
-        <span style="background: #e0f2fe; color: #075985; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2025-02-01</span>
-      </div>
+                <div class="action-item">
+                    <div class="action-header">
+                        <div class="action-icon">🗣️</div>
+                        <div class="action-content">
+                            <h4>Improve Communication Skills</h4>
+                            <p><strong>Steps:</strong> Practise narrative slide walkthroughs; collect peer feedback on clarity; present Unit 12 to a non-technical audience.</p>
+                        </div>
+                    </div>
+                    <div class="action-footer">
+                        <span class="target-date">📅 Target: 2025-01-15</span>
+                    </div>
+                </div>
+
+                <div class="action-item">
+                    <div class="action-header">
+                        <div class="action-icon">✍️</div>
+                        <div class="action-content">
+                            <h4>Share Knowledge</h4>
+                            <p><strong>Steps:</strong> Publish three short posts on threat modelling and backups; track engagement.</p>
+                        </div>
+                    </div>
+                    <div class="action-footer">
+                        <span class="target-date">📅 Target: 2025-03-01</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="conclusion-section">
+            <div class="conclusion-header">
+                <div class="conclusion-icon">🎯</div>
+                <h2>Conclusion</h2>
+            </div>
+            <p>
+                I entered confident in my technical skills and learned that resilience and ethics are central. I improved my ability to express risk in business terms while deepening governance and ethical awareness. I view security as an ongoing process requiring continuous threat assessment, collaboration, and evidence-based decisions.
+            </p>
+            <p>
+                Reflection produced concrete next steps that I'll apply in future projects to ensure security measures positively impact the organisation. I'm committed to lifelong learning, sharing best practice, and addressing emerging cybersecurity challenges.
+            </p>
+        </section>
     </div>
 
-    <div style="background: white; border-radius: 10px; padding: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #f97316; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
-      <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #f97316, #fb923c); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
-          🏛️
-        </div>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1.1rem;">Enhance Governance Capability</h4>
-      </div>
-      <div style="margin-bottom: 1rem;">
-        <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0 0 0.8rem 0;">
-          <strong>Steps:</strong> Study for CISSP/CISM; join a study group; apply governance patterns in projects; attempt exams; integrate new controls.
-        </p>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
-        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target</span>
-        <span style="background: #fef3c7; color: #92400e; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2025-08-01</span>
-      </div>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MSc Cyber Security Portfolio • Designed by Diogo</p>
+    </footer>
 
-    <div style="background: white; border-radius: 10px; padding: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #ec4899; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
-      <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #ec4899, #f43f5e); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
-          🗣️
-        </div>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1.1rem;">Improve Communication Skills</h4>
-      </div>
-      <div style="margin-bottom: 1rem;">
-        <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0 0 0.8rem 0;">
-          <strong>Steps:</strong> Practise narrative slide walkthroughs; collect peer feedback on clarity; present Unit 12 to a non-technical audience.
-        </p>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
-        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target</span>
-        <span style="background: #fce7f3; color: #9f1239; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2025-01-15</span>
-      </div>
-    </div>
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
 
-    <div style="background: white; border-radius: 10px; padding: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #8b5cf6; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
-      <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #8b5cf6, #a78bfa); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
-          ✍️
-        </div>
-        <h4 style="color: #2c3e50; margin: 0; font-size: 1.1rem;">Share Knowledge</h4>
-      </div>
-      <div style="margin-bottom: 1rem;">
-        <p style="color: #4a5568; line-height: 1.6; font-size: 0.9rem; margin: 0 0 0.8rem 0;">
-          <strong>Steps:</strong> Publish three short posts on threat modelling and backups; track engagement.
-        </p>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
-        <span style="color: #5a6c7d; font-size: 0.85rem; font-weight: 600;">Target</span>
-        <span style="background: #ede9fe; color: #5b21b6; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2025-03-01</span>
-      </div>
-    </div>
-  </div>
-</section>
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-<!-- Conclusion -->
-<section style="max-width: 1200px; margin: 0 auto 4rem;">
-  <div style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; border-radius: 10px; padding: 3rem 2.5rem; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
-    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-      <div style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem;">
-        🎯
-      </div>
-      <h2 style="margin: 0; font-size: 2rem;">Conclusion</h2>
-    </div>
-    <p style="line-height: 1.8; font-size: 1.05rem; opacity: 0.95; margin: 0 0 1.2rem 0;">
-      I entered confident in my technical skills and learned that resilience and ethics are central. I improved my
-      ability to express risk in business terms while deepening governance and ethical awareness. I view security as
-      an ongoing process requiring continuous threat assessment, collaboration, and evidence-based decisions.
-    </p>
-    <p style="line-height: 1.8; font-size: 1.05rem; opacity: 0.95; margin: 0;">
-      Reflection produced concrete next steps that I'll apply in future projects to ensure security measures positively
-      impact the organisation. I'm committed to lifelong learning, sharing best practice, and addressing emerging
-      cybersecurity challenges.
-    </p>
-  </div>
-</section>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
 
+        document.querySelectorAll('.outcome-card, .artefact, .swot-card, .action-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
