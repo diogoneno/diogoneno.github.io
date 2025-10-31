@@ -5,3 +5,8 @@ markdown: kramdown
 exclude:
   - README.txt
   - LICENSE.txt
+
+# Contact details
+email: diogoneno@proton.me
+linkedin_url: https://www.linkedin.com/in/diogoamarantes/
+github_url: https://github.com/diogoneno
