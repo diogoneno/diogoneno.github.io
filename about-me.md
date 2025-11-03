@@ -1269,10 +1269,10 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
                 <a href="mailto:diogoneno@proton.me" class="btn btn-primary">
                     📧 Get in Touch
                 </a>
-                <a href="https://www.linkedin.com/in/diogo-pereira/" target="_blank" rel="noopener" class="btn btn-secondary">
+                <a href="{{ site.linkedin_url | default: 'https://www.linkedin.com/in/diogoamarantes/' }}" target="_blank" rel="noopener" class="btn btn-secondary">
                     💼 LinkedIn Profile
                 </a>
-                <a href="#" class="btn btn-secondary">
+                <a href="{{ site.github_url | default: 'https://github.com/diogoneno' }}" target="_blank" rel="noopener" class="btn btn-secondary">
                     📄 Download CV
                 </a>
             </div>
