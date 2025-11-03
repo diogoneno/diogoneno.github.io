@@ -35,6 +35,7 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
             --text: #e4e4e7;
             --text-secondary: #a1a1aa;
             --accent: #7c3aed;
+            --success: #10b981;
         }
 
         body {
@@ -62,8 +63,8 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
             width: 200%;
             height: 200%;
             background: 
-                radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(124, 58, 237, 0.1) 0%, transparent 50%);
+                radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(124, 58, 237, 0.15) 0%, transparent 50%);
             animation: gradientShift 20s ease infinite;
         }
 
@@ -78,10 +79,10 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
             top: 0;
             width: 100%;
             padding: 1.5rem 5%;
-            background: rgba(10, 14, 39, 0.8);
-            backdrop-filter: blur(10px);
+            background: rgba(10, 14, 39, 0.9);
+            backdrop-filter: blur(20px);
             z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
         }
 
         nav .container {
@@ -127,13 +128,18 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
             transition: width 0.3s ease;
         }
 
-        .nav-links a:hover::after {
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
             width: 100%;
         }
 
-        /* Hero Section */
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section with Profile */
         .hero-about {
-            min-height: 60vh;
+            min-height: 70vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -145,27 +151,40 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
             max-width: 1400px;
             width: 100%;
             display: grid;
-            grid-template-columns: 300px 1fr;
+            grid-template-columns: 350px 1fr;
             gap: 4rem;
             align-items: center;
         }
 
-        .profile-image-container {
+        .profile-section {
             position: relative;
         }
 
+        .profile-image-container {
+            position: relative;
+            width: 350px;
+            height: 350px;
+        }
+
         .profile-image {
-            width: 300px;
-            height: 300px;
-            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
             overflow: hidden;
             border: 3px solid var(--primary);
-            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.3);
+            box-shadow: 0 25px 70px rgba(0, 212, 255, 0.4);
             position: relative;
             background: linear-gradient(135deg, #1e293b, #0f172a);
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all 0.4s ease;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .profile-image::before {
@@ -185,108 +204,144 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
             opacity: 1;
         }
 
+        .profile-image:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 35px 90px rgba(0, 212, 255, 0.5);
+        }
+
         .profile-image.profile-image--no-photo::after {
-            content: 'Add your photo';
+            content: 'Add your profile photo';
             position: absolute;
             inset: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--text-secondary);
+            text-align: center;
+            padding: 1.5rem;
+            color: rgba(255, 255, 255, 0.8);
             font-weight: 600;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            text-align: center;
-            padding: 1.5rem;
-            font-size: 0.85rem;
-            background: rgba(15, 23, 42, 0.7);
-            border-radius: 20px;
+            background: rgba(10, 14, 39, 0.75);
+            border-radius: 30px;
             border: 1px dashed rgba(0, 212, 255, 0.35);
         }
 
-        .profile-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .status-badge {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(16, 185, 129, 0.9);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+            z-index: 2;
+        }
+
+        .status-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        .hero-text {
+            animation: fadeInUp 1s ease;
         }
 
         .hero-text h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: 3.5rem;
             font-weight: 800;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #fff 0%, var(--primary) 100%);
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            line-height: 1.2;
         }
 
-        .hero-text .role {
+        .hero-text .subtitle {
             font-size: 1.5rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
         }
 
-        .hero-text .intro {
+        .hero-text p {
             font-size: 1.2rem;
-            color: var(--text-secondary);
+            color: var(--text);
             line-height: 1.8;
             margin-bottom: 2rem;
         }
 
-        .hero-tags {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .tag {
-            padding: 0.5rem 1.2rem;
-            background: rgba(0, 212, 255, 0.1);
-            border-radius: 20px;
-            font-size: 0.9rem;
-            color: var(--primary);
-            border: 1px solid rgba(0, 212, 255, 0.3);
-        }
-
-        /* Main Content */
-        .main-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 4rem 5%;
-        }
-
-        .content-section {
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 24px;
-            padding: 3rem;
-            margin-bottom: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .content-section:hover {
+        /* Glass Card Effect */
+        .glass-card {
             background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(124, 58, 237, 0.1));
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+        }
+
+        .glass-card:hover::before {
+            opacity: 1;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0, 212, 255, 0.2);
             border-color: rgba(0, 212, 255, 0.3);
         }
 
-        .content-section h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary);
-            font-weight: 700;
+        /* Content Sections */
+        .content-section {
+            max-width: 1400px;
+            margin: 0 auto 4rem;
+            padding: 0 5%;
+            animation: fadeInUp 0.8s ease;
         }
 
-        .content-section h3 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: var(--text);
-            font-weight: 600;
+        .content-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .content-section p {
+            font-size: 1.1rem;
             color: var(--text);
             line-height: 1.8;
             margin-bottom: 1.5rem;
@@ -294,19 +349,19 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
 
         .content-section ul {
             list-style: none;
-            padding: 0;
-            margin: 1.5rem 0;
+            padding-left: 0;
         }
 
-        .content-section li {
-            padding: 1rem 0;
-            padding-left: 2rem;
-            position: relative;
+        .content-section ul li {
+            font-size: 1.1rem;
             color: var(--text);
             line-height: 1.8;
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
         }
 
-        .content-section li::before {
+        .content-section ul li::before {
             content: '→';
             position: absolute;
             left: 0;
@@ -314,114 +369,121 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
             font-weight: bold;
         }
 
-        .content-section strong {
-            color: var(--primary);
-            font-weight: 600;
+        /* Focus Areas Grid */
+        .focus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
         }
 
-        /* Certifications Section */
-        .certifications-section {
-            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(124, 58, 237, 0.05));
-            border-radius: 24px;
-            padding: 4rem 3rem;
-            margin: 4rem 0;
+        .focus-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .focus-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--primary);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+        }
+
+        .focus-card h4 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .focus-card p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Certifications */
+        .certifications-section {
+            max-width: 1400px;
+            margin: 0 auto 4rem;
+            padding: 0 5%;
         }
 
         .certifications-section h2 {
-            text-align: center;
             font-size: 2.5rem;
+            font-weight: 700;
             margin-bottom: 3rem;
-            color: var(--text);
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .cert-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
 
         .cert-badge {
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 16px;
-            padding: 1.5rem;
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-            transition: all 0.3s ease;
-            min-height: 300px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            min-height: 270px;
+            transition: transform 0.3s ease;
         }
 
         .cert-badge:hover {
             transform: translateY(-10px);
-            border-color: var(--primary);
-            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
-            background: rgba(255, 255, 255, 0.05);
         }
 
-        .cert-badge iframe {
-            border: none;
-            margin: 0 auto;
-        }
-
-        /* Microsoft Badge Styling */
         .microsoft-badge {
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 2rem;
-            border: 2px solid rgba(255, 255, 255, 0.1);
             text-align: center;
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            gap: 1rem;
         }
 
         .microsoft-badge:hover {
-            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.08);
             border-color: var(--primary);
+            transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
-            background: rgba(255, 255, 255, 0.05);
         }
 
         .microsoft-badge img {
-            width: 150px;
-            height: 150px;
-            object-fit: contain;
-            margin-bottom: 1rem;
+            max-width: 150px;
+            height: auto;
         }
 
         .microsoft-badge .cert-name {
+            color: var(--primary);
             font-weight: 600;
-            color: var(--text);
-            margin-top: 1rem;
-            font-size: 1rem;
+            margin: 0 0 0.5rem;
         }
 
         .microsoft-badge .cert-issuer {
             color: var(--text-secondary);
             font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-
-        .microsoft-badge-fallback {
-            color: var(--text-secondary);
-            font-weight: 600;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            text-align: center;
+            margin-bottom: 0.5rem;
         }
 
         .microsoft-badge a {
             color: var(--primary);
             text-decoration: none;
-            font-size: 0.85rem;
-            margin-top: 0.5rem;
+            font-size: 0.9rem;
             transition: all 0.3s ease;
         }
 
@@ -429,112 +491,390 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
             color: var(--accent);
         }
 
-        /* Focus Areas Grid */
-        .focus-grid {
+        .badge-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 150px;
+            width: 100%;
+            border-radius: 14px;
+            background: rgba(0, 212, 255, 0.05);
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px dashed rgba(0, 212, 255, 0.35);
+        }
+
+        .badge-placeholder--hidden {
+            display: none;
+        }
+
+        .microsoft-badge.microsoft-badge--no-logo {
+            gap: 0.5rem;
+        }
+
+        /* Enhanced What I'm Looking For Section */
+        .looking-for-section {
+            max-width: 1400px;
+            margin: 6rem auto;
+            padding: 0 5%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .objective-card {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 2.5rem;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            align-items: start;
+        }
+
+        .objective-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .objective-card:hover .objective-icon {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 20px 50px rgba(0, 212, 255, 0.6);
+        }
+
+        .objective-content h3 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .objective-content p {
+            color: var(--text);
+            font-size: 1.15rem;
+            line-height: 1.9;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 50px rgba(0, 212, 255, 0.3);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Developer Tools Section */
+        .devtools-section {
+            max-width: 1400px;
+            margin: 6rem auto;
+            padding: 0 5%;
+        }
+
+        .tools-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin: 2rem 0;
+            margin-top: 3rem;
         }
 
-        .focus-card {
+        .tool-category {
             background: rgba(255, 255, 255, 0.03);
-            padding: 2rem;
-            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
             transition: all 0.3s ease;
         }
 
-        .focus-card:hover {
-            background: rgba(255, 255, 255, 0.05);
+        .tool-category:hover {
+            background: rgba(255, 255, 255, 0.06);
             border-color: var(--primary);
             transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
         }
 
-        .focus-card h4 {
+        .tool-category-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tool-icon {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+        }
+
+        .tool-category h4 {
             color: var(--primary);
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
 
-        .focus-card p {
-            color: var(--text-secondary);
-            line-height: 1.6;
+        .tool-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
         }
 
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(124, 58, 237, 0.1));
-            padding: 4rem 3rem;
-            border-radius: 24px;
+        .tool-badge {
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            color: var(--primary);
+            padding: 0.6rem 1.2rem;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .tool-badge:hover {
+            background: rgba(0, 212, 255, 0.2);
+            border-color: var(--primary);
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+        }
+
+        /* Connect Section */
+        .connect-section {
+            max-width: 1400px;
+            margin: 6rem auto 4rem;
+            padding: 0 5%;
+        }
+
+        .connect-card {
             text-align: center;
-            margin: 4rem 0;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 4rem 3rem;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(124, 58, 237, 0.1));
         }
 
-        .cta-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--text);
+        .connect-card h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        .cta-section p {
-            color: var(--text-secondary);
+        .connect-card p {
             font-size: 1.2rem;
-            margin-bottom: 2rem;
+            color: var(--text-secondary);
             max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto 2.5rem;
+            line-height: 1.8;
+        }
+
+        .connect-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .btn {
-            padding: 1rem 2.5rem;
-            border-radius: 50px;
+            padding: 1.2rem 2.5rem;
+            border-radius: 14px;
+            font-size: 1.1rem;
             font-weight: 600;
             text-decoration: none;
             transition: all 0.3s ease;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            border: none;
+            cursor: pointer;
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            color: white;
-            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--darker);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
         }
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.4);
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.6);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--primary);
+            transform: translateY(-3px);
         }
 
         /* Footer */
         footer {
+            text-align: center;
             padding: 3rem 5%;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-        }
-
-        footer p {
             color: var(--text-secondary);
         }
 
-        footer a {
-            color: var(--primary);
-            text-decoration: none;
+        footer p {
+            font-size: 1rem;
         }
 
-        /* Mobile Responsive */
-        @media (max-width: 968px) {
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 300px 1fr;
+                gap: 3rem;
+            }
+
+            .profile-image-container {
+                width: 300px;
+                height: 300px;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
             .hero-content {
                 grid-template-columns: 1fr;
+                gap: 2rem;
                 text-align: center;
             }
 
-            .profile-image {
+            .profile-image-container {
+                width: 250px;
+                height: 250px;
                 margin: 0 auto;
             }
 
-            .hero-tags {
+            .profile-image.profile-image--no-photo::after {
+                border-radius: 20px;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .hero-text .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .objective-card {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding: 2rem;
+            }
+
+            .objective-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 2.5rem;
+                margin: 0 auto;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .connect-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                width: 100%;
                 justify-content: center;
             }
 
@@ -542,20 +882,8 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
                 display: none;
             }
 
-            .content-section {
-                padding: 2rem;
-            }
-
-            .certifications-section {
-                padding: 3rem 2rem;
-            }
-
-            .cert-grid {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            }
-
-            .focus-grid {
-                grid-template-columns: 1fr;
+            .stats-section {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
@@ -566,11 +894,11 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="{{ '/' | relative_url }}" class="logo">DIOGO • CYBER SEC</a>
+            <a href="/" class="logo">Diogo Pereira</a>
             <ul class="nav-links">
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="/" class="active">About</a></li>
                 <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#devtools">Tools</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -579,57 +907,67 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
     <!-- Hero Section -->
     <section class="hero-about">
         <div class="hero-content">
-            <div class="profile-image-container">
-                {% assign profile_image_src = page.profile_image | default: '' %}
-                {% assign profile_image_alt = page.profile_image_alt | default: 'Diogo Pereira - Cyber Security Professional' %}
-                <div class="profile-image{% if profile_image_src == '' %} profile-image--no-photo{% endif %}">
-                    {% if profile_image_src != '' %}
-                        {% if profile_image_src contains '://' %}
-                            <img src="{{ profile_image_src }}" alt="{{ profile_image_alt }}" loading="lazy" onerror="this.closest('.profile-image').classList.add('profile-image--no-photo'); this.remove();">
-                        {% else %}
-                            <img src="{{ profile_image_src | relative_url }}" alt="{{ profile_image_alt }}" loading="lazy" onerror="this.closest('.profile-image').classList.add('profile-image--no-photo'); this.remove();">
+            <div class="profile-section">
+                <div class="profile-image-container">
+                    {% assign profile_src = page.profile_image | default: '' %}
+                    {% assign profile_alt = page.profile_image_alt | default: 'Profile photo' %}
+                    <div class="profile-image{% if profile_src == '' %} profile-image--no-photo{% endif %}">
+                        {% if profile_src != '' %}
+                            {% if profile_src contains '://' %}
+                                <img src="{{ profile_src }}" alt="{{ profile_alt }}" loading="eager" onerror="this.closest('.profile-image').classList.add('profile-image--no-photo'); this.remove();">
+                            {% else %}
+                                <img src="{{ profile_src | relative_url }}" alt="{{ profile_alt }}" loading="eager" onerror="this.closest('.profile-image').classList.add('profile-image--no-photo'); this.remove();">
+                            {% endif %}
                         {% endif %}
-                    {% endif %}
+                    </div>
+                    <div class="status-badge">Open to Opportunities</div>
                 </div>
             </div>
             <div class="hero-text">
-                <h1>Hello, I'm Diogo</h1>
-                <p class="role">Cyber Security SRE • MSc Candidate</p>
-                <p class="intro">
-                    I design and operate secure systems to improve team efficiency and productivity. 
-                    My work blends practical engineering with critical evaluation and research, 
-                    emphasising awareness and self-directed problem-solving.
+                <h1>Cyber Security Professional</h1>
+                <p class="subtitle">Building Secure, Resilient Systems</p>
+                <p>
+                    I'm a cyber security professional with over a decade of experience in security engineering, 
+                    data protection, and cloud infrastructure. I specialize in building secure-by-default platforms 
+                    and bridging the gap between technology and governance.
                 </p>
-                <div class="hero-tags">
-                    <span class="tag">Site Reliability Engineering</span>
-                    <span class="tag">Data Protection</span>
-                    <span class="tag">Security Operations</span>
-                    <span class="tag">Multilingual: EN • PT • ES • FR</span>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Professional Snapshot -->
-        <section class="content-section" id="about">
-            <h2>Professional Snapshot</h2>
+    <div class="container">
+        <!-- Who I Am -->
+        <section class="content-section">
+            <h2>Who I Am</h2>
             <p>
-                As a <strong>Site Reliability Engineer III</strong> specialising in backup and data protection, 
-                I provide advanced technical support, replicate complex customer environments, mentor peers, 
-                and collaborate with sales, engineering, and product teams. I am multilingual (EN, PT, ES, FR) 
-                and have a proven track record of enhancing knowledge base development and team enablement.
+                I'm Diogo, a Cyber Security professional with 10+ years of IT, 15+ certifications, and an MSc in Cyber Security 
+                (University of Essex Online, UK). I have worked in enterprise support roles across multi-national environments 
+                where secure technology meets reliability, customer outcomes, and business goals.
+            </p>
+            <p>
+                My specialisation is <strong>data protection</strong> and <strong>enterprise backup management</strong> 
+                (NetBackup, appliances, Azure, AWS, GCP), with advanced skills in diagnosing complex issues across UNIX, Linux, 
+                Windows Server, storage, networking, and virtualisation. My core approach is <strong>SRE-style reliability</strong> 
+                at scale, focusing on automation, measurable outcomes, and systematic improvement.
             </p>
         </section>
 
-        <!-- How I Work -->
+        <!-- Journey -->
         <section class="content-section">
-            <h2>How I Work</h2>
+            <h2>Journey</h2>
             <ul>
                 <li>
-                    <strong>Evidence-based decisions:</strong> I rely on threat intelligence, telemetry, 
-                    and feedback loops to ensure security decisions are data-driven.
+                    I started in IT support and advanced to enterprise technical roles at Veritas Technologies, 
+                    working with high-value customers globally, leading escalations, and mentoring junior engineers.
+                </li>
+                <li>
+                    I've championed process improvements, built knowledge bases, and co-ordinated multilingual queues 
+                    (EN, PT, ES, FR, DE), treating operations as a measurable engineering challenge.
+                </li>
+                <li>
+                    I'm pursuing an MSc in Cyber Security to formalise my practical experience into evidence-based, 
+                    research-supported practice. This extends my enterprise support foundation with risk governance, 
+                    secure systems design, and human factors.
                 </li>
                 <li>
                     I collaborate with engineers and leadership to co-design controls that strike a balance 
@@ -723,17 +1061,16 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
                 </div>
                 
                 <!-- Microsoft Badge -->
-                <div class="microsoft-badge">
-                    {% assign azure_badge_src = page.azure_badge_image | default: '' %}
+                {% assign azure_badge_src = page.azure_badge_image | default: '' %}
+                <div class="microsoft-badge{% if azure_badge_src == '' %} microsoft-badge--no-logo{% endif %}">
                     {% if azure_badge_src != '' %}
                         {% if azure_badge_src contains '://' %}
-                            <img src="{{ azure_badge_src }}" alt="Microsoft Certified: Azure Administrator Associate badge" loading="lazy">
+                            <img src="{{ azure_badge_src }}" alt="Microsoft Certified: Azure Administrator Associate badge" loading="lazy" onerror="const badge = this.closest('.microsoft-badge'); badge.classList.add('microsoft-badge--no-logo'); const placeholder = badge.querySelector('.badge-placeholder'); if (placeholder) { placeholder.classList.remove('badge-placeholder--hidden'); } this.remove();">
                         {% else %}
-                            <img src="{{ azure_badge_src | relative_url }}" alt="Microsoft Certified: Azure Administrator Associate badge" loading="lazy">
+                            <img src="{{ azure_badge_src | relative_url }}" alt="Microsoft Certified: Azure Administrator Associate badge" loading="lazy" onerror="const badge = this.closest('.microsoft-badge'); badge.classList.add('microsoft-badge--no-logo'); const placeholder = badge.querySelector('.badge-placeholder'); if (placeholder) { placeholder.classList.remove('badge-placeholder--hidden'); } this.remove();">
                         {% endif %}
-                    {% else %}
-                        <span class="microsoft-badge-fallback">Azure Administrator Associate</span>
                     {% endif %}
+                    <div class="badge-placeholder{% if azure_badge_src != '' %} badge-placeholder--hidden{% endif %}">Azure Administrator Associate</div>
                     <p class="cert-name">Azure Administrator Associate</p>
                     <p class="cert-issuer">Microsoft</p>
                     <a href="https://learn.microsoft.com/api/credentials/share/en-us/DiogoNeno/2C20F3038C358900?sharingId=48C04B1899FEF4BE" target="_blank" rel="noopener">Verify Credential →</a>
@@ -756,26 +1093,191 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
                 </li>
             </ul>
         </section>
+    </div>
 
-        <!-- What I'm Looking For -->
-        <section class="content-section">
+    <!-- What I'm Looking For Section -->
+    <section class="looking-for-section">
+        <div class="section-header fade-in-up">
             <h2>What I'm Looking For</h2>
-            <p>
-               I collaborate on security engineering and architecture initiatives—building secure-by-default platforms, bridging technology and governance, and delivering measurable outcomes. 
-               I contribute through hands-on projects, mentoring, and knowledge-sharing with teams that value evidence-based practice, clear communication, and shared ownership of risk.
-            </p>
-        </section>
+            <p>Building secure systems that balance innovation with protection</p>
+        </div>
 
-        <!-- CTA Section -->
-        <section class="cta-section" id="contact">
+        <div class="glass-card objective-card fade-in-up">
+            <div class="objective-icon">🔐</div>
+            <div class="objective-content">
+                <h3>Security Engineering &amp; Architecture</h3>
+                <p>
+                    I collaborate on security engineering and architecture initiatives—building secure-by-default platforms, 
+                    bridging technology and governance, and delivering measurable outcomes. I contribute through hands-on 
+                    projects, mentoring, and knowledge-sharing with teams that value evidence-based practice, clear 
+                    communication, and shared ownership of risk.
+                </p>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-card fade-in-up">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Years in Security</div>
+            </div>
+            <div class="stat-card fade-in-up">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Certifications</div>
+            </div>
+            <div class="stat-card fade-in-up">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Cloud Platforms</div>
+            </div>
+            <div class="stat-card fade-in-up">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Learning Mindset</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Tools Section -->
+    <section class="devtools-section" id="devtools">
+        <div class="section-header fade-in-up">
+            <h2>Developer Tools &amp; Stack</h2>
+            <p>Technologies and tools I work with to build secure, scalable systems</p>
+        </div>
+
+        <div class="tools-grid">
+            <div class="tool-category fade-in-up">
+                <div class="tool-category-header">
+                    <div class="tool-icon">☁️</div>
+                    <h4>Cloud Platforms</h4>
+                </div>
+                <div class="tool-list">
+                    <span class="tool-badge">Azure</span>
+                    <span class="tool-badge">AWS</span>
+                    <span class="tool-badge">GCP</span>
+                    <span class="tool-badge">Azure DevOps</span>
+                    <span class="tool-badge">Terraform</span>
+                </div>
+            </div>
+
+            <div class="tool-category fade-in-up">
+                <div class="tool-category-header">
+                    <div class="tool-icon">🔒</div>
+                    <h4>Security Tools</h4>
+                </div>
+                <div class="tool-list">
+                    <span class="tool-badge">Nmap</span>
+                    <span class="tool-badge">Wireshark</span>
+                    <span class="tool-badge">Metasploit</span>
+                    <span class="tool-badge">Burp Suite</span>
+                    <span class="tool-badge">OWASP ZAP</span>
+                    <span class="tool-badge">Snort</span>
+                </div>
+            </div>
+
+            <div class="tool-category fade-in-up">
+                <div class="tool-category-header">
+                    <div class="tool-icon">💻</div>
+                    <h4>Programming</h4>
+                </div>
+                <div class="tool-list">
+                    <span class="tool-badge">Python</span>
+                    <span class="tool-badge">Bash</span>
+                    <span class="tool-badge">PowerShell</span>
+                    <span class="tool-badge">JavaScript</span>
+                    <span class="tool-badge">SQL</span>
+                </div>
+            </div>
+
+            <div class="tool-category fade-in-up">
+                <div class="tool-category-header">
+                    <div class="tool-icon">🐳</div>
+                    <h4>DevOps &amp; Containers</h4>
+                </div>
+                <div class="tool-list">
+                    <span class="tool-badge">Docker</span>
+                    <span class="tool-badge">Kubernetes</span>
+                    <span class="tool-badge">Git</span>
+                    <span class="tool-badge">Jenkins</span>
+                    <span class="tool-badge">Ansible</span>
+                </div>
+            </div>
+
+            <div class="tool-category fade-in-up">
+                <div class="tool-category-header">
+                    <div class="tool-icon">💾</div>
+                    <h4>Data Protection</h4>
+                </div>
+                <div class="tool-list">
+                    <span class="tool-badge">NetBackup</span>
+                    <span class="tool-badge">Veeam</span>
+                    <span class="tool-badge">Azure Backup</span>
+                    <span class="tool-badge">Commvault</span>
+                </div>
+            </div>
+
+            <div class="tool-category fade-in-up">
+                <div class="tool-category-header">
+                    <div class="tool-icon">🖥️</div>
+                    <h4>Operating Systems</h4>
+                </div>
+                <div class="tool-list">
+                    <span class="tool-badge">Linux</span>
+                    <span class="tool-badge">Windows Server</span>
+                    <span class="tool-badge">UNIX</span>
+                    <span class="tool-badge">Ubuntu</span>
+                    <span class="tool-badge">CentOS</span>
+                </div>
+            </div>
+
+            <div class="tool-category fade-in-up">
+                <div class="tool-category-header">
+                    <div class="tool-icon">📊</div>
+                    <h4>Monitoring &amp; Analysis</h4>
+                </div>
+                <div class="tool-list">
+                    <span class="tool-badge">Splunk</span>
+                    <span class="tool-badge">ELK Stack</span>
+                    <span class="tool-badge">Grafana</span>
+                    <span class="tool-badge">Prometheus</span>
+                    <span class="tool-badge">Nagios</span>
+                </div>
+            </div>
+
+            <div class="tool-category fade-in-up">
+                <div class="tool-category-header">
+                    <div class="tool-icon">🌐</div>
+                    <h4>Virtualization</h4>
+                </div>
+                <div class="tool-list">
+                    <span class="tool-badge">VMware</span>
+                    <span class="tool-badge">Hyper-V</span>
+                    <span class="tool-badge">VirtualBox</span>
+                    <span class="tool-badge">Proxmox</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Let's Connect Section -->
+    <section class="connect-section" id="contact">
+        <div class="glass-card connect-card fade-in-up">
             <h2>Let's Connect</h2>
             <p>
                 Interested in collaborating or discussing cyber security challenges? 
-                I'm always open to connecting with like-minded professionals.
+                I'm always open to connecting with like-minded professionals who are passionate 
+                about building secure, resilient systems.
             </p>
-            <a href="mailto:diogoneno@proton.me" class="btn btn-primary">Get in Touch</a>
-        </section>
-    </div>
+            <div class="connect-buttons">
+                <a href="mailto:diogoneno@proton.me" class="btn btn-primary">
+                    📧 Get in Touch
+                </a>
+                <a href="https://www.linkedin.com/in/diogo-pereira/" target="_blank" rel="noopener" class="btn btn-secondary">
+                    💼 LinkedIn Profile
+                </a>
+                <a href="#" class="btn btn-secondary">
+                    📄 Download CV
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -812,11 +1314,44 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
             });
         }, observerOptions);
 
-        document.querySelectorAll('.content-section, .cert-badge, .focus-card, .microsoft-badge').forEach(el => {
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in-up, .content-section, .cert-badge, .focus-card, .microsoft-badge, .tool-category, .stat-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.6s ease';
+            el.style.transition = 'all 0.8s ease';
             observer.observe(el);
+        });
+
+        // Add hover effect to tool badges
+        document.querySelectorAll('.tool-badge').forEach(badge => {
+            badge.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05) translateY(-2px)';
+            });
+            badge.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) translateY(0)';
+            });
+        });
+
+        // Highlight active navigation
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
         });
     </script>
 </body>
