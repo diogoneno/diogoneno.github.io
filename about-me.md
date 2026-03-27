@@ -10,7 +10,7 @@ summary: >-
 topic_tags:
   - Professional Profile
   - Career Journey
-profile_image: /assets/images/test.jpg
+profile_image: /assets/images/about-me-profile.png
 profile_image_alt: Diogo Pereira - Cyber Security Professional
 azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associate.2.png
 ---
