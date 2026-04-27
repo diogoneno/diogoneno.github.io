@@ -782,7 +782,7 @@ topic_tags:
             <div class="section-header">
                 <h2>Action Plan</h2>
                 <div class="divider"></div>
-                <p>Concrete steps to address weaknesses and capitalize on opportunities</p>
+                <p>Concrete steps to address weaknesses and capitalise on opportunities</p>
             </div>
 
             <div class="action-items">
