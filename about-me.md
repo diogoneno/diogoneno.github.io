@@ -812,7 +812,7 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
                 <p class="subtitle">Building Secure, Resilient Systems</p>
                 <p>
                     I'm a cyber security professional with over a decade of experience in security engineering, 
-                    data protection, and cloud infrastructure. I specialize in building secure-by-default platforms 
+                    data protection, and cloud infrastructure. I specialise in building secure-by-default platforms 
                     and bridging the gap between technology and governance.
                 </p>
             </div>
