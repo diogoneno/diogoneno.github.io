@@ -605,7 +605,7 @@ topic_tags:
                         </tr>
                         <tr>
                             <td>Evidence-based writing</td>
-                            <td>Progressing toward proficiency through appropriate sourcing and peer-review additions; next actions are increasing peer-reviewed material, refreshing statistics, and tightening citation placement.</td>
+                            <td>Progressing towards proficiency through appropriate sourcing and peer-review additions; next actions are increasing peer-reviewed material, refreshing statistics, and tightening citation placement.</td>
                         </tr>
                         <tr>
                             <td>Critical review &amp; feedback</td>
