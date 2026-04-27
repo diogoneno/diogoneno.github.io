@@ -1,0 +1,9 @@
+<li{% if page.url == '/' %} class="active"{% endif %}>
+  <a href="{{ '/' | relative_url }}">Home</a>
+</li>
+{% assign module_pages = site.pages | where_exp: 'item', 'item["nav-menu"]' | sort: 'nav-order' %}
+{% for module in module_pages %}
+<li{% if module.url == page.url %} class="active"{% endif %}>
+  <a href="{{ module.url | relative_url }}">{{ module.title }}</a>
+</li>
+{% endfor %}
