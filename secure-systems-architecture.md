@@ -478,7 +478,7 @@ topic_tags:
             <a href="/" class="logo">DIOGO • CYBER SEC</a>
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/about-me.html">About Me</a></li>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#learning-outcomes">Outcomes</a></li>
                 <li><a href="#artefacts">Artefacts</a></li>
@@ -838,6 +838,22 @@ topic_tags:
                     secrecy, evidence-backed trade-off narratives, and showcasing the measurable impact of
                     collaborative changes.
                 </p>
+            </div>
+        </section>
+
+        <!-- References -->
+        <section id="references">
+            <div class="section-header">
+                <h2>References</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 2rem 2.5rem;">
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">ISO/IEC (2022) <em style="color: var(--text);">ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection — Information security management systems — Requirements</em>. Geneva: International Organization for Standardization.</p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">Council of the European Union (2016) <em style="color: var(--text);">Regulation (EU) 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data (General Data Protection Regulation)</em>. Brussels.</p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">Shostack, A. (2014) <em style="color: var(--text);">Threat Modeling: Designing for Security</em>. Indianapolis: Wiley.</p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">National Institute of Standards and Technology (2007) <em style="color: var(--text);">NIST SP 800-38D Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC</em>. Gaithersburg: NIST.</p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; margin: 0;">Howard, M. and LeBlanc, D. (2003) <em style="color: var(--text);">Writing Secure Code</em>. 2nd edn. Redmond: Microsoft Press.</p>
             </div>
         </section>
 
