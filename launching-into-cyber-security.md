@@ -17,104 +17,10 @@ topic_tags:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ page.summary | strip_newlines | strip }}">
     <title>Launching into Cyber Security | MSc Portfolio</title>
+    {% include shared-styles.html %}
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #00d4ff;
-            --secondary: #0066ff;
-            --dark: #0a0e27;
-            --darker: #050816;
-            --text: #e4e4e7;
-            --text-secondary: #a1a1aa;
-            --accent: #7c3aed;
-            --success: #10b981;
-            --warning: #f59e0b;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            background: var(--darker);
-            color: var(--text);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* Animated Background */
-        .animated-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
-        }
-
-        .animated-bg::before {
-            content: '';
-            position: absolute;
-            width: 200%;
-            height: 200%;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(124, 58, 237, 0.1) 0%, transparent 50%);
-            animation: gradientShift 20s ease infinite;
-        }
-
-        @keyframes gradientShift {
-            0%, 100% { transform: translate(0, 0); }
-            50% { transform: translate(-50px, -50px); }
-        }
-
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 1.5rem 5%;
-            background: rgba(10, 14, 39, 0.8);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        nav .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--text);
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
         /* Module Hero */
         .module-hero {
             padding: 8rem 5% 4rem;
@@ -269,7 +175,6 @@ topic_tags:
             border-radius: 20px;
             padding: 3rem;
             margin-bottom: 2rem;
-            border-left: 5px solid var(--primary);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-left: 5px solid var(--primary);
             transition: all 0.3s ease;
@@ -600,10 +505,6 @@ topic_tags:
             }
         }
 
-        /* Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
-        }
     </style>
 </head>
 <body>
@@ -620,8 +521,10 @@ topic_tags:
                 <li><a href="#artefacts">Artefacts</a></li>
                 <li><a href="#action-plan">Action Plan</a></li>
             </ul>
+            <button class="mobile-menu-btn" aria-label="Open navigation menu">&#9776;</button>
         </div>
     </nav>
+    {% include mobile-nav.html %}
 
     <!-- Module Hero -->
     <section class="module-hero">
@@ -742,33 +645,6 @@ topic_tags:
             </article>
 
             <!-- Artefact 3 -->
-            <article class="artefact">
-                <div class="artefact-header">
-                    <span class="artefact-icon">📊</span>
-                    <div class="artefact-title">
-                        <h3>Unit 3 - Summary Post</h3>
-                        <span class="unit-badge">UNIT 3</span>
-                    </div>
-                </div>
-                <div class="artefact-content">
-                    <p>
-                        Consolidated insights from the Log4j discussion, highlighting economic impacts, regulatory obligations (GDPR Art. 32), and reputational effects, with peer-suggested real-world examples.
-                    </p>
-                    <div class="evidence-box">
-                        <p>
-                            <strong>📁 Evidence:</strong>
-                            <a href="/assets/LauchingIntoCybersecurity/Summary%20Post.pdf" target="_blank" rel="noopener">Summary Post (PDF)</a>
-                        </p>
-                    </div>
-                    <div class="feedback-box">
-                        <p>
-                            <strong>✓ Feedback:</strong> Involvement of peers enhanced the justification for implementing patching and monitoring, while the precision of the recommendations was improved.
-                        </p>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Artefact 4 -->
             <article class="artefact">
                 <div class="artefact-header">
                     <span class="artefact-icon">📝</span>

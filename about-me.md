@@ -19,124 +19,10 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ page.summary | strip_newlines | strip }}">
     <title>About Me | Diogo - Cyber Security Portfolio</title>
+    {% include shared-styles.html %}
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #00d4ff;
-            --secondary: #0066ff;
-            --dark: #0a0e27;
-            --darker: #050816;
-            --text: #e4e4e7;
-            --text-secondary: #a1a1aa;
-            --accent: #7c3aed;
-            --success: #10b981;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            background: var(--darker);
-            color: var(--text);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* Animated Background */
-        .animated-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
-        }
-
-        .animated-bg::before {
-            content: '';
-            position: absolute;
-            width: 200%;
-            height: 200%;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(124, 58, 237, 0.15) 0%, transparent 50%);
-            animation: gradientShift 20s ease infinite;
-        }
-
-        @keyframes gradientShift {
-            0%, 100% { transform: translate(0, 0); }
-            50% { transform: translate(-50px, -50px); }
-        }
-
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 1.5rem 5%;
-            background: rgba(10, 14, 39, 0.9);
-            backdrop-filter: blur(20px);
-            z-index: 1000;
-            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
-        }
-
-        nav .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--text);
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--primary);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after,
-        .nav-links a.active::after {
-            width: 100%;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary);
-        }
-
         /* Hero Section with Profile */
         .hero-about {
             min-height: 70vh;
@@ -878,10 +764,6 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
                 justify-content: center;
             }
 
-            .nav-links {
-                display: none;
-            }
-
             .stats-section {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -901,8 +783,10 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
                 <li><a href="#devtools">Tools</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="mobile-menu-btn" aria-label="Open navigation menu">&#9776;</button>
         </div>
     </nav>
+    {% include mobile-nav.html %}
 
     <!-- Hero Section -->
     <section class="hero-about">
@@ -914,9 +798,9 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
                     <div class="profile-image{% if profile_src == '' %} profile-image--no-photo{% endif %}">
                         {% if profile_src != '' %}
                             {% if profile_src contains '://' %}
-                                <img src="{{ profile_src }}" alt="{{ profile_alt }}" loading="eager" onerror="this.closest('.profile-image').classList.add('profile-image--no-photo'); this.remove();">
+                                <img src="{{ profile_src }}" alt="{{ profile_alt }}" loading="lazy" onerror="this.closest('.profile-image').classList.add('profile-image--no-photo'); this.remove();">
                             {% else %}
-                                <img src="{{ profile_src | relative_url }}" alt="{{ profile_alt }}" loading="eager" onerror="this.closest('.profile-image').classList.add('profile-image--no-photo'); this.remove();">
+                                <img src="{{ profile_src | relative_url }}" alt="{{ profile_alt }}" loading="lazy" onerror="this.closest('.profile-image').classList.add('profile-image--no-photo'); this.remove();">
                             {% endif %}
                         {% endif %}
                     </div>
@@ -1272,7 +1156,7 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
                 <a href="{{ site.linkedin_url | default: 'https://www.linkedin.com/in/diogoamarantes/' }}" target="_blank" rel="noopener" class="btn btn-secondary">
                     💼 LinkedIn Profile
                 </a>
-                <a href="{{ site.github_url | default: 'https://github.com/diogoneno' }}" target="_blank" rel="noopener" class="btn btn-secondary">
+                <a href="{{ '/assets/cv/diogo-pereira-cv.pdf' | relative_url }}" download class="btn btn-secondary">
                     📄 Download CV
                 </a>
             </div>
@@ -1285,7 +1169,7 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
     </footer>
 
     <!-- Credly Badge Script -->
-    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    <script async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
 
     <script>
         // Smooth scrolling
@@ -1348,7 +1232,7 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
 
             navLinks.forEach(link => {
                 link.classList.remove('active');
-                if (link.getAttribute('href').includes(current)) {
+                if (current && link.getAttribute('href') === '#' + current) {
                     link.classList.add('active');
                 }
             });

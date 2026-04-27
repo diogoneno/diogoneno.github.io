@@ -1,0 +1,61 @@
+<!-- Mobile navigation overlay — include once per glassmorphism page, inside <body> -->
+<div class="mobile-overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <button class="mobile-overlay-close" id="mobile-overlay-close" aria-label="Close menu">&#x2715;</button>
+  <nav>
+    <ul class="mobile-overlay-links">
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      {% assign module_pages = site.pages | where_exp: 'item', 'item["nav-menu"]' | sort: 'nav-order' %}
+      {% for module in module_pages %}
+      <li><a href="{{ module.url | relative_url }}">{{ module.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
+
+<script>
+(function () {
+  var overlay = document.getElementById('mobile-overlay');
+  var openBtn = document.querySelector('.mobile-menu-btn');
+  var closeBtn = document.getElementById('mobile-overlay-close');
+
+  function openMenu() {
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    var firstLink = overlay.querySelector('a, button');
+    if (firstLink) firstLink.focus();
+  }
+
+  function closeMenu() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (openBtn) openBtn.focus();
+  }
+
+  if (openBtn) {
+    openBtn.addEventListener('click', openMenu);
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeMenu);
+  }
+
+  // Close when tapping a nav link
+  overlay.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close when tapping the overlay background (outside the links)
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) {
+      closeMenu();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay.classList.contains('open')) {
+      closeMenu();
+    }
+  });
+}());
+</script>
