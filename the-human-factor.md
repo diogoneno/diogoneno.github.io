@@ -384,7 +384,7 @@ topic_tags:
             <a href="/" class="logo">DIOGO • CYBER SEC</a>
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/about-me.html">About Me</a></li>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#objectives">Outcomes</a></li>
                 <li><a href="#artefacts">Artefacts</a></li>
@@ -621,6 +621,22 @@ topic_tags:
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </section>
+
+        <!-- References -->
+        <section id="references">
+            <div class="section-header">
+                <h2>References</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 2rem 2.5rem;">
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">Sasse, M.A. and Flechais, I. (2005) 'Usable Security: Why Do We Need It? How Do We Get It?', in Cranor, L.F. and Garfinkel, S. (eds.) <em style="color: var(--text);">Security and Usability: Designing Secure Systems that People Can Use</em>. Sebastopol: O'Reilly, pp. 13–30.</p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">European Union Agency for Cybersecurity (2023) <em style="color: var(--text);">Awareness Raising in a Box (AR-in-a-Box)</em>. Heraklion: ENISA. Available at: <a href="https://www.enisa.europa.eu/topics/cybersecurity-education/awareness-campaigns" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none;">https://www.enisa.europa.eu/topics/cybersecurity-education/awareness-campaigns</a></p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">National Institute of Standards and Technology (2003) <em style="color: var(--text);">NIST SP 800-50 Building an Information Technology Security Awareness and Training Program</em>. Gaithersburg: NIST.</p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">Norman, D.A. (2013) <em style="color: var(--text);">The Design of Everyday Things</em>. Revised and expanded edn. New York: Basic Books.</p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; margin: 0;">BCS, The Chartered Institute for IT (no date) <em style="color: var(--text);">BCS Code of Conduct</em>. Swindon: BCS. Available at: <a href="https://www.bcs.org/membership-and-registrations/become-a-member/bcs-code-of-conduct/" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none;">https://www.bcs.org/membership-and-registrations/become-a-member/bcs-code-of-conduct/</a></p>
             </div>
         </section>
 

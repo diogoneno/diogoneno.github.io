@@ -413,7 +413,7 @@ topic_tags:
             <a href="/" class="logo">DIOGO • CYBER SEC</a>
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/about-me.html">About Me</a></li>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#objectives">Outcomes</a></li>
                 <li><a href="#artefacts">Artefacts</a></li>
@@ -629,6 +629,22 @@ topic_tags:
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </section>
+
+        <!-- References -->
+        <section id="references">
+            <div class="section-header">
+                <h2>References</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 2rem 2.5rem;">
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">ISO/IEC (2011) <em style="color: var(--text);">ISO/IEC 27034-1:2011 Information technology — Security techniques — Application security — Part 1: Overview and concepts</em>. Geneva: International Organization for Standardization.</p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">McGraw, G. (2006) <em style="color: var(--text);">Software Security: Building Security In</em>. Boston: Addison-Wesley.</p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">OWASP Foundation (2021) <em style="color: var(--text);">OWASP Application Security Verification Standard (ASVS) v4.0.3</em>. Available at: <a href="https://owasp.org/www-project-application-security-verification-standard/" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none;">https://owasp.org/www-project-application-security-verification-standard/</a></p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">Saltzer, J.H. and Schroeder, M.D. (1975) 'The protection of information in computer systems', <em style="color: var(--text);">Proceedings of the IEEE</em>, 63(9), pp. 1278–1308.</p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; margin: 0;">Howard, M. and Lipner, S. (2006) <em style="color: var(--text);">The Security Development Lifecycle</em>. Redmond: Microsoft Press.</p>
             </div>
         </section>
 

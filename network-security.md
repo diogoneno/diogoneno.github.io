@@ -501,7 +501,7 @@ topic_tags:
             <a href="/" class="logo">DIOGO • CYBER SEC</a>
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/about-me.html">About Me</a></li>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#objectives">Outcomes</a></li>
                 <li><a href="#artefacts">Artefacts</a></li>

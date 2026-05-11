@@ -516,7 +516,7 @@ topic_tags:
             <a href="/" class="logo">DIOGO • CYBER SEC</a>
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/about-me.html">About Me</a></li>
                 <li><a href="#outcomes">Outcomes</a></li>
                 <li><a href="#artefacts">Artefacts</a></li>
                 <li><a href="#action-plan">Action Plan</a></li>
@@ -865,6 +865,22 @@ topic_tags:
             <p>
                 Reflection produced concrete next steps that I'll apply in future projects to ensure security measures positively impact the organisation. I'm committed to lifelong learning, sharing best practice, and addressing emerging cybersecurity challenges.
             </p>
+        </section>
+
+        <!-- References -->
+        <section id="references">
+            <div class="section-header">
+                <h2>References</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 2rem 2.5rem;">
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">ISO/IEC (2022) <em style="color: var(--text);">ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection — Information security management systems — Requirements</em>. Geneva: International Organization for Standardization.</p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">ISO/IEC (2011) <em style="color: var(--text);">ISO/IEC 27031:2011 Information technology — Security techniques — Guidelines for information and communication technology readiness for business continuity</em>. Geneva: International Organization for Standardization.</p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">National Institute of Standards and Technology (2024) <em style="color: var(--text);">The NIST Cybersecurity Framework (CSF) 2.0</em>. NIST CSWP 29. Gaithersburg: NIST. Available at: <a href="https://doi.org/10.6028/NIST.CSWP.29" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none;">https://doi.org/10.6028/NIST.CSWP.29</a></p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); margin: 0;">OWASP Foundation (2021) <em style="color: var(--text);">OWASP Top Ten</em>. Available at: <a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none;">https://owasp.org/www-project-top-ten/</a></p>
+                <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem; padding: 0.8rem 0; margin: 0;">Council of the European Union (2016) <em style="color: var(--text);">Regulation (EU) 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data (General Data Protection Regulation)</em>. Brussels.</p>
+            </div>
         </section>
     </div>
 
