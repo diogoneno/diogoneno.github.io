@@ -804,7 +804,6 @@ azure_badge_image: /assets/images/microsoft-certified-azure-administrator-associ
                             {% endif %}
                         {% endif %}
                     </div>
-                    <div class="status-badge">Open to Opportunities</div>
                 </div>
             </div>
             <div class="hero-text">
